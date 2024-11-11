@@ -1,0 +1,190 @@
+{
+    "bienvenida":{
+        "habilidad":"Desarrollador Frontend y Backend",
+        "infoBienvenida": "Bienvenid@ a mi portafolio, donde comparto mis conocimientos como desarrollador Frontend y Backend a través de mis proyectos."
+    },
+    "sobreMy":{
+        "nombre":"Ronny De Los Santos",
+        "especialidad":"FullStack",
+        "tituloSobreMy":"Sobre mi",
+        "misRedes":[
+            {
+                "nombreRed":"github",
+                "urlRed":"https://github.com/RonnyDLS",
+                "urlImg":"/imgs/github-64.png"
+            },
+            {
+                "nombreRed":"Linkedin",
+                "urlRed":"https://www.linkedin.com/in/ronny-de-los-santos-peralta-6129a3300/",
+                "urlImg":"/imgs/linkedin-50.png"
+            }
+        ],
+        "conocimientos":[
+            {
+                "conocimiento":"Js",
+                "color":"#F7DF1E",
+                "url_img":"/imgs_conocimientos/js.png"
+            },
+            {
+                "conocimiento":"Java",
+                "color":"white",
+                "url_img":"/imgs_conocimientos/java.png"
+            },
+            {
+                "conocimiento":"C#",
+                "color":"white",
+                "url_img":"/imgs_conocimientos/cshar.png"
+            },
+            {
+                "conocimiento":"Git",
+                "color":"white",
+                "url_img":"/imgs_conocimientos/git.png"
+            },
+            {
+                "conocimiento":"Selenium",
+                "color":"#00B400",
+                "url_img":"/imgs_conocimientos/selenium.png"
+            },
+            {
+                "conocimiento":"CSS",
+                "color":"white",
+                "url_img":"/imgs_conocimientos/css.png"
+            },
+            {
+                "conocimiento":"HTML",
+                "color":"white",
+                "url_img":"/imgs_conocimientos/html.png"
+            }
+        ],
+        "infoSobreMy":[
+            {
+                "parrafo":"Mi pasión por el desarrollo comenzó en el liceo técnico, donde estudié la carrera de desarrollo de aplicaciones. Fue allí donde descubrí el fascinante mundo de la creación de aplicaciones y sitios web."
+            },
+            {
+                "parrafo":"Me apasiona especialmente el desarrollo frontend, ya que me permite ver cómo mis diseños cobran vida y satisfacen las necesidades de los usuarios de manera visual y funcional. Además, crear la lógica detrás de un sistema y conectarla con el frontend es una experiencia increíble, ya que me desafía a unir creatividad y técnica en un solo proceso."
+            },
+            {
+                "parrafo":"Actualmente, estoy cursando la carrera de tecnólogo en desarrollo de software en el ITLA. Los conocimientos adquiridos en este programa me han impulsado significativamente, mejorando mis habilidades y mi capacidad para desarrollar soluciones tecnológicas más eficientes y completas."
+            }
+        ]
+    },
+    "proyectos":[
+        {
+            "id": "1P",
+            "destacado":true,
+            "titulo":"Gestión de citas medicas",
+            "resumen_proyecto":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est eius debitis perferendis nisi officiis rerum, earum voluptatibus quos ut voluptatem tempore fugiat enim veniam, nesciunt impedit aut tenetur? Non quisquam perferendis illo ad officia voluptatum repellat quae nihil. Pariatur, eum? Atque odit nostrum reprehenderit nobis quod ratione molestiae recusandae assumenda.",
+            "urlDireccionesProyecto":[
+                {
+                    "urlDireccionProyecto":""
+                }
+            ],
+            "informacion_proyecto":[
+                {
+                    "parrafo":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est eius debitis perferendis nisi officiis rerum, earum voluptatibus quos ut voluptatem tempore fugiat enim veniam, nesciunt impedit aut tenetur? Non quisquam perferendis illo ad officia voluptatum repellat quae nihil. Pariatur, eum? Atque odit nostrum reprehenderit nobis quod ratione molestiae recusandae assumenda."
+                },
+                {
+                    "parrafo":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est eius debitis perferendis nisi officiis rerum, earum voluptatibus quos ut voluptatem tempore fugiat enim veniam, nesciunt impedit aut tenetur? Non quisquam perferendis illo ad officia voluptatum repellat quae nihil. Pariatur, eum? Atque odit nostrum reprehenderit nobis quod ratione molestiae recusandae assumenda."
+                },
+                {
+                    "parrafo":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est eius debitis perferendis nisi officiis rerum."
+                }
+            ],
+            "url_img_resume":"/imgs/bienvenido_.png",
+            "urls_imagenes":[
+                {
+                    "url":"/imgs/code.png"
+                },
+                {
+                    "url":"/imgs/dev.png"
+                },
+                {
+                    "url":"/imgs/bienvenido_.png"
+                }
+            ],
+            "tecnologias":[
+                {
+                    "tecnologia":"C#",
+                    "color":"white",
+                    "url_img":""
+                },
+                {
+                    "tecnologia":"Js",
+                    "color":"white",
+                    "url_img":""
+                }
+            ]
+        }, 
+        {
+            "id": "2P",
+            "destacado":false,
+            "titulo":"Gestión de estudiantes",
+            "resumen_proyecto":"",
+            "informacion_proyecto":[
+                {
+                    "parrafo":"Hola, aparece"
+                }
+            ],
+            "urlDireccionesProyecto":[
+                {
+                    "urlDireccionProyecto":""
+                }
+            ],
+            "url_img_resume":"/imgs/code.png",
+            "urls_imagenes":[
+                {
+                    "url":"/imgs/bienvenido_.png"
+                }
+            ],
+            "tecnologias":[
+                {
+                    "tecnologia":"C#",
+                    "color":"white",
+                    "url_img":""
+                },
+                {
+                    "tecnologia":"Js",
+                    "color":"white",
+                    "url_img":""
+                }
+            ]
+        },
+        {
+            "id": "3P",
+            "destacado":false,
+            "titulo":"Gestión de citas",
+            "resumen_proyecto":"Hola ...",
+            "informacion_proyecto":[
+                {
+                    "parrafo":"Hola, aparece"
+                }
+            ],
+            "urlDireccionesProyecto":[
+                {
+                    "urlDireccionProyecto":""
+                }
+            ],
+            "url_img_resume":"/imgs/avatar.png",
+            "urls_imagenes":[
+                {
+                    "url":"/imgs/dev.png"
+                },
+                {
+                    "url":"/imgs/dev.png"
+                }
+            ],
+            "tecnologias":[
+                {
+                    "tecnologia":"C#",
+                    "color":"white",
+                    "url_img":"/imgs_conocimientos/cshar.png"
+                },
+                {
+                    "tecnologia":"Js",
+                    "color":"#F7DF1E",
+                    "url_img":"/imgs_conocimientos/js.png"
+                }
+            ]
+        }
+    ]
+}
