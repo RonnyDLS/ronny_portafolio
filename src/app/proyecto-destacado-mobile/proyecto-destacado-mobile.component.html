@@ -1,0 +1,25 @@
+<div class="content" *ngIf="db">
+    <div class="lista_proyectos">
+        <h2 class="titulo_proyectos">Proyectos Destacados</h2>
+        <div class="imgDefaultProyecto">
+            <app-img-proyectos-destacados></app-img-proyectos-destacados>
+        </div>
+        <div class="linea">
+            <div class="items_proyectos">
+                <div class="item" (click)="irAlProyectoDetacado(proyectoDestacado)" *ngFor="let proyectoDestacado of proyectosDestacados">
+                    {{proyectoDestacado.titulo}}
+                </div>
+                <div class="cj_mj_noDisponible" *ngIf="proyectosDestacados.length == 0"> 
+                    <div class="mj_noDisponible"> No hay disponibles </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="resumen_proyecto">         
+        <div class="enlaces_iconos">
+            <a [href]="red.urlRed" *ngFor="let red of db.sobreMy.misRedes" target="_blank">
+                <img class="redImg" [src]="red.urlImg" alt="">
+            </a>
+        </div>
+    </div>
+</div>

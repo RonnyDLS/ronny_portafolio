@@ -1,0 +1,39 @@
+<div class="content" *ngIf="db">
+    <div class="proyecto_descripcion">
+        <div>
+            <h2 class="titulo_proyectos">Proyecto</h2>
+            <h2 class="titulo_proyecto_resumen">{{proyecto.titulo}}</h2>
+        </div>
+        
+        <div class="parrafo_resumen">
+            <p class="parrafo" *ngFor="let parrafo of proyecto.informacion_proyecto">
+                {{parrafo.parrafo}}
+            </p>
+        </div>
+        <div class="tecnologias">
+            <h3 class="subtitulo_tecnologia">Tecnologias</h3>
+            <div class="items_tecnologias">
+                <a class="item" [ngStyle]="{'background-color': tecnologia.color}" *ngFor="let tecnologia of proyecto.tecnologias">
+                    <img class="img_tecnologia" [src]="tecnologia.url_img" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="enlaces_iconos">
+            <a [href]="red.urlRed" *ngFor="let red of db.sobreMy.misRedes" target="_blank">
+                <img class="redImg" [src]="red.urlImg" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="imgs_proyectos">
+        <a class="img_link_proyecto" [href]="imagen.url" *ngFor="let imagen of proyecto.urls_imagenes" target="_blank"> 
+            <img class="img_proyecto" [src]="imagen.url" alt="">
+        </a>
+
+    </div>
+    <div class="enlaces_iconos_mobile">
+        <a [href]="red.urlRed" *ngFor="let red of db.sobreMy.misRedes" target="_blank">
+            <img class="redImg" [src]="red.urlImg" alt="">
+        </a>
+    </div>
+</div>

@@ -1,0 +1,397 @@
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jura", sans-serif;
+}
+.cursorPoint{
+    cursor: pointer;
+}
+
+/* Escritorio  */
+@media screen and (min-width: 926px) {
+    .contenido{
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    .cj_cuadricula{
+        display: grid;
+        grid-template-columns: 1.4fr 1fr;
+        gap: 4rem;
+        padding-top: 5rem;
+    }
+    .img_hola{
+        background-image: url("/imgs/hola_home.png");
+        background-size: cover;
+        background-position: center center;
+        border: none;
+        background-color: transparent;
+        height: 13rem;
+        width: 26rem;
+        animation-name: img_hola_;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    
+    .txt_conocimiento{
+        margin-top: 1rem;
+        background-color: #2F1856;
+        padding: 1rem 2rem;
+        display: inline-block;
+        border-radius: .6rem;
+        color: #F07DDA;
+        font-size: 25px; 
+        font-weight: bold;
+    
+        animation-name: comocimietos;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    .txt_bienvenida{
+        margin-top: 2rem;
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.853);
+    }
+    .enlaces_iconos{
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        display: flex;
+        justify-content: start;
+        gap: 1rem;
+    }
+    .redImg{
+        width: 2rem;
+        height: 2rem;
+        background-position: center center;
+        background-size: cover;
+    }
+    .cj_imagen{
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+    .img_dev{
+        background-image: url("/imgs/dev.png");
+        background-size: cover;
+        background-position: center center;
+        border: none;
+        background-color: transparent;
+        height: 20rem;
+        width: 36rem;
+        animation: img_home 3s ease infinite;
+    }
+    
+    @keyframes img_home {
+        0%{
+            transform: translateY(.2rem);
+        }
+        50%{
+            transform: translateY(-1rem);
+        }
+        100%{
+            transform: translateY(.2rem);
+        }
+    }
+    
+    @keyframes img_hola_ {
+        0%{
+            transform: translateX(0);
+        }
+        30%{
+            transform: translateX(50px);
+        }
+        80%{
+            transform: translateX(0);
+        }
+        90%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(0);
+        }
+    }
+    
+    @keyframes comocimietos {
+        0%{
+            transform: rotate(1deg);
+        }
+        3%{
+            transform: rotate(-1deg);
+        }
+        6%{
+            transform: rotate(2deg);
+        }
+        9%{
+            transform: rotate(-2deg);
+        }
+        12%{
+            transform: rotate(4deg);
+        }
+        15%{
+            transform: rotate(-4deg);
+        }
+        18%{
+            transform: rotate(0);
+        }
+        100%{
+            transform: rotate(0);
+        }
+    }    
+}
+@media screen and (max-width: 1142px){
+    .cj_imagen{
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+    .img_dev{
+        background-image: url("/imgs/dev.png");
+        background-size: cover;
+        background-position: center center;
+        border: none;
+        background-color: transparent;
+        height: 17rem;
+        width: 30rem;
+        animation: img_home 4s ease infinite;
+    }
+}
+
+@media (min-width: 926px) and (max-width: 1055px) {
+    .cj_imagen{
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+    .img_dev{
+        background-image: url("/imgs/dev.png");
+        background-size: cover;
+        background-position: center center;
+        border: none;
+        background-color: transparent;
+        height: 12rem;
+        width: 22rem;
+        animation: img_home 3s ease infinite;
+    }
+    @keyframes img_home {
+        0%{
+            transform: translateY(.2rem);
+        }
+        50%{
+            transform: translateY(-1rem);
+        }
+        100%{
+            transform: translateY(.2rem);
+        }
+    }
+    .img_hola{
+        background-image: url("/imgs/hola_home.png");
+        background-size: cover;
+        background-position: center center;
+        border: none;
+        background-color: transparent;
+        height: 8rem;
+        width: 17rem;
+        animation-name: img_hola_;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    .txt_conocimiento{
+        margin-top: 1rem;
+        background-color: #2F1856;
+        padding: .6rem 1.5rem;
+        display: inline-block;
+        border-radius: .6rem;
+        color: #F07DDA;
+        font-size: 20px; 
+        font-weight: bold;
+    
+        animation-name: comocimietos;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    .txt_bienvenida{
+        margin-top: 1rem;
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.853);
+    }
+
+    @keyframes img_hola_ {
+        0%{
+            transform: translateX(0);
+        }
+        30%{
+            transform: translateX(50px);
+        }
+        80%{
+            transform: translateX(0);
+        }
+        90%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes comocimietos {
+        0%{
+            transform: rotate(1deg);
+        }
+        3%{
+            transform: rotate(-1deg);
+        }
+        6%{
+            transform: rotate(2deg);
+        }
+        9%{
+            transform: rotate(-2deg);
+        }
+        12%{
+            transform: rotate(4deg);
+        }
+        15%{
+            transform: rotate(-4deg);
+        }
+        18%{
+            transform: rotate(0);
+        }
+        100%{
+            transform: rotate(0);
+        }
+    } 
+}
+
+/* Mobile */
+@media screen and (max-width: 926px) {
+    .cj_cuadricula{
+        grid-template-rows: 1fr 1fr;
+        padding-top: 3rem;
+    }
+    .cj_contenido_txt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .img_hola{
+        background-image: url("/imgs/hola_home.png");
+        background-size: cover;
+        background-position: center center;
+        border: none;
+        background-color: transparent;
+        height: 7rem;
+        width: 15rem;
+        animation-name: img_hola_;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    .contenido{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .txt_conocimiento{
+        margin-top: .3rem;
+        background-color: #2F1856;
+        padding: .5rem 1.4rem;
+        display: inline-block;
+        border-radius: .6rem;
+        color: #F07DDA;
+        font-size: 17px; 
+        font-weight: bold;
+        text-align: center;
+    
+        animation-name: comocimietos;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    .txt_bienvenida{
+        margin-top: .4rem;
+        font-size: 1.1rem;
+        color: rgba(255, 255, 255, 0.853);
+        text-align: center;
+    }
+    .cj_imagen{
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+    .img_dev{
+        background-image: url("/imgs/dev.png");
+        background-size: cover;
+        background-position: center center;
+        border: none;
+        background-color: transparent;
+        height: 11rem;
+        width: 20rem;
+        animation: img_home 3s ease infinite;
+    }   
+    @keyframes img_home {
+        0%{
+            transform: translateY(.2rem);
+        }
+        50%{
+            transform: translateY(-1rem);
+        }
+        100%{
+            transform: translateY(.2rem);
+        }
+    }
+    .icon{
+        margin-top: 4rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 4rem;
+    }
+    .enlaces_iconos {
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .redImg{
+        width: 2rem;
+        height: 2rem;
+        background-position: center center;
+        background-size: cover;
+    }
+    @keyframes img_hola_ {
+        0%{
+            transform: translateX(-20px);
+        }
+        50%{
+            transform: translateX(20px);
+        }
+        100%{
+            transform: translateX(-20px);
+        }
+    }
+    @keyframes comocimietos {
+        0%{
+            transform: rotate(1deg);
+        }
+        3%{
+            transform: rotate(-1deg);
+        }
+        6%{
+            transform: rotate(2deg);
+        }
+        9%{
+            transform: rotate(-2deg);
+        }
+        12%{
+            transform: rotate(4deg);
+        }
+        15%{
+            transform: rotate(-4deg);
+        }
+        18%{
+            transform: rotate(0);
+        }
+        100%{
+            transform: rotate(0);
+        }
+    } 
+}

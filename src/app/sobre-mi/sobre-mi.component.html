@@ -1,0 +1,33 @@
+<div class="content" *ngIf="db">
+    <div class="img_saludo">
+        <div class="img_perfil"></div>
+        <div class="saludo">
+            <div class="cj_hola">
+                <h1 class="hola"></h1>
+                <div class="mano"></div>
+            </div>
+            <p class="nombre"></p>
+            <div>
+                <p class="especialidad"></p>
+            </div>
+        </div>
+    </div>
+    <div class="txt_sobre_mi">
+        <p *ngFor="let parrafo of db.sobreMy.infoSobreMy">
+            {{parrafo.parrafo}}
+        </p>
+    </div>
+    <div class="conocimientos">
+        <h2 class="sub_titulo">Conocimientos</h2>
+        <div class="items">
+            <div class="item" *ngFor="let comocimiento of db.sobreMy.conocimientos" [style.background-color]="comocimiento.color">
+                <img class="img_conocimientos" [src]="comocimiento.url_img" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="enlaces_iconos">
+        <a [href]="red.urlRed" *ngFor="let red of db.sobreMy.misRedes" target="_blank">
+            <img class="redImg" [src]="red.urlImg" alt="">
+        </a>
+    </div>
+</div>

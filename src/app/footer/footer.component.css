@@ -1,0 +1,23 @@
+.enlaces_iconos {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+.github {
+    background-image: url("/imgs/github-64.png");
+    width: 2rem;
+    height: 2rem;
+    background-position: center center;
+    background-size: cover;
+}
+
+.linkedin {
+    background-image: url("/imgs/linkedin-50.png");
+    width: 2rem;
+    height: 2rem;
+    background-position: center center;
+    background-size: cover;
+}

@@ -1,0 +1,235 @@
+* {
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jura", sans-serif;
+}
+
+/* Escritorio */
+@media screen and (min-width:931px) {
+    .content{
+        width: 90%;
+        margin: auto;
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+        gap: 4rem;
+    }
+    .parrafo{
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+    }
+    .titulo_proyecto_resumen{
+        color: #7e9fe6;
+    }
+    .parrafo_resumen{
+        color: #ffffffab;
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+    }
+    .subtitulo_tecnologia{
+        color: #b972e8;
+        margin-bottom: 2rem;
+        font-size: 1.7rem;
+    }
+    .items_tecnologias{
+        display: flex;
+        justify-content: start;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    .item{
+        padding: .2rem 1rem;
+        border-radius: .3rem;
+        font-weight: bold;
+    }
+    .proyecto_descripcion{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        position: relative;
+        animation: proyecto_descripcion .5s ease;
+    }
+    @keyframes proyecto_descripcion {
+        0%{
+            right: 10%;
+            opacity: 0;
+        }
+        100%{
+            right: 0;
+            opacity: 1;
+        }
+    }
+
+    .tecnologias{
+        margin-bottom: 2rem;
+    }
+
+    .enlaces_iconos_mobile{
+        display: none;
+    }    
+    
+    .enlaces_iconos {
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        display: flex;
+        justify-content: start;
+        gap: 1rem;
+    }
+    .redImg{
+        width: 2rem;
+        height: 2rem;
+        background-position: center center;
+        background-size: cover;
+    }
+    .imgs_proyectos{
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        height: 80vh;
+        border-bottom: solid 2px #ffffff4f;
+        border-top: solid 2px #ffffff4f;
+        padding-right: 1rem;
+        position: relative;
+        animation: imgs_proyectos .5s ease;
+    }
+    @keyframes imgs_proyectos {
+        0%{
+            right: -10%;
+            opacity: 0;
+        }
+        100%{
+            right: 0;
+            opacity: 1;
+        }
+    }
+
+    .imgs_proyectos::-webkit-scrollbar{
+        width: 5px;
+    }
+    .imgs_proyectos::-webkit-scrollbar-track{
+        background-color: #05001d;
+    }
+    .imgs_proyectos::-webkit-scrollbar-thumb{
+        background-color: #ffffff4f;
+        border-radius: 1rem;
+    }
+    
+    .img_proyecto{
+        width: 100%;
+        border-radius: 1rem;
+        margin: .5rem 0;
+        cursor: pointer;
+    }
+    .img_tecnologia{
+        width: 3rem;
+    }
+    .titulo_proyectos {
+        margin-bottom: 1rem;
+        font-size: 2.1rem;
+        font-weight: bold;
+        color: #b84afc;
+    }
+}
+
+/* Mobil */
+@media screen and (max-width:931px) {
+    .content{
+        width: 90%;
+        margin: auto;
+        margin-top: 3rem;
+    }
+    .proyecto_descripcion{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 2.5rem;
+        text-align: start;
+    }
+    .titulo_proyecto_resumen{
+        color: #7e9fe6;
+    }
+    .parrafo_resumen{
+        color: #ffffffab;
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+    }
+    .subtitulo_tecnologia{
+        color: #b972e8;
+        font-size: 1.7rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    .items_tecnologias{
+        display: flex;
+        justify-content: start;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    .item{
+        padding: .5rem 1rem;
+        border-radius: .3rem;
+        font-weight: bold;
+    }
+    .imgs_proyectos{
+        display: flex;
+        overflow-x: scroll;
+        border-left: solid 2px #ffffff4f;
+        border-right: solid 2px #ffffff4f;
+        padding-right: 1rem;
+        margin-bottom: 4rem;
+        height: 13rem;
+    }
+    .imgs_proyectos::-webkit-scrollbar{
+        width: 5px;
+    }
+    .imgs_proyectos::-webkit-scrollbar-track{
+        background-color: #05001d;
+    }
+    .imgs_proyectos::-webkit-scrollbar-thumb{
+        background-color: #ffffff4f;
+        border-radius: 1rem;
+    }
+    .img_proyecto{
+       height: 100%;
+       border-radius: 1rem;
+    }
+    .img_link_proyecto{
+        border-radius: 1rem;
+        margin: .5rem;
+        cursor: pointer; 
+    }
+    .enlaces_iconos {
+        display: none;
+    }
+    .enlaces_iconos_mobile{
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .redImg{
+        width: 2rem;
+        height: 2rem;
+        background-position: center center;
+        background-size: cover;
+    }
+    .img_tecnologia{
+        width: 2rem;
+    }
+    .parrafo{
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+        color: #ffffff;
+    }
+    .titulo_proyectos {
+        margin-bottom: 1rem;
+        font-size: 2.1rem;
+        font-weight: bold;
+        color: #b84afc;
+    }
+}

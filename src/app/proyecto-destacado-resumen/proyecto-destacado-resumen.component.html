@@ -1,0 +1,21 @@
+<div class="content" *ngIf="proyectoDestacado">
+    <h2 class="titulo_proyecto_resumen">{{proyectoDestacado.titulo}}</h2>
+    <div class="img_resumen">
+        <img [src]="proyectoDestacado.url_img_resume" alt="">
+    </div>
+    <p class="parrafo_resumen">{{proyectoDestacado.resumen_proyecto}}</p>
+    <div class="cj_btn_resumen">
+        <button class="btn_resumen" routerLink="/proyectos_destacado_descripcion">Ver resumen</button>
+    </div>
+
+    <div class="tecnologias">
+        <h3 class="subtitulo_tecnologia">Tecnologias</h3>
+        <div class="items_tecnologias">
+            <p class="item" *ngFor="let tecnologia of tecnologias" [ngStyle]="{'background-color': tecnologia.color}">
+                <img class="img_conocimientos" [src]="tecnologia.url_img" alt="">
+            </p>
+        </div>
+    </div>
+</div>
+
+
