@@ -144,29 +144,4 @@
         color: #b84afc;
         text-align: center;
     }
-    
-    .enlaces_iconos {
-        display: flex;
-        justify-content: center;
-        align-items: end;
-        gap: 1rem;
-        margin-top: 7rem;
-        margin-bottom: 5rem;
-    }
-    
-    .github {
-        background-image: url("/imgs/github-64.png");
-        width: 2rem;
-        height: 2rem;
-        background-position: center center;
-        background-size: cover;
-    }
-    
-    .linkedin {
-        background-image: url("/imgs/linkedin-50.png");
-        width: 2rem;
-        height: 2rem;
-        background-position: center center;
-        background-size: cover;
-    }
 }

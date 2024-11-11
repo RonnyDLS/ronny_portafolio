@@ -22,7 +22,7 @@
         padding-top: 5rem;
     }
     .img_hola{
-        background-image: url("/imgs/hola_home.png");
+        background-image: url("/assets/imgs/hola_home.png");
         background-size: cover;
         background-position: center center;
         border: none;
@@ -72,7 +72,7 @@
         align-items: end;
     }
     .img_dev{
-        background-image: url("/imgs/dev.png");
+        background-image: url("/assets/imgs/dev.png");
         background-size: cover;
         background-position: center center;
         border: none;
@@ -146,7 +146,7 @@
         align-items: end;
     }
     .img_dev{
-        background-image: url("/imgs/dev.png");
+        background-image: url("/assets/imgs/dev.png");
         background-size: cover;
         background-position: center center;
         border: none;
@@ -164,7 +164,7 @@
         align-items: end;
     }
     .img_dev{
-        background-image: url("/imgs/dev.png");
+        background-image: url("/assets/imgs/dev.png");
         background-size: cover;
         background-position: center center;
         border: none;
@@ -185,7 +185,7 @@
         }
     }
     .img_hola{
-        background-image: url("/imgs/hola_home.png");
+        background-image: url("/assets/imgs/hola_home.png");
         background-size: cover;
         background-position: center center;
         border: none;
@@ -275,7 +275,7 @@
         gap: 1rem;
     }
     .img_hola{
-        background-image: url("/imgs/hola_home.png");
+        background-image: url("/assets/imgs/hola_home.png");
         background-size: cover;
         background-position: center center;
         border: none;
@@ -317,7 +317,7 @@
         margin-top: 3rem;
     }
     .img_dev{
-        background-image: url("/imgs/dev.png");
+        background-image: url("/assets/imgs/dev.png");
         background-size: cover;
         background-position: center center;
         border: none;

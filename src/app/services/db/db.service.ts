@@ -11,6 +11,6 @@ export class DbService {
   constructor(private http:HttpClient) {}
 
   getDB(): Observable<DB>{
-    return this.http.get<DB>("/js/db.json");
+    return this.http.get<DB>("assets/js/db.json");
   }
 }

@@ -34,7 +34,7 @@
         margin-bottom: 2rem;
     }
     .cv_ico{
-        background-image: url("/imgs/cv_ico.png");
+        background-image: url("/assets/imgs/cv_ico.png");
         height: 7rem;
         width: 7rem;
         border-radius: .5rem;
@@ -107,7 +107,7 @@
         margin-bottom: 2rem;
     }
     .cv_ico{
-        background-image: url("/imgs/cv_ico.png");
+        background-image: url("/assets/imgs/cv_ico.png");
         height: 7rem;
         width: 7rem;
         border-radius: .5rem;
@@ -181,7 +181,7 @@
         margin-bottom: 3rem;
     }
     .cv_ico{
-        background-image: url("/imgs/cv_ico.png");
+        background-image: url("/assets/imgs/cv_ico.png");
         height: 7rem;
         width: 7rem;
         border-radius: .5rem;

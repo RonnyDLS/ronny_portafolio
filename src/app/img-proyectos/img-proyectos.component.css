@@ -1,5 +1,5 @@
 .imgDefault{
-    background-image: url("/imgs/dev_proyectos.png");
+    background-image: url("/assets/imgs/dev_proyectos.png");
     background-size: cover;
     background-position: center center;
     animation-name: imgDefault;
