@@ -4,7 +4,7 @@
         "infoBienvenida": "Bienvenid@ a mi portafolio, donde comparto mis conocimientos como desarrollador Frontend y Backend a través de mis proyectos."
     },
     "sobreMy":{
-        "imgPerfil": "/assets/imgs/perfil.png",
+        "imgPerfil": "assets/imgs/perfil.png",
         "nombre":"Ronny De Los Santos",
         "especialidad":"FullStack",
         "tituloSobreMy":"Sobre mi",
