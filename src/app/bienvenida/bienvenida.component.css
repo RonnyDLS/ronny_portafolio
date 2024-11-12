@@ -19,9 +19,6 @@
     .video_bienvenida{
         max-width: 60%;
         max-height: 60%;
-        background-color: #08002C;
-        object-fit: cover;
-        overflow: hidden;
     }
 }
 
@@ -39,8 +36,5 @@
     .video_bienvenida{
         max-width: 90%;
         max-height: 90%;
-        background-color: #08002C;
-        object-fit: cover;
-        overflow: hidden;
     }
 }
