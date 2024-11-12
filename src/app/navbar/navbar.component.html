@@ -1,6 +1,6 @@
 <nav id="nav">
-    <div class="perfil">
-        <img class="imagen_perfil" (click)="irAHome()">
+    <div class="perfil" *ngIf="db">
+        <img class="imagen_perfil" [src]="db.sobreMy.imgPerfil" (click)="irAHome()">
     </div>
     <div class="btns">
         <div class="btn inicio" routerLink="/home"></div>
@@ -16,8 +16,8 @@
             </div>
         </div>
         <div class="btn sobreMi" routerLink="sobre_mi"></div>
-        <a (click)="abrirVentanaCV()" class="btn flex_gap" >
-            <div class="descargar"></div>
+        <a (click)="abrirVentanaCV()" class="btn flex_gap" *ngIf="db">
+            <img class="descargar" [src]="db.imagenes[3]">
             <p class="curriculumV"></p>
         </a>
     </div>
@@ -41,8 +41,8 @@
     <label for="menu_activar"  class="btn_mobile" routerLink="/proyectos_destacados_mobile">Proyectos destacados</label>
     <label for="menu_activar"  class="btn_mobile" routerLink="/sobre_mi">Sobre mi</label>
     <label for="menu_activar"  (click)="abrirVentanaCV()" class="btn_mobile flex_gap">
-        <div class="flex_gap">
-            <div class="descargar"></div>
+        <div class="flex_gap" *ngIf="db">
+            <img class="descargar" [src]="db.imagenes[3]">
             <p>CV</p>
         </div>
     </label>

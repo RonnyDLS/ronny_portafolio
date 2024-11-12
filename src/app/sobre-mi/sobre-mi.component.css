@@ -23,9 +23,6 @@
         animation: sobreMy 1.1s ease;
     }
     .img_perfil{
-        background-image: url("/assets/imgs/perfil_sin_fondo.png");
-        background-size: cover;
-        background-position: center center;
         width: 17rem;
         height: 100%;
         justify-self: end;
@@ -132,9 +129,6 @@
         align-items: center;
     }
     .mano{
-        background-image: url("/assets/imgs/mano_hola.png");
-        background-position: center center;
-        background-size: cover;
         height: 3.5rem;
         width: 3.5rem;
         display: none;
@@ -153,22 +147,18 @@
     @keyframes conocimientos {
         0%{
             right: -40%;
-            opacity: 0;
         }
         100%{
             right: 0;
-            opacity: 1;
         }
     }
     
     @keyframes sobreMy {
         0%{
             right: 40%;
-            opacity: 0;
         }
         100%{
             right: 0;
-            opacity: 1;
         }
     }
 
@@ -243,9 +233,6 @@
         animation: sobreMy 1.1s ease;
     }
     .img_perfil{
-        background-image: url("/assets/imgs/perfil_sin_fondo.png");
-        background-size: cover;
-        background-position: center center;
         width: 100%;
         height: 100%;
         justify-self: end;
@@ -363,9 +350,6 @@
         align-items: center;
     }
     .mano{
-        background-image: url("/assets/imgs/mano_hola.png");
-        background-position: center center;
-        background-size: cover;
         height: 3.5rem;
         width: 3.5rem;
         display: none;
@@ -461,9 +445,6 @@
         animation: sobreMy 1.1s ease;
     }
     .img_perfil{
-        background-image: url("/assets/imgs/perfil_sin_fondo.png");
-        background-size: cover;
-        background-position: center center;
         width: 100%;
         height: 100%;
         justify-self: end;
@@ -580,9 +561,6 @@
         align-items: center;
     }
     .mano{
-        background-image: url("/assets/imgs/mano_hola.png");
-        background-position: center center;
-        background-size: cover;
         height: 2.3rem;
         width: 2.3rem;
         display: none;

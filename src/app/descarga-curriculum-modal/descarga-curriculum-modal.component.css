@@ -34,12 +34,9 @@
         margin-bottom: 2rem;
     }
     .cv_ico{
-        background-image: url("/assets/imgs/cv_ico.png");
         height: 7rem;
         width: 7rem;
         border-radius: .5rem;
-        background-position: center center;
-        background-size: cover;
     }
     .img_ico{
         display: flex;
@@ -107,12 +104,9 @@
         margin-bottom: 2rem;
     }
     .cv_ico{
-        background-image: url("/assets/imgs/cv_ico.png");
         height: 7rem;
         width: 7rem;
         border-radius: .5rem;
-        background-position: center center;
-        background-size: cover;
     }
     .img_ico{
         display: flex;
@@ -181,12 +175,9 @@
         margin-bottom: 3rem;
     }
     .cv_ico{
-        background-image: url("/assets/imgs/cv_ico.png");
         height: 7rem;
         width: 7rem;
         border-radius: .5rem;
-        background-position: center center;
-        background-size: cover;
     }
     .img_ico{
         display: flex;

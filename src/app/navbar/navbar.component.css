@@ -99,9 +99,6 @@
     }
     
     .descargar{
-        background-image: url("/assets/imgs/descargar-50.png");
-        background-position: center center;
-        background-size: cover;
         width: 1.2rem;
         height: 1.2rem;
     }
@@ -130,7 +127,6 @@
     }
     .imagen_perfil{
         cursor: pointer;
-        background-image: url("/assets/imgs/perfil.png");
         background-size: cover;
         background-position: center;
         height: 3.5rem;
@@ -181,9 +177,6 @@
         display: none;
     }
     .descargar{
-        background-image: url("/assets/imgs/descargar-50.png");
-        background-position: center center;
-        background-size: cover;
         width: 1.2rem;
         height: 1.2rem;
     }

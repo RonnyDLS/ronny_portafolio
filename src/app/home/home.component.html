@@ -1,12 +1,12 @@
 <article class="contenido" *ngIf="db">
     <div class="cj_cuadricula" >
         <div class="cj_contenido_txt">
-            <div class="img_hola"></div>
+            <img class="img_hola" [src]="db.imagenes[8]">
             <div class="txt_conocimiento">{{db.bienvenida.habilidad}}</div>
             <div class="txt_bienvenida">{{db.bienvenida.infoBienvenida}}</div>
         </div>
         <div class="cj_imagen">
-            <div class="img_dev"></div>
+            <img class="img_dev" [src]="db.imagenes[6]">
         </div>
     </div>
     <div class="enlaces_iconos">

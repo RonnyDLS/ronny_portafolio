@@ -1,7 +1,4 @@
 .imgDefault{
-    background-image: url("/assets/imgs/dev_proyectos.png");
-    background-size: cover;
-    background-position: center center;
     animation-name: imgDefault;
     animation-duration: 4s;
     animation-iteration-count: infinite;

@@ -1,7 +1,4 @@
 .imgDefault{
-    background-image: url("/assets/imgs/dev_proyectos_destacados.png");
-    background-size: cover;
-    background-position: center center;
     animation-name: imgDefault;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -22,13 +19,13 @@
 @media screen and (min-width: 553px) {
     .imgDefault{
         height: 18rem;
-        width: 32rem;
+        width: 30rem;
     }
 }
 
 @media screen and (max-width: 553px) {
     .imgDefault{
-        height: 11rem;
+        height: 12rem;
         width: 20rem;
     }
 }
