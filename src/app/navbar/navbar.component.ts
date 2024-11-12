@@ -31,6 +31,7 @@ export class NavbarComponent {
         this.db = respuesta;
       }
     )
+    this. irAHome();
   }
 
   menu() {
