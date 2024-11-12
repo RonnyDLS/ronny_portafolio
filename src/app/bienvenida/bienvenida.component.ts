@@ -1,32 +1,12 @@
-import { CommonModule } from '@angular/common';
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { Router, RouterOutlet } from '@angular/router';
-import { ConexionRutasComponent } from "../conexion-rutas/conexion-rutas.component";
-import { error } from 'node:console';
+import { Component, ComponentRef, ElementRef, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
 
 @Component({
   selector: 'app-bienvenida',
   standalone: true,
-  imports: [
-    CommonModule,
-    ConexionRutasComponent
-  ],
+  imports: [],
   templateUrl: './bienvenida.component.html',
   styleUrl: './bienvenida.component.css'
 })
-export class BienvenidaComponent implements OnInit {
+export class BienvenidaComponent {
   
-  
-  @ViewChild('video') videoref!: ElementRef<HTMLVideoElement>;
-
-  mostrarBienvenida: boolean = true;
-  mostrarNav: boolean = false;
-  
-  ngOnInit(): void {
-    setTimeout(()=>{
-      this.mostrarBienvenida = false;
-      this.mostrarNav = true;
-    }, 4000)
-  }
-
 }

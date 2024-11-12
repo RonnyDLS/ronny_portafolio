@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ComponentRef, ViewChild, ViewContainerRef } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
 import { BienvenidaComponent } from "./bienvenida/bienvenida.component";
 import { NavbarComponent } from "./navbar/navbar.component";
@@ -21,4 +21,16 @@ import { ProyectoResumenComponent } from "./proyecto-resumen/proyecto-resumen.co
 export class AppComponent {
   title = 'MyPortafolio';
 
+  @ViewChild('cambios', {read: ViewContainerRef}) cambios!:ViewContainerRef
+  navContent:ComponentRef<NavbarComponent>;
+  bienvenidaContent:ComponentRef<BienvenidaComponent>;
+  
+  ngAfterViewInit(): void {
+
+    this.bienvenidaContent = this.cambios.createComponent(BienvenidaComponent);
+    setTimeout(()=>{
+      this.bienvenidaContent.destroy()
+      this.navContent = this.cambios.createComponent(NavbarComponent);
+    }, 4000)
+  }
 }
