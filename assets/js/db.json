@@ -1,4 +1,21 @@
 {
+    "imagenes":[
+        "assets/imgs/avatar.png",
+        "assets/imgs/code.png",
+        "assets/imgs/cv_ico.png",
+        "assets/imgs/descarga.png",
+        "assets/imgs/dev_proyectos_destacados.png",
+        "assets/imgs/dev_proyectos.png",
+        "assets/imgs/dev.png",
+        "assets/imgs/github.png",
+        "assets/imgs/hola_home.png",
+        "assets/imgs/ico_menu.svg",
+        "assets/imgs/linkedin.png",
+        "assets/imgs/mano_hola.png",
+        "assets/imgs/mano.png",
+        "assets/imgs/perfil_sin_fondo.png",
+        "assets/imgs/perfil.png"
+    ],
     "bienvenida":{
         "habilidad":"Desarrollador Frontend y Backend",
         "infoBienvenida": "Bienvenid@ a mi portafolio, donde comparto mis conocimientos como desarrollador Frontend y Backend a través de mis proyectos."
@@ -12,49 +29,49 @@
             {
                 "nombreRed":"github",
                 "urlRed":"https://github.com/RonnyDLS",
-                "urlImg":"/assets/imgs/github-64.png"
+                "urlImg":"assets/imgs/github.png"
             },
             {
                 "nombreRed":"Linkedin",
                 "urlRed":"https://www.linkedin.com/in/ronny-de-los-santos-peralta-6129a3300/",
-                "urlImg":"/assets/imgs/linkedin-50.png"
+                "urlImg":"assets/imgs/linkedin.png"
             }
         ],
         "conocimientos":[
             {
                 "conocimiento":"Js",
                 "color":"#F7DF1E",
-                "url_img":"/assets/imgs_conocimientos/js.png"
+                "url_img":"assets/imgs_conocimientos/js.png"
             },
             {
                 "conocimiento":"Java",
                 "color":"white",
-                "url_img":"/assets/imgs_conocimientos/java.png"
+                "url_img":"assets/imgs_conocimientos/java.png"
             },
             {
                 "conocimiento":"C#",
                 "color":"white",
-                "url_img":"/assets/imgs_conocimientos/cshar.png"
+                "url_img":"assets/imgs_conocimientos/cshar.png"
             },
             {
                 "conocimiento":"Git",
                 "color":"white",
-                "url_img":"/assets/imgs_conocimientos/git.png"
+                "url_img":"assets/imgs_conocimientos/git.png"
             },
             {
                 "conocimiento":"Selenium",
                 "color":"#00B400",
-                "url_img":"/assets/imgs_conocimientos/selenium.png"
+                "url_img":"assets/imgs_conocimientos/selenium.png"
             },
             {
                 "conocimiento":"CSS",
                 "color":"white",
-                "url_img":"/assets/imgs_conocimientos/css.png"
+                "url_img":"assets/imgs_conocimientos/css.png"
             },
             {
                 "conocimiento":"HTML",
                 "color":"white",
-                "url_img":"/assets/imgs_conocimientos/html.png"
+                "url_img":"assets/imgs_conocimientos/html.png"
             }
         ],
         "infoSobreMy":[
@@ -91,16 +108,16 @@
                     "parrafo":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est eius debitis perferendis nisi officiis rerum."
                 }
             ],
-            "url_img_resume":"/assets/imgs/bienvenido_.png",
+            "url_img_resume":"assets/imgs/hola_home.png",
             "urls_imagenes":[
                 {
-                    "url":"/assets/imgs/code.png"
+                    "url":"assets/imgs/code.png"
                 },
                 {
-                    "url":"/assets/imgs/dev.png"
+                    "url":"assets/imgs/dev.png"
                 },
                 {
-                    "url":"/assets/imgs/bienvenido_.png"
+                    "url":"assets/imgs/hola_home.png"
                 }
             ],
             "tecnologias":[
@@ -131,10 +148,10 @@
                     "urlDireccionProyecto":""
                 }
             ],
-            "url_img_resume":"/assets/imgs/code.png",
+            "url_img_resume":"assets/imgs/code.png",
             "urls_imagenes":[
                 {
-                    "url":"/assets/imgs/bienvenido_.png"
+                    "url":"assets/imgs/code.png"
                 }
             ],
             "tecnologias":[
@@ -165,25 +182,25 @@
                     "urlDireccionProyecto":""
                 }
             ],
-            "url_img_resume":"/assets/imgs/avatar.png",
+            "url_img_resume":"assets/imgs/avatar.png",
             "urls_imagenes":[
                 {
-                    "url":"/assets/imgs/dev.png"
+                    "url":"assets/imgs/dev.png"
                 },
                 {
-                    "url":"/assets/imgs/dev.png"
+                    "url":"assets/imgs/dev.png"
                 }
             ],
             "tecnologias":[
                 {
                     "tecnologia":"C#",
                     "color":"white",
-                    "url_img":"/assets/imgs_conocimientos/cshar.png"
+                    "url_img":"assets/imgs_conocimientos/cshar.png"
                 },
                 {
                     "tecnologia":"Js",
                     "color":"#F7DF1E",
-                    "url_img":"/assets/imgs_conocimientos/js.png"
+                    "url_img":"assets/imgs_conocimientos/js.png"
                 }
             ]
         }
