@@ -155,7 +155,7 @@
     
     .img_proyecto{
         width: 100%;
-        border-radius: 1rem;
+        border-radius: .5rem;
         margin: .5rem 0;
         cursor: pointer;
     }
@@ -264,7 +264,7 @@
     }
     .img_proyecto{
        height: 100%;
-       border-radius: 1rem;
+       border-radius: .5rem;
     }
     .img_link_proyecto{
         border-radius: 1rem;
