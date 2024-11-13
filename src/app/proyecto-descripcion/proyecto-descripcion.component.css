@@ -23,16 +23,25 @@
     }
     .titulo_proyecto_resumen{
         color: #7e9fe6;
+        padding-bottom: 1rem;
+        font-size: 2.1rem;
+        border-bottom: solid 1px rgba(255, 255, 255, 0.507);
+    }
+    .titulo_proyectos {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #b84afc;
+    }
+    .subtitulo_tecnologia{
+        color: #7e9fe6;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
     }
     .parrafo_resumen{
         color: #ffffffab;
         font-size: 1.1rem;
         line-height: 1.4rem;
-    }
-    .subtitulo_tecnologia{
-        color: #b972e8;
-        margin-bottom: 2rem;
-        font-size: 1.7rem;
     }
     .items_tecnologias{
         display: flex;
@@ -153,12 +162,7 @@
     .img_tecnologia{
         width: 3rem;
     }
-    .titulo_proyectos {
-        margin-bottom: 1rem;
-        font-size: 2.1rem;
-        font-weight: bold;
-        color: #b84afc;
-    }
+
 }
 
 /* Mobil */
@@ -177,17 +181,25 @@
     }
     .titulo_proyecto_resumen{
         color: #7e9fe6;
+        padding-bottom: 1rem;
+        font-size: 2.1rem;
+        border-bottom: solid 1px rgba(255, 255, 255, 0.507);
+    }
+    .titulo_proyectos {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #b84afc;
+    }
+    .subtitulo_tecnologia{
+        color: #7e9fe6;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
     }
     .parrafo_resumen{
         color: #ffffffab;
         font-size: 1.1rem;
         line-height: 1.4rem;
-    }
-    .subtitulo_tecnologia{
-        color: #b972e8;
-        font-size: 1.7rem;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
     }
     .items_tecnologias{
         display: flex;
@@ -282,11 +294,5 @@
         margin-bottom: 2rem;
         font-size: 1.1rem;
         line-height: 1.4rem;
-    }
-    .titulo_proyectos {
-        margin-bottom: 1rem;
-        font-size: 2.1rem;
-        font-weight: bold;
-        color: #b84afc;
     }
 }

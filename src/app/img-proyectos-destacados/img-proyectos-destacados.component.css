@@ -19,13 +19,13 @@
 @media screen and (min-width: 553px) {
     .imgDefault{
         height: 18rem;
-        width: 30rem;
+        width: 34rem;
     }
 }
 
 @media screen and (max-width: 553px) {
     .imgDefault{
         height: 12rem;
-        width: 20rem;
+        width: 24rem;
     }
 }

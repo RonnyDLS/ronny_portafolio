@@ -12,9 +12,7 @@ import { ProyectoResumenComponent } from "./proyecto-resumen/proyecto-resumen.co
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [
-    BienvenidaComponent
-],
+  imports: [],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
