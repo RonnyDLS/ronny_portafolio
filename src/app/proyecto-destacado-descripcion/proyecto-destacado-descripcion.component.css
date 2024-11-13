@@ -45,6 +45,37 @@
         border-radius: .3rem;
         font-weight: bold;
     }
+    .item:hover{
+        animation: tecnologia;
+        animation-duration: 1s;
+    }
+
+    @keyframes tecnologia {
+        0%{
+            transform: rotate(7deg) translateY(-5px);
+        }
+        15%{
+            transform: rotate(-7deg) translateY(-5px);
+        }
+        30%{
+            transform: rotate(5deg);
+        }
+        45%{
+            transform: rotate(-5deg);
+        }
+        55%{
+            transform: rotate(3deg);
+        }
+        70%{
+            transform: rotate(-3deg);
+        }
+        85%{
+            transform: rotate(2deg);
+        }
+        100%{
+            transform: rotate(-2deg);
+        }
+    }
     .proyecto_descripcion{
         display: flex;
         flex-direction: column;
@@ -172,6 +203,37 @@
         padding: .5rem 1rem;
         border-radius: .3rem;
         font-weight: bold;
+    }
+    .item:hover{
+        animation: tecnologia;
+        animation-duration: 1s;
+    }
+
+    @keyframes tecnologia {
+        0%{
+            transform: rotate(7deg) translateY(-5px);
+        }
+        15%{
+            transform: rotate(-7deg) translateY(-5px);
+        }
+        30%{
+            transform: rotate(5deg);
+        }
+        45%{
+            transform: rotate(-5deg);
+        }
+        55%{
+            transform: rotate(3deg);
+        }
+        70%{
+            transform: rotate(-3deg);
+        }
+        85%{
+            transform: rotate(2deg);
+        }
+        100%{
+            transform: rotate(-2deg);
+        }
     }
     .imgs_proyectos{
         display: flex;

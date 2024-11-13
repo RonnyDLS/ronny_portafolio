@@ -119,10 +119,7 @@
         background-position: center center;
         background-size: cover;
     }
-    .item:hover{
-        animation: tecnologia;
-        animation-duration: 1s;
-    }
+
     .cj_hola{
         display: flex;
         gap: 2rem;
@@ -143,23 +140,9 @@
         position: relative;
         animation: conocimientos 1.1s ease;
     }
-
-    @keyframes conocimientos {
-        0%{
-            right: -40%;
-        }
-        100%{
-            right: 0;
-        }
-    }
-    
-    @keyframes sobreMy {
-        0%{
-            right: 40%;
-        }
-        100%{
-            right: 0;
-        }
+    .item:hover{
+        animation: tecnologia;
+        animation-duration: 1s;
     }
 
     @keyframes tecnologia {
@@ -186,6 +169,24 @@
         }
         100%{
             transform: rotate(-2deg);
+        }
+    }
+
+    @keyframes conocimientos {
+        0%{
+            right: -40%;
+        }
+        100%{
+            right: 0;
+        }
+    }
+    
+    @keyframes sobreMy {
+        0%{
+            right: 40%;
+        }
+        100%{
+            right: 0;
         }
     }
     

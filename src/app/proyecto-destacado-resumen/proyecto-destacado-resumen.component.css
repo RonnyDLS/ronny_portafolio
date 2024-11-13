@@ -65,9 +65,41 @@
         border-radius: .3rem;
         font-weight: bold;
     }
+    .item:hover{
+        animation: tecnologia;
+        animation-duration: 1s;
+    }
     .img_conocimientos{
         width: 2rem;
     }
+
+    @keyframes tecnologia {
+        0%{
+            transform: rotate(7deg) translateY(-5px);
+        }
+        15%{
+            transform: rotate(-7deg) translateY(-5px);
+        }
+        30%{
+            transform: rotate(5deg);
+        }
+        45%{
+            transform: rotate(-5deg);
+        }
+        55%{
+            transform: rotate(3deg);
+        }
+        70%{
+            transform: rotate(-3deg);
+        }
+        85%{
+            transform: rotate(2deg);
+        }
+        100%{
+            transform: rotate(-2deg);
+        }
+    }
+
 }
 
 /* Mobil */
@@ -110,7 +142,39 @@
         border-radius: .3rem;
         font-weight: bold;
     }
+    
+    .item:hover{
+        animation: tecnologia;
+        animation-duration: 1s;
+    }
     .img_conocimientos{
         width: 2rem;
+    }
+    
+    @keyframes tecnologia {
+        0%{
+            transform: rotate(7deg) translateY(-5px);
+        }
+        15%{
+            transform: rotate(-7deg) translateY(-5px);
+        }
+        30%{
+            transform: rotate(5deg);
+        }
+        45%{
+            transform: rotate(-5deg);
+        }
+        55%{
+            transform: rotate(3deg);
+        }
+        70%{
+            transform: rotate(-3deg);
+        }
+        85%{
+            transform: rotate(2deg);
+        }
+        100%{
+            transform: rotate(-2deg);
+        }
     }
 }
