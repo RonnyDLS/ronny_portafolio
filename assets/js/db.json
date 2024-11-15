@@ -1,27 +1,32 @@
 {
     "imagenes":[
-        "assets/imgs/avatar.png",
-        "assets/imgs/code.png",
-        "assets/imgs/cv_ico.png",
-        "assets/imgs/descarga.png",
-        "assets/imgs/dev_proyectos_destacados.png",
-        "assets/imgs/dev_proyectos.png",
-        "assets/imgs/dev.png",
-        "assets/imgs/github.png",
-        "assets/imgs/hola_home.png",
-        "assets/imgs/ico_menu.svg",
-        "assets/imgs/linkedin.png",
-        "assets/imgs/mano_hola.png",
-        "assets/imgs/mano.png",
-        "assets/imgs/perfil_sin_fondo.png",
-        "assets/imgs/perfil.png"
+        "assets/imgs/otras/avatar.png",
+        "assets/imgs/otras/code.png",
+        "assets/imgs/otras/cv_ico.png",
+        "assets/imgs/otras/descarga.png",
+        "assets/imgs/otras/dev_proyectos_destacados.png",
+        "assets/imgs/otras/dev_proyectos.png",
+        "assets/imgs/otras/dev.png",
+        "assets/imgs/otras/github.png",
+        "assets/imgs/otras/hola_home.png",
+        "assets/imgs/otras/ico_menu.svg",
+        "assets/imgs/otras/linkedin.png",
+        "assets/imgs/otras/mano_hola.png",
+        "assets/imgs/otras/mano.png",
+        "assets/imgs/otras/perfil_sin_fondo.png",
+        "assets/imgs/otras/perfil.png"
     ],
     "bienvenida":{
-        "habilidad":"Desarrollador Frontend y Backend",
-        "infoBienvenida": "Bienvenid@ a mi portafolio, donde comparto mis conocimientos como desarrollador Frontend y Backend a través de mis proyectos."
+        "habilidades":[
+            "Desarrollador Frontend y Backend"
+        ],
+        "infoBienvenida": [
+            "¡Bienvenid@ a mi portafolio!",
+            "En este portafolio comparto mis conocimientos y experiencias como Desarrollador de Fronted y Backend, a través de los proyectos realizados durante mi trayectoria."
+        ]
     },
     "sobreMy":{
-        "imgPerfil": "assets/imgs/perfil.png",
+        "imgPerfil": "assets/imgs/otras/perfil.png",
         "nombre":"Ronny De Los Santos",
         "especialidad":"FullStack",
         "tituloSobreMy":"Sobre mi",
@@ -29,54 +34,54 @@
             {
                 "nombreRed":"github",
                 "urlRed":"https://github.com/RonnyDLS",
-                "urlImg":"assets/imgs/github.png"
+                "urlImg":"assets/imgs/otras/github.png"
             },
             {
                 "nombreRed":"Linkedin",
                 "urlRed":"https://www.linkedin.com/in/ronny-de-los-santos-peralta-6129a3300/",
-                "urlImg":"assets/imgs/linkedin.png"
+                "urlImg":"assets/imgs/otras/linkedin.png"
             }
         ],
         "conocimientos":[
             {
                 "conocimiento":"Js",
                 "color":"#F7DF1E",
-                "url_img":"assets/imgs_conocimientos/js.png"
+                "url_img":"assets/imgs/imgs_conocimientos/js.png"
             },
             {
                 "conocimiento":"Java",
                 "color":"white",
-                "url_img":"assets/imgs_conocimientos/java.png"
+                "url_img":"assets/imgs/imgs_conocimientos/java.png"
             },
             {
                 "conocimiento":"C#",
                 "color":"white",
-                "url_img":"assets/imgs_conocimientos/cshar.png"
+                "url_img":"assets/imgs/imgs_conocimientos/cshar.png"
             },
             {
                 "conocimiento":"Git",
                 "color":"white",
-                "url_img":"assets/imgs_conocimientos/git.png"
+                "url_img":"assets/imgs/imgs_conocimientos/git.png"
             },
             {
                 "conocimiento":"Selenium",
                 "color":"#00B400",
-                "url_img":"assets/imgs_conocimientos/selenium.png"
+                "url_img":"assets/imgs/imgs_conocimientos/selenium.png"
             },
             {
                 "conocimiento":"CSS",
                 "color":"white",
-                "url_img":"assets/imgs_conocimientos/css.png"
+                "url_img":"assets/imgs/imgs_conocimientos/css.png"
             },
             {
                 "conocimiento":"HTML",
                 "color":"white",
-                "url_img":"assets/imgs_conocimientos/html.png"
+                "url_img":"assets/imgs/imgs_conocimientos/html.png"
             }
         ],
         "infoSobreMy":[
             {
-                "parrafo":"Mi pasión por el desarrollo comenzó en el liceo técnico, donde estudié la carrera de desarrollo de aplicaciones. Fue allí donde descubrí el fascinante mundo de la creación de aplicaciones y sitios web."
+                "parrafo":"Mi pasión por el desarrollo de SoftWare comenzó en el Liceo Politecnico Pedro Henriquez Ureña, donde estudié la carrera de desarrollo de aplicaciones. Fue allí donde descubrí el fascinante mundo de la creación de aplicaciones y sitios web."
             },
             {
                 "parrafo":"Me apasiona especialmente el desarrollo frontend, ya que me permite ver cómo mis diseños cobran vida y satisfacen las necesidades de los usuarios de manera visual y funcional. Además, crear la lógica detrás de un sistema y conectarla con el frontend es una experiencia increíble, ya que me desafía a unir creatividad y técnica en un solo proceso."
@@ -91,7 +96,7 @@
             "id": "educaApp",
             "destacado":true,
             "titulo":"EducaApp",
-            "resumen_proyecto":"EducaApp es un sistema de gestión académica para profesores, que facilita el control de calificaciones, asistencias y seguimiento de estudiantes. Permite crear asignaturas y asignar estudiantes, manteniendo registros detallados e independientes de cada materia. Utiliza una base de datos MySQL para el almacenamiento seguro de la información.",
+            "resumen_proyecto":"EducaApp, es un sistema de gestión académica para profesores, que facilita el control de calificaciones, asistencias y seguimiento de estudiantes. Permite crear asignaturas y asignar estudiantes, manteniendo registros detallados e independientes de cada materia. Utiliza una base de datos MySQL para el almacenamiento seguro de la información.",
             "urlDireccionesProyecto":[
                 {
                     "urlDireccionProyecto":""
@@ -99,49 +104,72 @@
             ],
             "informacion_proyecto":[
                 {
-                    "parrafo":"EducaApp es un sistema de gestión diseñado para facilitar el seguimiento académico de los estudiantes por parte de los docentes. Su principal función es administrar las calificaciones, asistencias y notas de los alumnos de manera eficiente. La aplicación permite a los profesores crear diversas asignaturas y asignar diferentes estudiantes a cada una de ellas, proporcionando un registro completo e independiente de las actividades académicas."
+                    "parrafo":"EducaApp, es un sistema de gestión diseñado para facilitar el seguimiento académico de los estudiantes por parte de los docente; su principal función es administrar las calificaciones, asistencias y notas de los alumnos de manera eficiente. Esta aplicación permite a los profesores crear diversas asignaturas y asignar diferentes estudiantes a cada una de ellas, proporcionando un registro completo e independiente de las actividades académicas."
                 },
                 {
                     "parrafo":"Este sistema ofrece una herramienta personalizada para los profesores, permitiéndoles llevar un control detallado del progreso y rendimiento de los estudiantes. Además, EducaApp se conecta a una base de datos MySQL, lo que garantiza un almacenamiento seguro y una gestión eficiente de la información académica."
                 }
             ],
-            "url_img_resume":"assets/imgs_proyectos/educaApp/educaApp1.png",
+            "url_img_resume":"assets/imgs/imgs_proyectos/educaApp/educaApp1.png",
             "urls_imagenes":[
                 {
-                    "url":"assets/imgs_proyectos/educaApp/educaApp1.png"
+                    "url":"assets/imgs/imgs_proyectos/educaApp/educaApp1.png"
                 },
                 {
-                    "url":"assets/imgs_proyectos/educaApp/educaApp2.png"
+                    "url":"assets/imgs/imgs_proyectos/educaApp/educaApp2.png"
                 },
                 {
-                    "url":"assets/imgs_proyectos/educaApp/educaApp3.png"
+                    "url":"assets/imgs/imgs_proyectos/educaApp/educaApp3.png"
                 },
                 {
-                    "url":"assets/imgs_proyectos/educaApp/educaApp4.png"
+                    "url":"assets/imgs/imgs_proyectos/educaApp/educaApp4.png"
                 },
                 {
-                    "url":"assets/imgs_proyectos/educaApp/educaApp5.png"
+                    "url":"assets/imgs/imgs_proyectos/educaApp/educaApp5.png"
                 },
                 {
-                    "url":"assets/imgs_proyectos/educaApp/educaApp6.png"
+                    "url":"assets/imgs/imgs_proyectos/educaApp/educaApp6.png"
                 },
                 {
-                    "url":"assets/imgs_proyectos/educaApp/educaApp7.png"
+                    "url":"assets/imgs/imgs_proyectos/educaApp/educaApp7.png"
                 },
                 {
-                    "url":"assets/imgs_proyectos/educaApp/educaApp8.png"
+                    "url":"assets/imgs/imgs_proyectos/educaApp/educaApp8.png"
                 }
             ],
             "tecnologias":[
                 {
                     "tecnologia":"Java",
                     "color":"white",
-                    "url_img":"assets/imgs_conocimientos/java.png"
+                    "url_img":"assets/imgs/imgs_conocimientos/java.png"
                 },
                 {
                     "tecnologia":"Js",
                     "color":"white",
-                    "url_img":"assets/imgs_conocimientos/mysql.webp"
+                    "url_img":"assets/imgs/imgs_conocimientos/mysql.webp"
+                }
+            ],
+            "colaboradores":[
+                {
+                    "nombre":"Kelobel",
+                    "apellido":"Tapia Casilla",
+                    "url_img_perfil":"assets/imgs/colaboradores/kelobel.jpg",
+                    "perfil_letra":"KT",
+                    "color_fondo_perfil":"blue"
+                },
+                {
+                    "nombre":"Smith",
+                    "apellido":"Rodriguez peguero",
+                    "url_img_perfil":"assets/imgs/colaboradores/smith.jpg",
+                    "perfil_letra":"SR",
+                    "color_fondo_perfil":"blue"
+                },
+                {
+                    "nombre":"Erick A.",
+                    "apellido":"Jiménez Collins",
+                    "url_img_perfil":"assets/imgs/colaboradores/erick.jpg",
+                    "perfil_letra":"EJ",
+                    "color_fondo_perfil":"blue"
                 }
             ]
         }
