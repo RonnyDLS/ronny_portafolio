@@ -1,0 +1,51 @@
+DIMENCIONES DE IMAGENES
+
+
+- Logotipo de Cabecera (Header Logo):
+  
+  * Tamaño ideal: 250 px de ancho x 100 px de alto.
+  * Formato recomendado: PNG (para transparencia) o SVG (para escalabilidad).
+  * Usos: Se muestra en la parte superior del sitio web, junto al menú de navegación.
+
+
+
+- Logotipo para Favicon:
+
+  * Tamaño ideal: 16 px x 16 px, 32 px x 32 px, y 48 px x 48 px.
+  * Formato recomendado: ICO o PNG.
+  * Usos: Icono que aparece en la pestaña del navegador o en la lista de favoritos.
+
+
+
+- Logotipo para Redes Sociales:
+
+ * Tamaño ideal: 400 px x 400 px.
+ * Formato recomendado: PNG o JPEG.
+ * Usos: Imagen de perfil o miniaturas en redes sociales.
+
+
+
+- Logotipo para Footer:
+
+ * Tamaño ideal: 150 px de ancho x 50 px de alto.
+ * Variante Retina: 300 px de ancho x 100 px de alto.
+ * Formato recomendado: PNG o SVG.
+ * Usos: Se muestra en la parte inferior del sitio, generalmente en el pie de página.
+
+
+
+
+NOTA:
+
+
+- Consideraciones Adicionales
+
+  1. Formato SVG: Si tu logotipo es simple (como texto o formas), considera usar SVG, ya que es escalable y siempre se verá nítido, sin importar el tamaño.
+
+  2. Imágenes Responsivas: Usa imágenes responsivas (srcset) para cargar diferentes tamaños del logotipo según la resolución del dispositivo.
+
+  3. Espacio en Blanco: Asegúrate de que el logotipo tenga un poco de margen o espacio en blanco para que no se vea apretado.
+
+
+
+

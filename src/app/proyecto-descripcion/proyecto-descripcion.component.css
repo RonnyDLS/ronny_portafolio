@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: "Jura", sans-serif;
 }
+.nombreCompleto_c{
+    color: #ffffffc5;;
+}
 
 /* Escritorio */
 @media screen and (min-width:931px) {
@@ -37,6 +40,45 @@
         color: #7e9fe6;
         margin-bottom: 2rem;
         font-size: 1.5rem;
+    }
+    .cj_colaboradores{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    .subtitulo_colaboradores{
+        color: #7e9fe6;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+    }
+    .colaborador{
+        background-color: #ffffff0c;
+        padding: .7rem;
+        display: flex;
+        justify-content: start;
+        gap: 1rem;
+        align-items: center;
+        border-radius: .5rem;
+        padding-right: 2rem;
+        transition: .3s;
+    }
+    .colaborador:hover{
+        transform: translateX(.5rem);
+    }
+    .colaboradores_mobile{
+        display: none;
+    }
+    .perfil_c{
+        background-color: #b84afc71;
+        padding: .5rem;
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: .8rem;
+    }
+    .perfil_img_c{
+        border-radius: 50%;
+        font-weight: bold;
+        width: 2rem;
     }
     .parrafo_resumen{
         color: #ffffffab;
@@ -162,6 +204,9 @@
     .img_tecnologia{
         width: 3rem;
     }
+    .tecnologias_mobile{
+        display: none;
+    }
 
 }
 
@@ -191,11 +236,56 @@
         font-weight: bold;
         color: #b84afc;
     }
+    .tecnologias{
+        display: none;
+    }
+
+
+
+
     .subtitulo_tecnologia{
         color: #7e9fe6;
         margin-bottom: 2rem;
         font-size: 1.5rem;
     }
+    .cj_colaboradores{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    .subtitulo_colaboradores{
+        color: #7e9fe6;
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+    }
+    .colaborador{
+        padding: .5rem;
+        display: flex;
+        justify-content: start;
+        gap: 1rem;
+        align-items: center;
+        padding-right: 2rem;
+        transition: .2s;
+        font-size: .8rem;
+        border-bottom: solid 1px rgba(255, 255, 255, 0.292);
+    }
+    .colaboradores{
+        display: none;
+    }
+    .perfil_c{
+        background-color: #b84afc71;
+        padding: .5rem;
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: .8rem;
+    }
+    .perfil_img_c{
+        border-radius: 50%;
+        font-weight: bold;
+        width: 2rem;
+    }
+
+
     .parrafo_resumen{
         color: #ffffffab;
         font-size: 1.1rem;
@@ -206,6 +296,7 @@
         justify-content: start;
         gap: 1rem;
         flex-wrap: wrap;
+        margin-bottom: 3rem;
     }
     .item{
         padding: .5rem 1rem;

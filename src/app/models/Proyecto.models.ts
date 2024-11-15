@@ -1,3 +1,4 @@
+import { Colaborador } from "./colaborador.models";
 import { Parrafo } from "./Parrafo.models";
 import { Tecnologia } from "./Tecnologia.models";
 import { Url } from "./Url.models";
@@ -14,4 +15,5 @@ export class Proyecto{
     urls_imagenes:Url[];
     tecnologias:Tecnologia[];
     destacado:boolean;
+    colaboradores:Colaborador[];
 }

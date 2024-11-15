@@ -1,4 +1,4 @@
 export class Bienvenida{
-    habilidad:string;
-    infoBienvenida:string;
+    habilidades:string[];
+    infoBienvenida:string[];
 }

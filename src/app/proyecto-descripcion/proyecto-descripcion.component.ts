@@ -5,6 +5,7 @@ import { ProyectoIndex } from '../models/DTOProyectoIndex.models';
 import { DbService } from '../services/db/db.service';
 import { DB } from '../models/dbDatos.models';
 import { Proyecto } from '../models/Proyecto.models';
+import { Colaborador } from '../models/colaborador.models';
 
 @Component({
   selector: 'app-proyecto-descripcion',
@@ -47,4 +48,16 @@ export class ProyectoDescripcionComponent {
       )
     }
   }
+
+  // Presentar foto o iniciales del nombre
+  iconoImagenPerfilColaborador(colaborador:Colaborador):boolean {
+
+    // Si tiene url devuélveme true
+    if(colaborador.url_img_perfil != ""){
+      return true;
+    }else{
+      return false
+    }
+  }
+
 }

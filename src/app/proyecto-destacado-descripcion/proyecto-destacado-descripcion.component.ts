@@ -4,13 +4,14 @@ import { DB } from '../models/dbDatos.models';
 import { EnviarProyectoService } from '../services/enviarObjProyecto/enviar-proyecto.service';
 import { DbService } from '../services/db/db.service';
 import { Proyecto } from '../models/Proyecto.models';
+import { Colaborador } from '../models/colaborador.models';
 
 @Component({
   selector: 'app-proyecto-destacado-descripcion',
   standalone: true,
   imports: [
     CommonModule
-],
+  ],
   templateUrl: './proyecto-destacado-descripcion.component.html',
   styleUrl: './proyecto-destacado-descripcion.component.css'
 })
@@ -42,6 +43,17 @@ export class ProyectoDestacadoDescripcionComponent {
           }
         }
       )
+    }
+  }
+
+  // Presentar foto o iniciales del nombre
+  iconoImagenPerfilColaborador(colaborador: Colaborador): boolean {
+
+    // Si tiene url devuélveme true
+    if (colaborador.url_img_perfil != "") {
+      return true;
+    } else {
+      return false
     }
   }
 }
