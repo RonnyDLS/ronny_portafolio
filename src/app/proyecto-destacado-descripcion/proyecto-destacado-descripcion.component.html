@@ -5,6 +5,8 @@
             <h2 class="titulo_proyecto_resumen">{{proyectoDestacado.titulo}}</h2>
         </div>
 
+        <div class="line_movible"></div>
+
         <div class="parrafo_resumen">
             <p class="parrafo" *ngFor="let parrafo of proyectoDestacado.informacion_proyecto">
                 {{parrafo.parrafo}}
@@ -14,7 +16,8 @@
         <div class="tecnologias">
             <h3 class="subtitulo_tecnologia">Tecnologías</h3>
             <div class="items_tecnologias">
-                <a class="item" [ngStyle]="{'background-color': tecnologia.color}" *ngFor="let tecnologia of proyectoDestacado.tecnologias">
+                <a class="item" [ngStyle]="{'background-color': tecnologia.color}"
+                    *ngFor="let tecnologia of proyectoDestacado.tecnologias">
                     <img class="img_tecnologia" [src]="tecnologia.url_img" alt="">
                 </a>
             </div>
@@ -24,9 +27,10 @@
             <h3 class="subtitulo_colaboradores">Colaboradores</h3>
             <div class="cj_colaboradores">
                 <div class="colaborador" *ngFor="let colaborador of proyectoDestacado.colaboradores">
-
-                    <div class="perfil_c" *ngIf="!iconoImagenPerfilColaborador(colaborador)">{{colaborador.perfil_letra}}</div> 
-                    <img class="perfil_img_c" *ngIf="iconoImagenPerfilColaborador(colaborador)" [src]="colaborador.url_img_perfil" alt="">
+                    <div class="perfil_c" *ngIf="!iconoImagenPerfilColaborador(colaborador)">
+                        {{colaborador.perfil_letra}}</div>
+                    <img class="perfil_img_c" *ngIf="iconoImagenPerfilColaborador(colaborador)"
+                        [src]="colaborador.url_img_perfil" alt="">
                     <div class="nombreCompleto_c">{{colaborador.nombre+" "+colaborador.apellido}}</div>
                 </div>
             </div>
@@ -40,7 +44,8 @@
     </div>
 
     <div class="imgs_proyectos">
-        <a class="img_link_proyecto" [href]="imagen.url" *ngFor="let imagen of proyectoDestacado.urls_imagenes" target="_blank"> 
+        <a class="img_link_proyecto" [href]="imagen.url" *ngFor="let imagen of proyectoDestacado.urls_imagenes"
+            target="_blank">
             <img class="img_proyecto" [src]="imagen.url" alt="">
         </a>
     </div>
@@ -49,7 +54,8 @@
     <div class="tecnologias_mobile">
         <h3 class="subtitulo_tecnologia">Tecnologías</h3>
         <div class="items_tecnologias">
-            <a class="item" [ngStyle]="{'background-color': tecnologia.color}" *ngFor="let tecnologia of proyectoDestacado.tecnologias">
+            <a class="item" [ngStyle]="{'background-color': tecnologia.color}"
+                *ngFor="let tecnologia of proyectoDestacado.tecnologias">
                 <img class="img_tecnologia" [src]="tecnologia.url_img" alt="">
             </a>
         </div>
@@ -60,11 +66,14 @@
         <div class="cj_colaboradores">
             <div class="colaborador" *ngFor="let colaborador of proyectoDestacado.colaboradores">
 
-                <div class="perfil_c" *ngIf="!iconoImagenPerfilColaborador(colaborador)">{{colaborador.perfil_letra}}</div> 
-                <img class="perfil_img_c" *ngIf="iconoImagenPerfilColaborador(colaborador)" [src]="colaborador.url_img_perfil" alt="">
+                <div class="perfil_c" *ngIf="!iconoImagenPerfilColaborador(colaborador)">{{colaborador.perfil_letra}}
+                </div>
+                <img class="perfil_img_c" *ngIf="iconoImagenPerfilColaborador(colaborador)"
+                    [src]="colaborador.url_img_perfil" alt="">
                 <div class="nombreCompleto_c">{{colaborador.nombre+" "+colaborador.apellido}}</div>
             </div>
         </div>
+    </div>
 
     <div class="enlaces_iconos_mobile">
         <a [href]="red.urlRed" *ngFor="let red of db.sobreMy.misRedes" target="_blank">

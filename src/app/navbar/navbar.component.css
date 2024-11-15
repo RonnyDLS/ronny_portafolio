@@ -178,7 +178,7 @@
         height: 1.2rem;
     }
     .pro::before{
-        content: "Ver proyectos";
+        content: "Mis proyectos";
     }
     .txt_proyecto::before{
         content: "Proyectos";
@@ -219,6 +219,8 @@
         margin-top: .7rem;
         display: none;
         margin-left: .5rem;
+        z-index: 100;
+        position: relative;
     }
     .ln{
         border-bottom: solid 1px #8065ca;
