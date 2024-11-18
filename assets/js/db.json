@@ -308,6 +308,85 @@
                 }
             ],
             "colaboradores": []
+        },
+        {
+            "id": "ctas",
+            "destacado": true,
+            "titulo": "Citas",
+            "resumen_proyecto": "Citas es un sistema para gestionar citas pendientes y programadas. Permite editar, cancelar y ver el historial de citas canceladas. Fue creado con C#, .NET API REST y utiliza SQL Server para la base de datos.",
+            "urlDireccionesProyecto": [
+                {
+                    "urlDireccionProyecto": ""
+                }
+            ],
+            "informacion_proyecto": [
+                {
+                    "parrafo": "El sistema Citas es una herramienta diseñada para gestionar eficientemente el registro de citas pendientes. Ofrece la posibilidad de programar citas en un horario específico, mostrando características como el nombre y apellido del cliente, la fecha, la hora y el estatus de la cita. Además, el sistema permite editar y cancelar citas de manera sencilla, brindando flexibilidad para actualizar la información según sea necesario."
+                }, 
+                {
+                    "parrafo": "Una funcionalidad adicional del sistema es la posibilidad de consultar el historial de citas canceladas, lo que permite llevar un registro detallado y accesible para futuras consultas."
+                }, 
+                {
+                    "parrafo": "El sistema fue desarrollado utilizando C# y una API REST basada en .NET. Se conecta a una base de datos creada con SQL Server, garantizando una gestión segura y eficiente de los datos."
+                }
+            ],
+            "url_img_resume": "assets/imgs/imgs_proyectos/citas/citas1.png",
+            "urls_imagenes": [
+                {
+                    "url": "assets/imgs/imgs_proyectos/citas/citas1.png"
+                },
+                {
+                    "url": "assets/imgs/imgs_proyectos/citas/citas2.png"
+                },
+                {
+                    "url": "assets/imgs/imgs_proyectos/citas/citas3.png"
+                },
+                {
+                    "url": "assets/imgs/imgs_proyectos/citas/citas4.png"
+                },
+                {
+                    "url": "assets/imgs/imgs_proyectos/citas/citas5.png"
+                },
+                {
+                    "url": "assets/imgs/imgs_proyectos/citas/citas6.png"
+                },
+                {
+                    "url": "assets/imgs/imgs_proyectos/citas/citas7.png"
+                }
+            ],
+            "tecnologias": [
+                {
+                    "tecnologia": "C#",
+                    "color": "white",
+                    "url_img": "assets/imgs/imgs_conocimientos/cshar.png"
+                },
+                {
+                    "tecnologia": ".Net",
+                    "color": "white",
+                    "url_img": "assets/imgs/imgs_conocimientos/.net.png"
+                },
+                {
+                    "tecnologia": "Js",
+                    "color": "#F7DF1E",
+                    "url_img": "assets/imgs/imgs_conocimientos/js.png"
+                },
+                {
+                    "tecnologia": "Html",
+                    "color": "white",
+                    "url_img": "assets/imgs/imgs_conocimientos/html.png"
+                },
+                {
+                    "tecnologia": "Css",
+                    "color": "white",
+                    "url_img": "assets/imgs/imgs_conocimientos/css.png"
+                },
+                {
+                    "tecnologia": "SQL Server",
+                    "color": "white",
+                    "url_img": "assets/imgs/imgs_conocimientos/sqlServer.png"
+                }
+            ],
+            "colaboradores": []
         }
     ]
 }
