@@ -16,7 +16,7 @@
         <div class="tecnologias">
             <h3 class="subtitulo_tecnologia">Tecnologías</h3>
             <div class="items_tecnologias">
-                <a class="item" [ngStyle]="{'background-color': tecnologia.color}"
+                <a class="item cj_imgConocimiento" [ngStyle]="{'background-color': tecnologia.color}"
                     *ngFor="let tecnologia of proyectoDestacado.tecnologias">
                     <img class="img_tecnologia" [src]="tecnologia.url_img" alt="">
                 </a>
@@ -44,8 +44,7 @@
     </div>
 
     <div class="imgs_proyectos">
-        <a class="img_link_proyecto" [href]="imagen.url" *ngFor="let imagen of proyectoDestacado.urls_imagenes"
-            target="_blank">
+        <a class="img_link_proyecto" [href]="imagen.url" *ngFor="let imagen of proyectoDestacado.urls_imagenes" target="_blank">
             <img class="img_proyecto" [src]="imagen.url" alt="">
         </a>
     </div>
@@ -54,7 +53,7 @@
     <div class="tecnologias_mobile">
         <h3 class="subtitulo_tecnologia">Tecnologías</h3>
         <div class="items_tecnologias">
-            <a class="item" [ngStyle]="{'background-color': tecnologia.color}"
+            <a class="item cj_imgConocimiento" [ngStyle]="{'background-color': tecnologia.color}"
                 *ngFor="let tecnologia of proyectoDestacado.tecnologias">
                 <img class="img_tecnologia" [src]="tecnologia.url_img" alt="">
             </a>

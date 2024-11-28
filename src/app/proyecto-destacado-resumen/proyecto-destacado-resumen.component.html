@@ -11,7 +11,7 @@
     <div class="tecnologias">
         <h3 class="subtitulo_tecnologia">Tecnologias</h3>
         <div class="items_tecnologias">
-            <p class="item" *ngFor="let tecnologia of tecnologias" [ngStyle]="{'background-color': tecnologia.color}">
+            <p class="item cj_imgConocimiento" *ngFor="let tecnologia of tecnologias" [ngStyle]="{'background-color': tecnologia.color}">
                 <img class="img_conocimientos" [src]="tecnologia.url_img" alt="">
             </p>
         </div>

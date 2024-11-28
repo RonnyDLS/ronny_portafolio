@@ -92,6 +92,16 @@
                 "conocimiento": "MySQL",
                 "color": "white",
                 "url_img": "assets/imgs/imgs_conocimientos/mysql.webp"
+            },
+            {
+                "conocimiento": "PHP",
+                "color": "white",
+                "url_img": "assets/imgs/imgs_conocimientos/php.png"
+            },
+            {
+                "conocimiento": "XAMPP",
+                "color": "white",
+                "url_img": "assets/imgs/imgs_conocimientos/xampp.png"
             }
         ],
         "infoSobreMy": [
@@ -384,6 +394,180 @@
                     "tecnologia": "SQL Server",
                     "color": "white",
                     "url_img": "assets/imgs/imgs_conocimientos/sqlServer.png"
+                }
+            ],
+            "colaboradores": []
+        },
+        {
+            "id": "pkmon",
+            "destacado": false,
+            "titulo": "Registro De Pokémon",
+            "resumen_proyecto": "El sistema Registro de Pokémon es una solución desarrollada en PHP, HTML y CSS que permite registrar, editar y eliminar información de Pokémon, como sus nombres, habilidades, colores, tipos y niveles. Funciona localmente gracias a XAMPP, lo que facilita su uso como herramienta de gestión.",
+            "urlDireccionesProyecto": [
+                {
+                    "urlDireccionProyecto": ""
+                }
+            ],
+            "informacion_proyecto": [
+                {
+                    "parrafo": "El sistema Registro de Pokémon está diseñado para gestionar información detallada sobre Pokémon, permitiendo registrar datos como sus nombres, habilidades, colores, tipos y niveles. Además, ofrece la posibilidad de administrar esta información mediante opciones para editar y eliminar los registros existentes, lo que facilita mantener los datos actualizados y organizados."
+                },
+                {
+                    "parrafo": "Este sistema fue desarrollado utilizando el lenguaje de programación PHP, junto con HTML y CSS para la estructura y diseño visual. Para su funcionamiento, se utilizó el entorno de desarrollo XAMPP, que permite cargar la página y manejar la lógica desde el lado del servidor de manera eficiente en un entorno local."
+                }
+            ],
+            "url_img_resume": "assets/imgs/imgs_proyectos/registroPokemon/registroPokemon1.png",
+            "urls_imagenes": [
+                {
+                    "url": "assets/imgs/imgs_proyectos/registroPokemon/registroPokemon1.png"
+                },
+                {
+                    "url": "assets/imgs/imgs_proyectos/registroPokemon/registroPokemon2.png"
+                }
+            ],
+            "tecnologias": [
+                {
+                    "tecnologia": "Html",
+                    "color": "white",
+                    "url_img": "assets/imgs/imgs_conocimientos/html.png"
+                },
+                {
+                    "tecnologia": "Css",
+                    "color": "white",
+                    "url_img": "assets/imgs/imgs_conocimientos/css.png"
+                },
+                {
+                    "tecnologia": "PHP",
+                    "color": "white",
+                    "url_img": "assets/imgs/imgs_conocimientos/php.png"
+                },
+                {
+                    "tecnologia": "XAMPP",
+                    "color": "white",
+                    "url_img": "assets/imgs/imgs_conocimientos/xampp.png"
+                }
+            ],
+            "colaboradores": []
+        },
+        {
+            "id": "grzoco",
+            "destacado": false,
+            "titulo": "Guerreros Del Zodiaco",
+            "resumen_proyecto": "El sistema Guerreros del Zodiaco es una solución desarrollada en PHP, HTML y CSS, diseñada para registrar y gestionar información sobre guerreros. Permite editar y eliminar registros y ofrece un dashboard con estadísticas como cantidad de guerreros, habilidades promedio, niveles, y edades. Además, incluye una tabla que organiza a los guerreros según su signo zodiacal. Funciona en un entorno local configurado con XAMPP.",
+            "urlDireccionesProyecto": [
+                {
+                    "urlDireccionProyecto": ""
+                }
+            ],
+            "informacion_proyecto": [
+                {
+                    "parrafo": "El sistema Guerreros del Zodiaco está diseñado para gestionar información detallada sobre guerreros, incluyendo su foto, nombre, apellido, fecha de nacimiento y habilidades. Los usuarios tienen la capacidad de registrar nuevos guerreros, así como editar y eliminar los registros existentes, permitiendo mantener actualizada la base de datos de manera eficiente."
+                },
+                {
+                    "parrafo": "Este sistema incluye un dashboard que ofrece estadísticas relevantes, como la cantidad total de guerreros registrados, el número de habilidades ingresadas, el promedio de habilidades por guerrero, la edad promedio de los guerreros, el nivel promedio en sus habilidades, y una comparación que identifica tanto la habilidad más poderosa como la menos poderosa. Adicionalmente, se presenta una tabla que clasifica a los guerreros según su signo zodiacal, mostrando el número de guerreros por signo y sus respectivas características."
+                },
+                {
+                    "parrafo": "El desarrollo del sistema se llevó a cabo utilizando PHP como lenguaje principal, acompañado de HTML y CSS para la estructura y diseño visual. Para su implementación, se empleó XAMPP, que permite ejecutar el sistema en un entorno local al funcionar como servidor para gestionar las solicitudes y mostrar la información en tiempo real."
+                }
+            ],
+            "url_img_resume": "assets/imgs/imgs_proyectos/guerrerosZodiaco/guerrerosZodiaco1.png",
+            "urls_imagenes": [
+                {
+                    "url": "assets/imgs/imgs_proyectos/guerrerosZodiaco/guerrerosZodiaco1.png"
+                },
+                {
+                    "url": "assets/imgs/imgs_proyectos/guerrerosZodiaco/guerrerosZodiaco2.png"
+                },
+                {
+                    "url": "assets/imgs/imgs_proyectos/guerrerosZodiaco/guerrerosZodiaco3.png"
+                },
+                {
+                    "url": "assets/imgs/imgs_proyectos/guerrerosZodiaco/guerrerosZodiaco4.png"
+                },
+                {
+                    "url": "assets/imgs/imgs_proyectos/guerrerosZodiaco/guerrerosZodiaco5.png"
+                },
+                {
+                    "url": "assets/imgs/imgs_proyectos/guerrerosZodiaco/guerrerosZodiaco6.png"
+                },
+                {
+                    "url": "assets/imgs/imgs_proyectos/guerrerosZodiaco/guerrerosZodiaco7.png"
+                },
+                {
+                    "url": "assets/imgs/imgs_proyectos/guerrerosZodiaco/guerrerosZodiaco8.png"
+                }
+            ],
+            "tecnologias": [
+                {
+                    "tecnologia": "Html",
+                    "color": "white",
+                    "url_img": "assets/imgs/imgs_conocimientos/html.png"
+                },
+                {
+                    "tecnologia": "Css",
+                    "color": "white",
+                    "url_img": "assets/imgs/imgs_conocimientos/css.png"
+                },
+                {
+                    "tecnologia": "PHP",
+                    "color": "white",
+                    "url_img": "assets/imgs/imgs_conocimientos/php.png"
+                },
+                {
+                    "tecnologia": "XAMPP",
+                    "color": "white",
+                    "url_img": "assets/imgs/imgs_conocimientos/xampp.png"
+                }
+            ],
+            "colaboradores": []
+        },
+        {
+            "id": "tardza",
+            "destacado": false,
+            "titulo": "Registro Tardanzas",
+            "resumen_proyecto": "El sistema Tardanzas es una herramienta desarrollada en PHP, HTML y CSS para registrar y gestionar tardanzas de estudiantes. Almacena datos como matrícula, nombres, curso, motivo, fecha y hora, funcionando de manera eficiente gracias a su configuración con XAMPP en un entorno local.",
+            "urlDireccionesProyecto": [
+                {
+                    "urlDireccionProyecto": ""
+                }
+            ],
+            "informacion_proyecto": [
+                {
+                    "parrafo": "El sistema Tardanzas está diseñado para registrar información relacionada con estudiantes que llegan tarde, permitiendo capturar datos como matrícula, nombres, curso, motivo de la tardanza, así como la fecha y hora en que ocurrió. Este sistema facilita el seguimiento de las tardanzas y ayuda a mantener un control organizado y accesible de los registros."
+                },
+                {
+                    "parrafo": "El desarrollo del sistema se realizó utilizando PHP como lenguaje de programación, complementado con HTML y CSS para la estructura y diseño de la interfaz. Se utilizó XAMPP como entorno de desarrollo, lo que permite cargar la página y gestionar las operaciones desde el servidor de manera eficiente en un entorno local."
+                }
+            ],
+            "url_img_resume": "assets/imgs/imgs_proyectos/registroTardanzas/registroTardanzas1.png",
+            "urls_imagenes": [
+                {
+                    "url": "assets/imgs/imgs_proyectos/registroTardanzas/registroTardanzas1.png"
+                },
+                {
+                    "url": "assets/imgs/imgs_proyectos/registroTardanzas/registroTardanzas2.png"
+                }
+            ],
+            "tecnologias": [
+                {
+                    "tecnologia": "Html",
+                    "color": "white",
+                    "url_img": "assets/imgs/imgs_conocimientos/html.png"
+                },
+                {
+                    "tecnologia": "Css",
+                    "color": "white",
+                    "url_img": "assets/imgs/imgs_conocimientos/css.png"
+                },
+                {
+                    "tecnologia": "PHP",
+                    "color": "white",
+                    "url_img": "assets/imgs/imgs_conocimientos/php.png"
+                },
+                {
+                    "tecnologia": "XAMPP",
+                    "color": "white",
+                    "url_img": "assets/imgs/imgs_conocimientos/xampp.png"
                 }
             ],
             "colaboradores": []

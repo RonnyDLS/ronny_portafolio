@@ -210,6 +210,7 @@
         border-radius: .5rem;
         margin: .5rem 0;
         cursor: pointer;
+        border: solid 2px #ffffff4d;
     }
     .img_tecnologia{
         width: 3rem;
@@ -217,7 +218,11 @@
     .tecnologias_mobile{
         display: none;
     }
-
+    .cj_imgConocimiento{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 /* Mobil */
@@ -365,11 +370,13 @@
     .img_proyecto{
        height: 100%;
        border-radius: .5rem;
+       border: solid 2px #ffffff4d;
     }
     .img_link_proyecto{
         border-radius: 1rem;
         margin: .5rem;
         cursor: pointer; 
+        border: solid 2px #ffffff4d;
     }
     .enlaces_iconos {
         display: none;
@@ -394,5 +401,10 @@
         margin-bottom: 2rem;
         font-size: 1.1rem;
         line-height: 1.4rem;
+    }
+    .cj_imgConocimiento{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

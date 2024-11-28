@@ -31,6 +31,7 @@
 }
 
 .img_resumen>img {
+    border: solid 2px #ffffff4d;
     border-radius: .5rem;
     width: 100%;
 }
@@ -68,8 +69,8 @@
     flex-wrap: wrap;
 }
 
-.item {
-    padding: .2rem 1rem;
+.item{
+    padding: .5rem 1rem;
     border-radius: .3rem;
     font-weight: bold;
 }
@@ -79,8 +80,14 @@
     animation-duration: 1s;
 }
 
-.img_conocimientos {
-    width: 2rem;
+.img_conocimientos{
+    width: 3rem;
+}
+
+.cj_imgConocimiento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes tecnologia {

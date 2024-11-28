@@ -16,7 +16,7 @@
         <div class="tecnologias">
             <h3 class="subtitulo_tecnologia">Tecnologías</h3>
             <div class="items_tecnologias">
-                <a class="item" [ngStyle]="{'background-color': tecnologia.color}"
+                <a class="item cj_imgConocimiento" [ngStyle]="{'background-color': tecnologia.color}"
                     *ngFor="let tecnologia of proyecto.tecnologias">
                     <img class="img_tecnologia" [src]="tecnologia.url_img" alt="">
                 </a>
@@ -53,7 +53,7 @@
     <div class="tecnologias_mobile">
         <h3 class="subtitulo_tecnologia">Tecnologías</h3>
         <div class="items_tecnologias">
-            <a class="item" [ngStyle]="{'background-color': tecnologia.color}"
+            <a class="item cj_imgConocimiento" [ngStyle]="{'background-color': tecnologia.color}"
                 *ngFor="let tecnologia of proyecto.tecnologias">
                 <img class="img_tecnologia" [src]="tecnologia.url_img" alt="">
             </a>
