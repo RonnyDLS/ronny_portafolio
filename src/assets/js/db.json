@@ -413,7 +413,7 @@
                     "parrafo": "El sistema Registro de Pokémon está diseñado para gestionar información detallada sobre Pokémon, permitiendo registrar datos como sus nombres, habilidades, colores, tipos y niveles. Además, ofrece la posibilidad de administrar esta información mediante opciones para editar y eliminar los registros existentes, lo que facilita mantener los datos actualizados y organizados."
                 },
                 {
-                    "parrafo": "Este sistema fue desarrollado utilizando el lenguaje de programación PHP, junto con HTML y CSS para la estructura y diseño visual. Para su funcionamiento, se utilizó el entorno de desarrollo XAMPP, que permite cargar la página y manejar la lógica desde el lado del servidor de manera eficiente en un entorno local."
+                    "parrafo": "Este sistema fue desarrollado utilizando el lenguaje de programación PHP, junto con HTML y CSS para la estructura y diseño visual y como base de datos se utilizo SQLite. Para su funcionamiento, se utilizó el entorno de desarrollo XAMPP, que permite cargar la página y manejar la lógica desde el lado del servidor de manera eficiente en un entorno local."
                 }
             ],
             "url_img_resume": "assets/imgs/imgs_proyectos/registroPokemon/registroPokemon1.png",
@@ -423,6 +423,12 @@
                 },
                 {
                     "url": "assets/imgs/imgs_proyectos/registroPokemon/registroPokemon2.png"
+                },
+                {
+                    "url": "assets/imgs/imgs_proyectos/registroPokemon/registroPokemon3.png"
+                },
+                {
+                    "url": "assets/imgs/imgs_proyectos/registroPokemon/registroPokemon4.png"
                 }
             ],
             "tecnologias": [
@@ -445,6 +451,11 @@
                     "tecnologia": "XAMPP",
                     "color": "white",
                     "url_img": "assets/imgs/imgs_conocimientos/xampp.png"
+                },
+                {
+                    "tecnologia": "XAMPP",
+                    "color": "white",
+                    "url_img": "assets/imgs/imgs_conocimientos/sqlite.png"
                 }
             ],
             "colaboradores": []

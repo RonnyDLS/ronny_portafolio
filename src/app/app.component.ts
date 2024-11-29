@@ -25,12 +25,12 @@ export class AppComponent {
   
   ngAfterViewInit(): void {
 
-    // this.bienvenidaContent = this.cambios.createComponent(BienvenidaComponent);
-    // setTimeout(()=>{
-    //   this.bienvenidaContent.destroy()
-    //   this.navContent = this.cambios.createComponent(NavbarComponent);
-    // }, 4000)
+    this.bienvenidaContent = this.cambios.createComponent(BienvenidaComponent);
+    setTimeout(()=>{
+      this.bienvenidaContent.destroy()
+      this.navContent = this.cambios.createComponent(NavbarComponent);
+    }, 4000)
 
-    this.navContent = this.cambios.createComponent(NavbarComponent);
+    //this.navContent = this.cambios.createComponent(NavbarComponent);
   }
 }
