@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { DbService } from '../services/db/db.service';
 import { DB } from '../models/dbDatos.models';
 import { EnviarProyectoService } from '../services/enviarObjProyecto/enviar-proyecto.service';
-import { Proyecto } from '../models/Proyecto.models';
+import { Proyecto } from '../models/Proyectos.models';
 import { ProyectoDestacadoResumenComponent } from '../proyecto-destacado-resumen/proyecto-destacado-resumen.component';
 import { ImgProyectosDestacadosComponent } from '../img-proyectos-destacados/img-proyectos-destacados.component';
 

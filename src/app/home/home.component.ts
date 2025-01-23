@@ -22,6 +22,7 @@ export class HomeComponent implements OnInit{
     this.dbService.getDB().subscribe(
       (respuesta)=>{
         this.db = respuesta;
+        
       }
     )
   }

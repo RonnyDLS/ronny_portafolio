@@ -3,7 +3,7 @@ import { DB } from '../models/dbDatos.models';
 import { DbService } from '../services/db/db.service';
 import { EnviarProyectoService } from '../services/enviarObjProyecto/enviar-proyecto.service';
 import { CommonModule } from '@angular/common';
-import { Proyecto } from '../models/Proyecto.models';
+import { Proyecto } from '../models/Proyectos.models';
 import { ImgProyectosComponent } from "../img-proyectos/img-proyectos.component";
 import { Router } from '@angular/router';
 

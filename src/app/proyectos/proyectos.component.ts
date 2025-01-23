@@ -5,7 +5,7 @@ import { RouterOutlet } from '@angular/router';
 import { DB } from '../models/dbDatos.models';
 import { DbService } from '../services/db/db.service';
 import { EnviarProyectoService } from '../services/enviarObjProyecto/enviar-proyecto.service';
-import { Proyecto } from '../models/Proyecto.models';
+import { Proyecto } from '../models/Proyectos.models';
 import { ImgProyectosComponent } from "../img-proyectos/img-proyectos.component";
 
 @Component({

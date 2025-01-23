@@ -14,4 +14,6 @@ export class Proyecto{
     urls_imagenes:Url[];
     tecnologias:Tecnologia[];
     destacado:boolean;
+    colaboradores
+
 }

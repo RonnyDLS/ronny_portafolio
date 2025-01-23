@@ -5,6 +5,8 @@
             <h2 class="titulo_proyecto_resumen">{{proyecto.titulo}}</h2>
         </div>
         
+        <div class="line_movile"></div>
+
         <div class="parrafo_resumen">
             <p class="parrafo" *ngFor="let parrafo of proyecto.informacion_proyecto">
                 {{parrafo.parrafo}}
@@ -16,6 +18,16 @@
                 <a class="item" [ngStyle]="{'background-color': tecnologia.color}" *ngFor="let tecnologia of proyecto.tecnologias">
                     <img class="img_tecnologia" [src]="tecnologia.url_img" alt="">
                 </a>
+            </div>
+        </div>
+
+        <div class="colaboradores" *ngIf="proyecto.colaboradores.length">
+            <h3 class="subtitulo_colaboradores">Colaboradores</h3>
+            <div class="lista_colaboradores">
+                <div class="colaborador" *ngFor="let item of proyecto.colaboradores">
+                    <img class="img_col_perfil" [src]="item.url_img_perfil" alt="">
+                    <div class="nombre_col">{{item.nombre }} {{item.apellido }}</div> 
+                </div>
             </div>
         </div>
 

@@ -2,8 +2,14 @@
     <div class="cj_cuadricula" >
         <div class="cj_contenido_txt">
             <img class="img_hola" [src]="db.imagenes[8]">
-            <div class="txt_conocimiento">{{db.bienvenida.habilidad}}</div>
-            <div class="txt_bienvenida">{{db.bienvenida.infoBienvenida}}</div>
+            <div class="cj_contenido">
+                <div class="txt_conocimiento" *ngFor="let habilidad of db.bienvenida.habilidades">
+                    {{habilidad}}
+                </div>
+            </div>
+            <div class="txt_bienvenida_p" *ngFor="let parrafo of db.bienvenida.infoBienvenida">
+                {{parrafo}}
+            </div>
         </div>
         <div class="cj_imagen">
             <img class="img_dev" [src]="db.imagenes[6]">

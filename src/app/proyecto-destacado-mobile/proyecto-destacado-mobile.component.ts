@@ -5,7 +5,7 @@ import { EnviarProyectoService } from '../services/enviarObjProyecto/enviar-proy
 import { CommonModule } from '@angular/common';
 import { ImgProyectosDestacadosComponent } from "../img-proyectos-destacados/img-proyectos-destacados.component";
 import { Router } from '@angular/router';
-import { Proyecto } from '../models/Proyecto.models';
+import { Proyecto } from '../models/Proyectos.models';
 
 @Component({
   selector: 'app-proyecto-destacado-mobile',

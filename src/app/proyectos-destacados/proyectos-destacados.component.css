@@ -22,7 +22,6 @@
         display: grid;
         grid-template-columns: 1.5fr 2fr;
         gap: 4rem;
-        margin-bottom: 6rem;
     }
     
     .enlaces_iconos{

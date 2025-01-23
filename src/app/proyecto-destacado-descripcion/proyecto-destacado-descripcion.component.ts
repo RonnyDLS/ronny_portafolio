@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { DB } from '../models/dbDatos.models';
 import { EnviarProyectoService } from '../services/enviarObjProyecto/enviar-proyecto.service';
 import { DbService } from '../services/db/db.service';
-import { Proyecto } from '../models/Proyecto.models';
+import { Proyecto } from '../models/Proyectos.models';
 
 @Component({
   selector: 'app-proyecto-destacado-descripcion',

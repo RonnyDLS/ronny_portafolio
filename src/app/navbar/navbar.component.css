@@ -178,7 +178,7 @@
         height: 1.2rem;
     }
     .pro::before{
-        content: "Ver proyectos";
+        content: "Mis proyectos";
     }
     .txt_proyecto::before{
         content: "Proyectos";

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ProyectosComponent } from "../proyectos/proyectos.component";
 import { RouterLink } from '@angular/router';
-import { Proyecto } from '../models/Proyecto.models';
+import { Proyecto } from '../models/Proyectos.models';
 import { EnviarProyectoService } from '../services/enviarObjProyecto/enviar-proyecto.service';
 import { CommonModule } from '@angular/common';
 import { DbService } from '../services/db/db.service';
