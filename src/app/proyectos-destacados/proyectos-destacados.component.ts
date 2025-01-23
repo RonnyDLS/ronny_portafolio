@@ -31,7 +31,7 @@ export class ProyectosDestacadosComponent implements OnInit {
     this.dbService.getDB().subscribe(
       (respuesta) => {
         this.db = respuesta;
-
+        
         for(let proyecto of this.db.proyectos){
           if(proyecto.destacado === true){
             this.proyectosDestacados.push(proyecto);

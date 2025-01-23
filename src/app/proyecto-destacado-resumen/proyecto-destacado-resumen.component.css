@@ -33,6 +33,7 @@
 .img_resumen>img {
     border-radius: .5rem;
     width: 100%;
+    border: solid 2px #ffffff50;;
 }
 
 .parrafo_resumen {
@@ -69,7 +70,7 @@
 }
 
 .item {
-    padding: .2rem 1rem;
+    padding: .3rem 1rem;
     border-radius: .3rem;
     font-weight: bold;
 }
@@ -80,7 +81,7 @@
 }
 
 .img_conocimientos {
-    width: 2rem;
+    width: 3rem;
 }
 
 @keyframes tecnologia {

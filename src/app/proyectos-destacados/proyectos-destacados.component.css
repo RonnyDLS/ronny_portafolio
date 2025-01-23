@@ -101,7 +101,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
+        height: 80vh;
+        overflow-y: scroll;
+        scrollbar-width: none;
+    } 
     .img_proyectos{
        width: 30rem;
     }

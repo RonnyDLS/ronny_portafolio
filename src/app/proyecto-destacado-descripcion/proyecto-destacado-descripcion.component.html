@@ -18,6 +18,16 @@
             </div>
         </div>
 
+        <div class="colaboradores" *ngIf="proyectoDestacado.colaboradores.length">
+            <h3 class="subtitulo_colaboradores">Colaboradores</h3>
+            <div class="lista_colaboradores">
+                <div class="colaborador" *ngFor="let item of proyectoDestacado.colaboradores">
+                    <img class="img_col_perfil" [src]="item.url_img_perfil" alt="">
+                    <div class="nombre_col">{{item.nombre }} {{item.apellido }}</div> 
+                </div>
+            </div>
+        </div>
+
         <div class="enlaces_iconos">
             <a [href]="red.urlRed" *ngFor="let red of db.sobreMy.misRedes" target="_blank">
                 <img class="redImg" [src]="red.urlImg" alt="">

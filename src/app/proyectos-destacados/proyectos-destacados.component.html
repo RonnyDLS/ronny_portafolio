@@ -2,7 +2,7 @@
     <div class="lista_proyectos">
         <h2 class="titulo_proyectos">Proyectos Destacados</h2>
         <div class="linea">
-            <div class="items_proyectos">
+            <div class="items_proyectos" *ngIf="proyectosDestacados">
                 <div class="item" (click)="cargarComponente(proyectoDestacado)" (click)="eliminarImgDefault()" *ngFor="let proyectoDestacado of proyectosDestacados;">
                     {{proyectoDestacado.titulo}}
                 </div>
