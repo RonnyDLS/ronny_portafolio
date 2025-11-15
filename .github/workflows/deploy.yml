@@ -22,25 +22,23 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-
+      
       - name: Install dependencies
         run: npm install
 
       - name: Build Angular app
-        run: npm run build --if-present
+        run: npm run build
 
-      - name: Check build folder
-        run: |
-          echo "Contenido de dist/"
-          ls -R dist
+      - name: Check build output
+        run: ls -R dist
 
       - name: Deploy to GitHub Pages
         run: |
           npx angular-cli-ghpages \
-            --dir="dist/my-portafolio" \
-            --repo="https://github.com/RonnyDLS/ronny_portafolio.git" \
+            --dir=dist/my-portafolio/browser \
+            --skip-index-file \
+            --repo="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/RonnyDLS/ronny_portafolio.git" \
             --name="GitHub Actions" \
             --email="actions@github.com" \
-            --branch="gh-pages" \
+            --branch=gh-pages \
             --no-silent
-            
