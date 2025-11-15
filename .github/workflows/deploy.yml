@@ -1,0 +1,40 @@
+name: Deploy Angular 18 to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout del código
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Instalar Node
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      # 3. Instalar dependencias
+      - name: Install dependencies
+        run: npm install
+
+      # 4. Compilar Angular con base-href
+      - name: Build Angular app
+        run: npm run build --if-present
+
+      # 5. Deploy a GitHub Pages (gh-pages branch)
+      - name: Deploy to GitHub Pages
+        run: |
+          npx angular-cli-ghpages --dir=dist/my-portafolio/browser \
+            --repo=https://github.com/RonnyDLS/ronny_portafolio.git \
+            --name="GitHub Actions" \
+            --email="actions@github.com" \
+            --branch=gh-pages
