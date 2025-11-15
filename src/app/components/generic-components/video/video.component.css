@@ -1,0 +1,9 @@
+.cj_video{
+    border-radius: 1rem;
+    cursor: pointer; 
+}
+
+.video{
+   border-radius: .5rem;
+   border: solid 2px #ffffff50;;
+}

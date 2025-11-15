@@ -1,0 +1,31 @@
+.imgDefault{
+    animation-name: imgDefault;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+    
+@keyframes imgDefault {
+    0%{
+        transform: translateY(.2rem);
+    }
+    50%{
+        transform: translateY(-1rem);
+    }
+    100%{
+        transform: translateY(.2rem);
+    }
+}
+
+@media screen and (min-width: 553px) {
+    .imgDefault{
+        height: 18rem;
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width: 553px) {
+    .imgDefault{
+        height: 12rem;
+        width: 20rem;
+    }
+}

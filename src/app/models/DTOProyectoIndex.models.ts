@@ -1,6 +1,6 @@
-import { Proyecto } from "./Proyecto.models";
+import { Proyecto } from "./Proyectos.models";
 
 export class ProyectoIndex{
-    proyecto:Proyecto;
+    proyectos:Proyecto[]=[];
     index:number;
 }

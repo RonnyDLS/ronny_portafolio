@@ -3,6 +3,7 @@ import { Parrafo } from "./Parrafo.models";
 import { Redes } from "./Redes.models";
 
 export class SobreMy{
+    imgPerfil:string;
     nombre:string;
     especialidad:string;
     tituloSobreMy:string;

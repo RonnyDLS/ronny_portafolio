@@ -11,6 +11,7 @@ export class DbService {
   constructor(private http:HttpClient) {}
 
   getDB(): Observable<DB>{
-    return this.http.get<DB>("/js/db.json");
+    let timestamp = new Date().getTime();
+    return this.http.get<DB>(`assets/js/db.json?v=${timestamp}`);
   }
 }

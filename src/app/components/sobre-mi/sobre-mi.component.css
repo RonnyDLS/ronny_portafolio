@@ -1,0 +1,645 @@
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jura", sans-serif;
+}
+
+/* Escritorio */
+@media screen and (min-width: 910px) {
+    .content {
+        width: 60%;
+        margin: auto;
+        margin-top: 7rem;
+        margin-bottom: 7rem;
+    }
+    .img_saludo{
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+        height: 15rem;
+        gap: 2rem;
+        position: relative;
+        animation: sobreMy 1.1s ease;
+    }
+    .img_perfil{
+        width: 17rem;
+        height: 100%;
+        justify-self: end;
+    }
+    .saludo{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-top: 1rem;
+    }
+    .hola{
+        font-size: 4rem;
+        color: #ffffffe7;
+    }
+    .nombre{
+        font-size: 1.5rem;
+        color: #ffffffe7;
+    }
+    .especialidad{
+        padding: .5rem 1rem;
+        background-color: #026dbf;
+        color: #ffffff;
+        font-weight: bold;   
+        display: inline-block;
+        border-radius: .3rem;
+    }
+    .nombre::before{
+        content: "Soy";
+    }
+    .nombre::after{
+        content: " Ronny De Los Santos";
+        font-weight: bold;
+    }
+    .hola::before{
+        content: "¡Hola!";
+    }
+    .especialidad::before{
+        content: "FullStack";
+    }
+    .txt_sobre_mi{
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        background-color: #0B013B;
+        border: solid 1px #ffffff9d;
+        border-radius: .5rem;
+        margin-bottom: 4rem;
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+        position: relative;
+        animation: sobreMy 1.1s ease;
+    }
+    .txt_sobre_mi>p{
+        text-align: center;
+        color: #ffffffa3;
+    }
+    .sub_titulo{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .items{
+        padding: 2rem;
+        background-color: #0B013B;
+        border: solid 1px #ffffff9d;
+        border-radius: .5rem;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: start;
+    }
+    .item{
+        background-color: aliceblue;
+        display: flex;
+        padding: .5rem;
+        color: #05001d;
+        font-weight: bold;
+        border-radius: .5rem;
+    }
+    .img_conocimientos{
+        width: 3rem;
+    
+    }
+    .enlaces_iconos{
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .redImg{
+        width: 2rem;
+        height: 2rem;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .cj_hola{
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+    .mano{
+        height: 3.5rem;
+        width: 3.5rem;
+        display: none;
+    }
+    .hola:hover + .mano{
+        display: block;
+        animation: mano;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    .conocimientos{
+        position: relative;
+        animation: conocimientos 1.1s ease;
+    }
+    .item:hover{
+        animation: tecnologia;
+        animation-duration: 1s;
+    }
+
+    @keyframes tecnologia {
+        0%{
+            transform: rotate(7deg) translateY(-5px);
+        }
+        15%{
+            transform: rotate(-7deg) translateY(-5px);
+        }
+        30%{
+            transform: rotate(5deg);
+        }
+        45%{
+            transform: rotate(-5deg);
+        }
+        55%{
+            transform: rotate(3deg);
+        }
+        70%{
+            transform: rotate(-3deg);
+        }
+        85%{
+            transform: rotate(2deg);
+        }
+        100%{
+            transform: rotate(-2deg);
+        }
+    }
+
+    @keyframes conocimientos {
+        0%{
+            right: -40%;
+        }
+        100%{
+            right: 0;
+        }
+    }
+    
+    @keyframes sobreMy {
+        0%{
+            right: 40%;
+        }
+        100%{
+            right: 0;
+        }
+    }
+    
+    @keyframes mano {
+        0%{
+            transform: rotate(-20deg);
+        }
+        15%{
+            transform: rotate(10deg);
+        }
+        30%{
+            transform: rotate(-7deg);
+        }
+        45%{
+            transform: rotate(-17deg);
+        }
+        60%{
+            transform: rotate(-10deg);
+        }
+        75%{
+            transform: rotate(-5deg);
+        }
+        90%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 910px) {
+    .content {
+        width: 90%;
+        margin: auto;
+        margin-top: 4rem;
+        margin-bottom: 7rem;
+    }
+    .img_saludo{
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+        height: 17rem;
+        position: relative;
+        animation: sobreMy 1.1s ease;
+    }
+    .img_perfil{
+        width: 100%;
+        height: 100%;
+        justify-self: end;
+    }
+    .saludo{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+    .hola{
+        font-size: 4rem;
+        color: #ffffffe7;
+    }
+    .nombre{
+        font-size: 1.5rem;
+        color: #ffffffe7;
+    }
+    .nombre::before{
+        content: "Soy";
+    }
+    .nombre::after{
+        content: " Ronny De Los Santos";
+        font-weight: bold;
+    }
+    .hola::before{
+        content: "¡Hola!";
+    }
+    .especialidad::before{
+        content: "FullStack";
+    }
+    .especialidad{
+        padding: .7rem 1.8rem;
+        background-color: #026dbf;
+        color: #ffffff;
+        font-weight: bold;   
+        display: inline-block;
+        border-radius: .3rem;
+        font-size: 1rem;
+    }
+    .txt_sobre_mi{
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        background-color: #0B013B;
+        border: solid 1px #ffffff9d;
+        border-radius: .5rem;
+        margin-bottom: 4rem;
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+        position: relative;
+        animation: txt_sobre_mi 1.1s ease;
+    }
+    @keyframes txt_sobre_mi {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .txt_sobre_mi>p{
+        text-align: center;
+        color: #ffffffa3;
+    }
+    .sub_titulo{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .items{
+        padding: 2rem;
+        background-color: #0B013B;
+        border: solid 1px #ffffff9d;
+        border-radius: .5rem;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+    .item{
+        background-color: aliceblue;
+        display: inline-block;
+        padding: .2rem 1rem;
+        color: #05001d;
+        font-weight: bold;
+        border-radius: .5rem;
+    }
+    .img_conocimientos{
+        width: 3rem;
+    }
+    .enlaces_iconos{
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .redImg{
+        width: 2rem;
+        height: 2rem;
+        background-position: center center;
+        background-size: cover;
+    }
+    .item:hover{
+        animation: tecnologia;
+        animation-duration: 1s;
+    }
+    .cj_hola{
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+    .mano{
+        height: 3.5rem;
+        width: 3.5rem;
+        display: none;
+    }
+    .hola:hover + .mano{
+        display: block;
+        animation: mano;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    .conocimientos{
+        position: relative;
+        animation: conocimientos 1.1s ease;
+    }
+
+    @keyframes conocimientos {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    
+    @keyframes tecnologia {
+        0%{
+            transform: rotate(7deg) translateY(-5px);
+        }
+        15%{
+            transform: rotate(-7deg) translateY(-5px);
+        }
+        30%{
+            transform: rotate(5deg);
+        }
+        45%{
+            transform: rotate(-5deg);
+        }
+        55%{
+            transform: rotate(3deg);
+        }
+        70%{
+            transform: rotate(-3deg);
+        }
+        85%{
+            transform: rotate(2deg);
+        }
+        100%{
+            transform: rotate(-2deg);
+        }
+    }
+    
+    @keyframes mano {
+        0%{
+            transform: rotate(-20deg);
+        }
+        15%{
+            transform: rotate(10deg);
+        }
+        30%{
+            transform: rotate(-7deg);
+        }
+        45%{
+            transform: rotate(-17deg);
+        }
+        60%{
+            transform: rotate(-10deg);
+        }
+        75%{
+            transform: rotate(-5deg);
+        }
+        90%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 526px) {
+    .content {
+        width: 90%;
+        margin: auto;
+        margin-top: 4rem;
+        margin-bottom: 7rem;
+    }
+    .img_saludo{
+        display: grid;
+        grid-template-columns: 1.5fr 2fr;
+        height: 9.5rem;
+        position: relative;
+        animation: sobreMy 1.1s ease;
+    }
+    .img_perfil{
+        width: 100%;
+        height: 100%;
+        justify-self: end;
+    }
+    .saludo{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+    .hola{
+        font-size: 2rem;
+        color: #ffffffe7;
+    }
+    .nombre{
+        font-size: 1rem;
+        color: #ffffffe7;
+    }
+    .nombre::before{
+        content: "Soy";
+    }
+    .nombre::after{
+        content: " Ronny De Los Santos";
+        font-weight: bold;
+    }
+    .hola::before{
+        content: "¡Hola!";
+    }
+    .especialidad::before{
+        content: "FullStack";
+    }
+    .especialidad{
+        padding: .5rem 1rem;
+        background-color: #026dbf;
+        color: #ffffff;
+        font-weight: bold;   
+        display: inline-block;
+        border-radius: .3rem;
+        font-size: .7rem;
+    }
+    .txt_sobre_mi{
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        background-color: #0B013B;
+        border: solid 1px #ffffff9d;
+        border-radius: .5rem;
+        margin-bottom: 4rem;
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+        position: relative;
+        animation: txt_sobre_mi 1.1s ease;
+    }
+    @keyframes txt_sobre_mi {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .txt_sobre_mi>p{
+        text-align: center;
+        color: #ffffffa3;
+    }
+    .sub_titulo{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .items{
+        padding: 2rem;
+        background-color: #0B013B;
+        border: solid 1px #ffffff9d;
+        border-radius: .5rem;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+    .item{
+        background-color: aliceblue;
+        display: inline-block;
+        padding: .2rem 1rem;
+        color: #05001d;
+        font-weight: bold;
+        border-radius: .5rem;
+    }
+    .img_conocimientos{
+        width: 3rem;
+    }
+    .enlaces_iconos{
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .redImg{
+        width: 2rem;
+        height: 2rem;
+        background-position: center center;
+        background-size: cover;
+    }
+    .item:hover{
+        animation: tecnologia;
+        animation-duration: 1s;
+    }
+    .cj_hola{
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+    .mano{
+        height: 2.3rem;
+        width: 2.3rem;
+        display: none;
+    }
+    .hola:hover + .mano{
+        display: block;
+        animation: mano;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    }
+    .conocimientos{
+        position: relative;
+        animation: conocimientos 1.1s ease;
+    }
+
+    @keyframes conocimientos {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    } 
+    
+    @keyframes tecnologia {
+        0%{
+            transform: rotate(7deg) translateY(-5px);
+        }
+        15%{
+            transform: rotate(-7deg) translateY(-5px);
+        }
+        30%{
+            transform: rotate(5deg);
+        }
+        45%{
+            transform: rotate(-5deg);
+        }
+        55%{
+            transform: rotate(3deg);
+        }
+        70%{
+            transform: rotate(-3deg);
+        }
+        85%{
+            transform: rotate(2deg);
+        }
+        100%{
+            transform: rotate(-2deg);
+        }
+    }
+    
+    @keyframes mano {
+        0%{
+            transform: rotate(-20deg);
+        }
+        15%{
+            transform: rotate(10deg);
+        }
+        30%{
+            transform: rotate(-7deg);
+        }
+        45%{
+            transform: rotate(-17deg);
+        }
+        60%{
+            transform: rotate(-10deg);
+        }
+        75%{
+            transform: rotate(-5deg);
+        }
+        90%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(0deg);
+        }
+    }
+}
+

@@ -4,11 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --base-href /origen/",
-    "deploy": "ng deploy",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:MyPortafolio": "node dist/my-portafolio/server/server.mjs"
+    "serve:ssr:MyPortafolio": "node dist/my-portafolio/server/server.mjs",
+    "build": "ng build --base-href /ronny_portafolio/",
+    "deploy": "ng deploy"
   },
   "private": true,
   "dependencies": {
