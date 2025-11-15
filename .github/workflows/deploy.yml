@@ -7,43 +7,37 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write   # 👈 NECESARIO para poder subir a gh-pages
+  contents: write
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout del código
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. Instalar Node
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
 
-      # 3. Instalar dependencias
       - name: Install dependencies
         run: npm install
 
-      # 4. Compilar Angular con base-href
       - name: Build Angular app
         run: npm run build --if-present
 
-      # 5. Verificar que la carpeta de build exista (debug)
-      - name: Check build folders
+      - name: Check build folder
         run: |
           echo "Contenido de dist/"
           ls -R dist
 
-      # 6. Deploy a GitHub Pages
       - name: Deploy to GitHub Pages
         run: |
           npx angular-cli-ghpages \
-            --dir="dist/my-portafolio/browser" \
+            --dir="dist/my-portafolio" \
             --repo="https://github.com/RonnyDLS/ronny_portafolio.git" \
             --name="GitHub Actions" \
             --email="actions@github.com" \
