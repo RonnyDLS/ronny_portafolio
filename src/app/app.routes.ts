@@ -1,16 +1,16 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { BienvenidaComponent } from './bienvenida/bienvenida.component';
-import { ProyectoDescripcionComponent } from './proyecto-descripcion/proyecto-descripcion.component';
-import { ProyectosComponent } from './proyectos/proyectos.component';
-import { ProyectosDestacadosComponent } from './proyectos-destacados/proyectos-destacados.component';
-import { ProyectoResumenComponent } from './proyecto-resumen/proyecto-resumen.component';
-import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
-import { ProyectoDestacadoMobileComponent } from './proyecto-destacado-mobile/proyecto-destacado-mobile.component';
-import { ProyectoDestacadoDescripcionComponent } from './proyecto-destacado-descripcion/proyecto-destacado-descripcion.component';
-import { ProyectoMobileComponent } from './proyecto-mobile/proyecto-mobile.component';
-import { DescargaCurriculumModalComponent } from './descarga-curriculum-modal/descarga-curriculum-modal.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { HomeComponent } from './components/home/home.component';
+import { BienvenidaComponent } from './components/bienvenida/bienvenida.component';
+import { ProyectosComponent } from './components/vistaProyectos/proyectos/proyectos.component';
+import { ProyectosDestacadosComponent } from './components/vistaProyectosDestacados/proyectos-destacados/proyectos-destacados.component';
+import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
+import { ProyectoDestacadoMobileComponent } from './components/vistaProyectosDestacados/proyecto-destacado-mobile/proyecto-destacado-mobile.component';
+import { ProyectoDestacadoDescripcionComponent } from './components/vistaProyectosDestacados/proyecto-destacado-descripcion/proyecto-destacado-descripcion.component';
+import { ProyectoMobileComponent } from './components/vistaProyectos/proyecto-mobile/proyecto-mobile.component';
+import { DescargaCurriculumModalComponent } from './components/descarga-curriculum-modal/descarga-curriculum-modal.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { ProyectoResumenComponent } from './components/vistaProyectos/proyecto-resumen/proyecto-resumen.component';
+import { ProyectoDescripcionComponent } from './components/vistaProyectos/proyecto-descripcion/proyecto-descripcion.component';
 
 export const routes: Routes = [
     {path: "nav", component:NavbarComponent}, 

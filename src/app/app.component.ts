@@ -1,30 +1,32 @@
-import { Component, ComponentRef, ViewChild, ViewContainerRef } from '@angular/core';
+import {
+  Component,
+  ComponentRef,
+  ViewChild,
+  ViewContainerRef,
+} from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
-import { BienvenidaComponent } from "./bienvenida/bienvenida.component";
-import { NavbarComponent } from "./navbar/navbar.component";
-import { HomeComponent } from "./home/home.component";
-import { SobreMiComponent } from "./sobre-mi/sobre-mi.component";
-import { ProyectosComponent } from "./proyectos/proyectos.component";
-import { ProyectosDestacadosComponent } from "./proyectos-destacados/proyectos-destacados.component";
-import { ProyectoDescripcionComponent } from "./proyecto-descripcion/proyecto-descripcion.component";
-import { ProyectoResumenComponent } from "./proyecto-resumen/proyecto-resumen.component";
+import { BienvenidaComponent } from './components/bienvenida/bienvenida.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { HomeComponent } from './components/home/home.component';
+import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
+import { ProyectosComponent } from './components/vistaProyectos/proyectos/proyectos.component';
+import { ProyectosDestacadosComponent } from './components/vistaProyectosDestacados/proyectos-destacados/proyectos-destacados.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'MyPortafolio';
 
-  @ViewChild('cambios', {read: ViewContainerRef}) cambios!:ViewContainerRef
-  navContent:ComponentRef<NavbarComponent>;
-  bienvenidaContent:ComponentRef<BienvenidaComponent>;
-  
-  ngAfterViewInit(): void {
+  @ViewChild('cambios', { read: ViewContainerRef }) cambios!: ViewContainerRef;
+  navContent: ComponentRef<NavbarComponent>;
+  bienvenidaContent: ComponentRef<BienvenidaComponent>;
 
+  ngAfterViewInit(): void {
     //this.bienvenidaContent = this.cambios.createComponent(BienvenidaComponent);
     // setTimeout(()=>{
     //   this.bienvenidaContent.destroy()
