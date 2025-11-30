@@ -78,11 +78,11 @@
         <div class="cj_video">
             <div class="bordes_video ln_right"></div>
             <div class="video_flex">
-                <div class="imgs_proyectos" [ngStyle]="{ 'height':  viewVideo ? '' : '13rem'}">
+                <div class="imgs_proyectos">
                     @if(viewImgs){
                         @for (imagen of proyecto.urls_imagenes; track $index){
                             <a target="_blank" class="img_link_proyecto" [href]="imagen.url">
-                                <img alt="" class="img_proyecto" [src]="imagen.url">
+                                <img alt="" class="img_proyecto" [src]="imagen.url" width="300" height="180">
                             </a>
                         }
                     }
