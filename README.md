@@ -32,7 +32,11 @@ A continuación se incluyen los comandos y herramientas principales utilizados d
 
 # 📘 Deploy de Aplicación Angular 18 en GitHub Pages
 
-Guía técnica y automatizada para despliegue continuo
+
+Guía técnica y automatizada para despliegue continuo.
+
+Documentacion linkedin: https://www.linkedin.com/pulse/how-deploy-angular-18-app-github-pages-mohamed-el-fadili-ahbrc/
+
 
 ## 🚀 Introducción
 
