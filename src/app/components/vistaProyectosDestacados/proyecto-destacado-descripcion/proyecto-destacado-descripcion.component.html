@@ -18,7 +18,7 @@
             </div>
         </div>
 
-        <div class="colaboradores" *ngIf="proyectoDestacado.colaboradores.length">
+        <div class="escritorio colaboradores" *ngIf="proyectoDestacado.colaboradores.length">
             <h3 class="subtitulo_colaboradores">Colaboradores</h3>
             <div class="lista_colaboradores">
                 <div class="colaborador" *ngFor="let item of proyectoDestacado.colaboradores">
@@ -35,7 +35,7 @@
         </div>
     </div>
 
-    <div class="cj_multimedia">
+    <div class="escritorio cj_multimedia">
         <div class="btns-multimedia">
             @if(proyectoDestacado?.urls_videos?.length > 0){
                 <button [ngClass]="viewImgs ? 'btn_imgs btn_imgs_clic' : 'btn_imgs'" (click)="clickimgs()">Imagenes</button>
@@ -64,10 +64,71 @@
             }
         </div>
     </div>
+</div>
 
-    <div class="enlaces_iconos_mobile">
-        <a [href]="red.urlRed" *ngFor="let red of db.sobreMy.misRedes" target="_blank">
-            <img class="redImg" [src]="red.urlImg" alt="">
-        </a>
+<div *ngIf="db">
+    <!-- Mobile  -->
+    <div class="mobile">
+        <div class="btns-multimedia">
+            @if(proyectoDestacado?.urls_videos?.length > 0){
+                <button [ngClass]="viewImgs ? 'btn_imgs btn_imgs_clic' : 'btn_imgs'" (click)="clickimgs()">Imagenes</button>
+                <button [ngClass]="viewVideo ? 'btn_video btn_video_clic' : 'btn_video'" (click)="clickVideo()">Video</button>
+            }
+        </div>
+        <div class="cj_video">
+            <div class="bordes_video ln_right"></div>
+            <div class="video_flex">
+                <div class="imgs_proyectos" [ngStyle]="{ 'height':  viewVideo ? '' : '13rem'}">
+                    @if(viewImgs){
+                        @for (imagen of proyectoDestacado.urls_imagenes; track $index){
+                            <a target="_blank" class="img_link_proyecto" [href]="imagen.url">
+                                <img alt="" class="img_proyecto" [src]="imagen.url">
+                            </a>
+                        }
+                    }
+                
+                    @if(viewVideo){
+                        <div class="cj_ls_video">
+                            @for (url_video of proyectoDestacado?.urls_videos; track $index) {
+                                <app-video [urlVideo]="url_video.url" width="300" height="180"></app-video>
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="bordes_video ln_left"></div>
+        </div>
+
+        <div class="content">
+            <div class="tecnologias_mobile">
+                <h3 class="subtitulo_tecnologia">Tecnologías</h3>
+                <div class="items_tecnologias">
+                    <a class="item" [ngStyle]="{'background-color': tecnologia.color}" *ngFor="let tecnologia of proyectoDestacado.tecnologias">
+                        <img class="img_tecnologia" [src]="tecnologia.url_img" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="colaboradores_mobile" *ngIf="proyectoDestacado.colaboradores.length">
+            <h3 class="subtitulo_colaboradores">Colaboradores</h3>
+
+            <div class="cj_colaboradores">
+                <div class="colaborador" *ngFor="let item of proyectoDestacado.colaboradores">
+                    <img
+                    alt=""
+                    class="perfil_img_c"
+                    [src]="item.url_img_perfil" 
+                    />
+                    <div class="nombreCompleto_c">{{item.nombre }} {{item.apellido }}</div>
+                </div>
+            </div>
+            </div>
+
+            <div class="enlaces_iconos_mobile">
+                <a [href]="red.urlRed" *ngFor="let red of db.sobreMy.misRedes" target="_blank">
+                    <img class="redImg" [src]="red.urlImg" alt="">
+                </a>
+            </div>
+        </div>
     </div>
 </div>
