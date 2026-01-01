@@ -1,10 +1,11 @@
-import { Component, ViewChild, ViewContainerRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
 import { RouterLink, RouterModule, RouterOutlet } from '@angular/router';
 import { Router } from '@angular/router';
 import { DescargaCurriculumModalComponent } from "../../components/descarga-curriculum-modal/descarga-curriculum-modal.component";
 import { CommonModule } from '@angular/common';
 import { DbService } from '../../services/db/db.service';
 import { DB } from '../../models/dbDatos.models';
+import { TemaConfig } from '../../models/estilo.model';
 
 @Component({
   selector: 'app-navbar',
@@ -19,14 +20,19 @@ import { DB } from '../../models/dbDatos.models';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
 
-  db:DB;
+  color: string = '#07002c';
+  db: DB;
+  tema: TemaConfig;
+  isActive: boolean = true;
   @ViewChild('descargaCurriculum', {read: ViewContainerRef}) descargaCurriculum!:ViewContainerRef;
   visibilidadVentana:boolean = false;
 
-  constructor(private router: Router, private dbService:DbService) {
-    dbService.getDB().subscribe(
+  constructor(private router: Router, private dbService:DbService) {}
+  
+  ngOnInit(): void {
+    this.dbService.getDB().subscribe(
       (respuesta)=>{
         this.db = respuesta;
       }
@@ -53,4 +59,16 @@ export class NavbarComponent {
     this.visibilidadVentana = false;
   }
 
+  changesTema(){
+    this.isActive = !this.isActive;
+    if(!this.isActive) {
+      this.tema = this.db.estilo.temas[1];
+      console.log('__isActive', this.isActive)
+    }
+
+    if(this.isActive) {
+      this.tema = this.db.estilo.temas[0];
+      console.log('__isActive', this.isActive)
+    }
+  }
 } 

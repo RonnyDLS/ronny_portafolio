@@ -1,4 +1,399 @@
 {
+  "estilo":{
+    "temas": [
+      {
+        "nombreTema": "oscuro",
+        "navbar": {
+          "fuente": "",
+          "colorTxt": "#fff",
+          "colorFondo": "#07002c",
+          "elementos": [
+            {
+              "nombre": "boton",
+              "colorFondo": "#210f53",
+              "fuente": "",
+              "colorTxt": "#fff",
+              "colorLinea": "#8065ca"
+            },
+            {
+              "nombre": "imagen_perfil",
+              "colorLinea": "#fff"
+            },
+            {
+              "nombre": "icon_descarga",
+              "url": "assets/imgs/otras/descarga.png"
+            }
+          ]
+        },
+        "home": {
+          "fuente": "",
+          "colorTxt": "#fff",
+          "colorFondo": "#05001D",
+          "elementos": [
+            {
+              "nombre": "etiqueta",
+              "colorFondo": "#2F1856",
+              "fuente": "",
+              "colorTxt": "#F07DDA"
+            },
+            {
+              "nombre": "imagen_hola",
+              "url": "assets/imgs/otras/mano_hola.png"
+            },
+            {
+              "nombre": "imagen_dev",
+              "url": "assets/imgs/otras/dev.png"
+            }
+          ]
+        },
+        "proyecto": {
+          "listaProyectos": {
+            "fuente": "",
+            "colorTxt": "#B84AFC",
+            "colorFondo": "#05001D",
+            "elementos": [
+              {
+                "nombre": "tarjeta_lista_proyectos",
+                "colorFondo": "#120D29",
+                "fuente": "",
+                "colorTxt": "",
+                "colorLinea": ""
+              },
+              {
+                "nombre": "item_lista_proyectos",
+                "colorFondo": "",
+                "colorFondo2": "",
+                "fuente": "",
+                "colorTxt": "",
+                "colorLinea": "",
+                "colorLinea2": ""
+              }
+            ]
+          },
+          "resumenProyecto": {
+            "fuente": "",
+            "colorTxt": "",
+            "colorFondo": "",
+            "elementos": [
+              {
+                "nombre": "titulo",
+                "fuente": "",
+                "colorTxt": ""
+              },
+              {
+                "nombre": "sub_titulo",
+                "fuente": "",
+                "colorTxt": ""
+              },
+              {
+                "nombre": "imagen_resumen",
+                "colorLinea": "",
+                "url": ""
+              },
+              {
+                "nombre": "boton",
+                "colorFondo": "",
+                "colorFondo2": "",
+                "fuente": "",
+                "colorTxt": "",
+                "colorLinea": ""
+              }
+            ]
+          }
+        },
+        "proyectoDescripcion": {
+          "fuente": "",
+          "colorTxt": "",
+          "colorFondo": "",
+          "elementos": [
+            {
+              "nombre": "titulo",
+              "fuente": "",
+              "colorTxt": ""
+            },
+            {
+              "nombre": "titulo_categoria",
+              "fuente": "",
+              "colorTxt": ""
+            },
+            {
+              "nombre": "sub_titulo",
+              "fuente": "",
+              "colorTxt": ""
+            },
+            {
+              "nombre": "tarjeta_item_colaboradores",
+              "colorFondo": "",
+              "fuente": "",
+              "colorTxt": "",
+              "colorLinea": ""
+            },
+            {
+              "nombre": "boton",
+              "colorFondo": "",
+              "fuente": "",
+              "colorTxt": "",
+              "colorLinea": ""
+            },
+            {
+              "nombre": "tarjeta_multimedia",
+              "colorFondo": "",
+              "colorLinea": ""
+            },
+            {
+              "nombre": "multimedia_barras_laterales",
+              "colorFondo": ""
+            },
+            {
+              "nombre": "item_tarjeta_multimedia",
+              "colorLinea": ""
+            }
+          ]
+        },
+        "sobreMi": {
+          "fuente": "",
+          "colorTxt": "",
+          "colorFondo": "",
+          "elementos": [
+            {
+              "nombre": "etiqueta",
+              "colorFondo": "",
+              "fuente": "",
+              "colorTxt": "",
+              "colorLinea": ""
+            },
+            {
+              "nombre": "tarjeta_info_conocimientos",
+              "colorFondo": "",
+              "fuente": "",
+              "colorTxt": "",
+              "colorLinea": ""
+            }
+          ]
+        },
+        "cv": {
+          "fuente": "",
+          "colorTxt": "",
+          "colorFondo": "",
+          "colorLinea": "",
+          "elementos": [
+            {
+              "nombre": "boton_cancelar",
+              "colorFondo": "",
+              "colorFondo2": "",
+              "fuente": "",
+              "colorTxt": "",
+              "colorLinea": ""
+            },
+            {
+              "nombre": "boton_descargar",
+              "colorFondo": "",
+              "colorFondo2": "",
+              "fuente": "",
+              "colorTxt": "",
+              "colorLinea": ""
+            }
+          ]
+        }
+      },
+      {
+        "nombreTema": "blanco",
+        "navbar": {
+          "fuente": "",
+          "colorTxt": "#fff",
+          "colorFondo": "#fff",
+          "elementos": [
+            {
+              "nombre": "boton",
+              "colorFondo": "#210f53",
+              "fuente": "",
+              "colorTxt": "#fff",
+              "colorLinea": "#8065ca"
+            },
+            {
+              "nombre": "imagen_perfil",
+              "colorLinea": "#fff"
+            },
+            {
+              "nombre": "icon_descarga",
+              "url": "assets/imgs/otras/descarga.png"
+            }
+          ]
+        },
+        "home": {
+          "fuente": "",
+          "colorTxt": "#fff",
+          "colorFondo": "#05001D",
+          "elementos": [
+            {
+              "nombre": "etiqueta",
+              "colorFondo": "#2F1856",
+              "fuente": "",
+              "colorTxt": "#F07DDA"
+            },
+            {
+              "nombre": "imagen_hola",
+              "url": "assets/imgs/otras/mano_hola.png"
+            },
+            {
+              "nombre": "imagen_dev",
+              "url": "assets/imgs/otras/dev.png"
+            }
+          ]
+        },
+        "proyecto": {
+          "listaProyectos": {
+            "fuente": "",
+            "colorTxt": "#B84AFC",
+            "colorFondo": "#05001D",
+            "elementos": [
+              {
+                "nombre": "tarjeta_lista_proyectos",
+                "colorFondo": "#120D29",
+                "fuente": "",
+                "colorTxt": "",
+                "colorLinea": ""
+              },
+              {
+                "nombre": "item_lista_proyectos",
+                "colorFondo": "",
+                "colorFondo2": "",
+                "fuente": "",
+                "colorTxt": "",
+                "colorLinea": "",
+                "colorLinea2": ""
+              }
+            ]
+          },
+          "resumenProyecto": {
+            "fuente": "",
+            "colorTxt": "",
+            "colorFondo": "",
+            "elementos": [
+              {
+                "nombre": "titulo",
+                "fuente": "",
+                "colorTxt": ""
+              },
+              {
+                "nombre": "sub_titulo",
+                "fuente": "",
+                "colorTxt": ""
+              },
+              {
+                "nombre": "imagen_resumen",
+                "colorLinea": "",
+                "url": ""
+              },
+              {
+                "nombre": "boton",
+                "colorFondo": "",
+                "colorFondo2": "",
+                "fuente": "",
+                "colorTxt": "",
+                "colorLinea": ""
+              }
+            ]
+          }
+        },
+        "proyectoDescripcion": {
+          "fuente": "",
+          "colorTxt": "",
+          "colorFondo": "",
+          "elementos": [
+            {
+              "nombre": "titulo",
+              "fuente": "",
+              "colorTxt": ""
+            },
+            {
+              "nombre": "titulo_categoria",
+              "fuente": "",
+              "colorTxt": ""
+            },
+            {
+              "nombre": "sub_titulo",
+              "fuente": "",
+              "colorTxt": ""
+            },
+            {
+              "nombre": "tarjeta_item_colaboradores",
+              "colorFondo": "",
+              "fuente": "",
+              "colorTxt": "",
+              "colorLinea": ""
+            },
+            {
+              "nombre": "boton",
+              "colorFondo": "",
+              "fuente": "",
+              "colorTxt": "",
+              "colorLinea": ""
+            },
+            {
+              "nombre": "tarjeta_multimedia",
+              "colorFondo": "",
+              "colorLinea": ""
+            },
+            {
+              "nombre": "multimedia_barras_laterales",
+              "colorFondo": ""
+            },
+            {
+              "nombre": "item_tarjeta_multimedia",
+              "colorLinea": ""
+            }
+          ]
+        },
+        "sobreMi": {
+          "fuente": "",
+          "colorTxt": "",
+          "colorFondo": "",
+          "elementos": [
+            {
+              "nombre": "etiqueta",
+              "colorFondo": "",
+              "fuente": "",
+              "colorTxt": "",
+              "colorLinea": ""
+            },
+            {
+              "nombre": "tarjeta_info_conocimientos",
+              "colorFondo": "",
+              "fuente": "",
+              "colorTxt": "",
+              "colorLinea": ""
+            }
+          ]
+        },
+        "cv": {
+          "fuente": "",
+          "colorTxt": "",
+          "colorFondo": "",
+          "colorLinea": "",
+          "elementos": [
+            {
+              "nombre": "boton_cancelar",
+              "colorFondo": "",
+              "colorFondo2": "",
+              "fuente": "",
+              "colorTxt": "",
+              "colorLinea": ""
+            },
+            {
+              "nombre": "boton_descargar",
+              "colorFondo": "",
+              "colorFondo2": "",
+              "fuente": "",
+              "colorTxt": "",
+              "colorLinea": ""
+            }
+          ]
+        }
+      }
+    ]
+
+  },
   "imagenes": [
     "assets/imgs/otras/avatar.png",
     "assets/imgs/otras/code.png",
@@ -160,7 +555,11 @@
           "url": "assets/imgs/imgs_proyectos/educaApp/educaApp8.png"
         }
       ],
-      "urls_videos": [],
+      "urls_videos": [
+        {
+          "url": "https://www.youtube.com/embed/iSDlpPvqGPM?si=rH5Xda_HDKXEVGeK"
+        }
+      ],
       "tecnologias": [
         {
           "tecnologia": "Java",

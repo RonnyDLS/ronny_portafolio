@@ -1,11 +1,24 @@
-:tema_claro{
-    --tema_claro_fondo: #ffffff;
-    --tema_claro_letra: #000000; 
-}
 
-:tema_azul{
-    --tema_azul_fondo: #07002c;
-    --tema_azul_letra: #ffffff; 
+:root {
+  /* ================== TEMA CLARO ================== */
+  /* Nav */
+
+  /* Escritorio */
+  --color-fondo-nav-dark: #07002c;
+  --color-ln-bottom-nav-dark: #403e4c;
+
+  --color-fondo-btn-nav-dark: #210F53;
+  --color-linea-btn-nav-dark: #8065ca;
+  --color-txt-btn-nav-dark: #fff;
+
+  --color-img-ln-nav-dark: #fff;
+
+  --color-menuFlotante-txt-nav-dark: #fff;
+  --color-menuFlotante-fondo-nav-dark: #210f53;
+  --color-menuFlotante-fondoHOVER-nav-dark: #2a1367;
+  --color-menuFlotante-ln-nav-dark: #8065ca;
+  --color-menuFlotante-btnLn-bottom-nav-dark: #8065ca;
+
 }
 
 body{

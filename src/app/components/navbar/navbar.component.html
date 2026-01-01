@@ -1,4 +1,4 @@
-<nav id="nav">
+<nav id="nav" [ngStyle]="{'background-color': tema?.navbar?.colorFondo}" (click)="changesTema()">
     <div class="perfil" *ngIf="db">
         <img class="imagen_perfil" [src]="db.sobreMy.imgPerfil" (click)="irAHome()">
     </div>
