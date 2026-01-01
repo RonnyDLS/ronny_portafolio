@@ -1,25 +1,35 @@
-<div class="content" *ngIf="db">
+@if (db) {
+  <div class="content">
     <div class="lista_proyectos">
-        <h2 class="titulo_proyectos">Proyectos</h2>
-        <div class="imgDefaultProyecto">
-            <app-img-proyectos></app-img-proyectos>
-        </div>
-        <div class="linea">
-            <div class="items_proyectos" *ngIf="db">
-                <div class="item" (click)="irAlProyecto(proyecto)" *ngFor="let proyecto of db.proyectos">
-                    {{proyecto.titulo}}
-                </div>
-                <div class="cj_mj_noDisponible" *ngIf="db.proyectos.length == 0"> 
-                    <div class="mj_noDisponible"> No hay disponibles </div>
-                </div>
-            </div>
-        </div>
+      <h2 class="titulo_proyectos">Proyectos</h2>
+      <div class="imgDefaultProyecto">
+        <app-img-proyectos></app-img-proyectos>
+      </div>
+      <div class="linea">
+        @if (db) {
+          <div class="items_proyectos">
+            @for (proyecto of db.proyectos; track proyecto) {
+              <div class="item" (click)="irAlProyecto(proyecto)">
+                {{proyecto.titulo}}
+              </div>
+            }
+            @if (db.proyectos.length == 0) {
+              <div class="cj_mj_noDisponible">
+                <div class="mj_noDisponible"> No hay disponibles </div>
+              </div>
+            }
+          </div>
+        }
+      </div>
     </div>
-    <div class="resumen_proyecto">         
-        <div class="enlaces_iconos">
-            <a [href]="red.urlRed" *ngFor="let red of db.sobreMy.misRedes" target="_blank">
-                <img class="redImg" [src]="red.urlImg" alt="">
-            </a>
-        </div>
+    <div class="resumen_proyecto">
+      <div class="enlaces_iconos">
+        @for (red of db.sobreMy.misRedes; track red) {
+          <a [href]="red.urlRed" target="_blank">
+            <img class="redImg" [src]="red.urlImg" alt="">
+          </a>
+        }
+      </div>
     </div>
-</div>
+  </div>
+}

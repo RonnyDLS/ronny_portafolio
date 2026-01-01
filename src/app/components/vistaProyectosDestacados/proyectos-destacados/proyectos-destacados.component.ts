@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, ComponentRef, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { DbService } from '../../../services/db/db.service';
@@ -9,14 +9,12 @@ import { ProyectoDestacadoResumenComponent } from '../proyecto-destacado-resumen
 import { ImgProyectosDestacadosComponent } from '../img-proyectos-destacados/img-proyectos-destacados.component';
 
 @Component({
-  selector: 'app-proyectos-destacados',
-  standalone: true,
-  imports: [
-    RouterModule,
-    CommonModule
-  ],
-  templateUrl: './proyectos-destacados.component.html',
-  styleUrl: './proyectos-destacados.component.css'
+    selector: 'app-proyectos-destacados',
+    imports: [
+    RouterModule
+],
+    templateUrl: './proyectos-destacados.component.html',
+    styleUrl: './proyectos-destacados.component.css'
 })
 export class ProyectosDestacadosComponent implements OnInit {
 

@@ -1,16 +1,13 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { DbService } from '../../../services/db/db.service';
 import { DB } from '../../../models/dbDatos.models';
 
 @Component({
-  selector: 'app-img-proyectos-destacados',
-  standalone: true,
-  imports: [
-    CommonModule
-  ],
-  templateUrl: './img-proyectos-destacados.component.html',
-  styleUrl: './img-proyectos-destacados.component.css'
+    selector: 'app-img-proyectos-destacados',
+    imports: [],
+    templateUrl: './img-proyectos-destacados.component.html',
+    styleUrl: './img-proyectos-destacados.component.css'
 })
 export class ImgProyectosDestacadosComponent {
   

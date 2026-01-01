@@ -3,10 +3,9 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-video',
-  standalone: true,
   imports: [],
-  templateUrl: './video.component.html',
-  styleUrl: './video.component.css'
+    templateUrl: './video.component.html',
+    styleUrl: './video.component.css'
 })
 export class VideoComponent {
 

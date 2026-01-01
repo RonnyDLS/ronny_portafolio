@@ -2,22 +2,20 @@ import { Component, ViewChild, ViewContainerRef } from '@angular/core';
 import { RouterLink, RouterModule, RouterOutlet } from '@angular/router';
 import { Router } from '@angular/router';
 import { DescargaCurriculumModalComponent } from "../../components/descarga-curriculum-modal/descarga-curriculum-modal.component";
-import { CommonModule } from '@angular/common';
+
 import { DbService } from '../../services/db/db.service';
 import { DB } from '../../models/dbDatos.models';
 
 @Component({
-  selector: 'app-navbar',
-  standalone: true,
-  imports: [
+    selector: 'app-navbar',
+    imports: [
     RouterOutlet,
     RouterLink,
     RouterModule,
-    DescargaCurriculumModalComponent,
-    CommonModule
+    DescargaCurriculumModalComponent
 ],
-  templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+    templateUrl: './navbar.component.html',
+    styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
 

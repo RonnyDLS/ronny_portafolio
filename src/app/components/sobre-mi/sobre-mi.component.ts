@@ -1,17 +1,14 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, OnInit } from '@angular/core';
 import { DbService } from '../../services/db/db.service';
 import { DB } from '../../models/dbDatos.models';
 
 
 @Component({
-  selector: 'app-sobre-mi',
-  standalone: true,
-  imports: [
-    CommonModule
-  ],
-  templateUrl: './sobre-mi.component.html',
-  styleUrl: './sobre-mi.component.css'
+    selector: 'app-sobre-mi',
+    imports: [],
+    templateUrl: './sobre-mi.component.html',
+    styleUrl: './sobre-mi.component.css'
 })
 export class SobreMiComponent implements OnInit {
 
