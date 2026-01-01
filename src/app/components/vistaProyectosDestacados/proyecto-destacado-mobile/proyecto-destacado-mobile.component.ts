@@ -2,7 +2,7 @@ import { Component, ViewChild, ViewContainerRef } from '@angular/core';
 import { DB } from '../../../models/dbDatos.models';
 import { DbService } from '../../../services/db/db.service';
 import { EnviarProyectoService } from '../../../services/enviarObjProyecto/enviar-proyecto.service';
-import { CommonModule } from '@angular/common';
+
 import { Router } from '@angular/router';
 import { Proyecto } from '../../../models/Proyectos.models';
 import { ImgProyectosDestacadosComponent } from '../img-proyectos-destacados/img-proyectos-destacados.component';
@@ -10,9 +10,8 @@ import { ImgProyectosDestacadosComponent } from '../img-proyectos-destacados/img
 @Component({
     selector: 'app-proyecto-destacado-mobile',
     imports: [
-        CommonModule,
-        ImgProyectosDestacadosComponent
-    ],
+    ImgProyectosDestacadosComponent
+],
     templateUrl: './proyecto-destacado-mobile.component.html',
     styleUrl: './proyecto-destacado-mobile.component.css'
 })

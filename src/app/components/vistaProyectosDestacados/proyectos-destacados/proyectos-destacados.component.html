@@ -1,24 +1,34 @@
 <div class="content">
-    <div class="lista_proyectos">
-        <h2 class="titulo_proyectos">Proyectos Destacados</h2>
-        <div class="items_proyectos" *ngIf="db">
-            <div class="item" (click)="cargarComponente(proyectoDestacado)" (click)="eliminarImgDefault()" *ngFor="let proyectoDestacado of proyectosDestacados;">
-                {{proyectoDestacado.titulo}}
-            </div>
-            <div class="cj_mj_noDisponible" *ngIf="db?.proyectos.length == 0"> 
-                <div class="mj_noDisponible"> No hay disponibles </div>
-            </div>
-        </div>
+  <div class="lista_proyectos">
+    <h2 class="titulo_proyectos">Proyectos Destacados</h2>
+    @if (db) {
+      <div class="items_proyectos">
+        @for (proyectoDestacado of proyectosDestacados; track proyectoDestacado) {
+          <div class="item" (click)="cargarComponente(proyectoDestacado)" (click)="eliminarImgDefault()">
+            {{proyectoDestacado.titulo}}
+          </div>
+        }
+        @if (db?.proyectos.length == 0) {
+          <div class="cj_mj_noDisponible">
+            <div class="mj_noDisponible"> No hay disponibles </div>
+          </div>
+        }
+      </div>
+    }
+  </div>
+  <div class="resumen_proyecto">
+    <div class="cj_resumen" #proyectoDestacadoResumen>
+      <router-outlet></router-outlet>
     </div>
-    <div class="resumen_proyecto">
-         <div class="cj_resumen" #proyectoDestacadoResumen>         
-            <router-outlet></router-outlet>
-         </div>
-         
-         <div class="enlaces_iconos" *ngIf="db">
-            <a [href]="red.urlRed" *ngFor="let red of db.sobreMy.misRedes" target="_blank">
-                <img class="redImg" [src]="red.urlImg" alt="">
-            </a>
-        </div>
-    </div>
+
+    @if (db) {
+      <div class="enlaces_iconos">
+        @for (red of db.sobreMy.misRedes; track red) {
+          <a [href]="red.urlRed" target="_blank">
+            <img class="redImg" [src]="red.urlImg" alt="">
+          </a>
+        }
+      </div>
+    }
+  </div>
 </div>

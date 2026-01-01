@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, ComponentRef, ViewChild, ViewContainerRef } from '@angular/core';
 import { ProyectoResumenComponent } from '../proyecto-resumen/proyecto-resumen.component';
 import { RouterOutlet } from '@angular/router';
@@ -11,9 +11,8 @@ import { ImgProyectosComponent } from '../img-proyectos/img-proyectos.component'
 @Component({
     selector: 'app-proyectos',
     imports: [
-        RouterOutlet,
-        CommonModule
-    ],
+    RouterOutlet
+],
     templateUrl: './proyectos.component.html',
     styleUrl: './proyectos.component.css'
 })

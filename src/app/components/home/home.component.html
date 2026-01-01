@@ -1,23 +1,31 @@
-<article class="contenido" *ngIf="db">
+@if (db) {
+  <article class="contenido">
     <div class="cj_cuadricula" >
-        <div class="cj_contenido_txt">
-            <img class="img_hola" [src]="db.imagenes[8]">
-            <div class="cj_contenido">
-                <div class="txt_conocimiento" *ngFor="let habilidad of db.bienvenida.habilidades">
-                    {{habilidad}}
-                </div>
+      <div class="cj_contenido_txt">
+        <img class="img_hola" [src]="db.imagenes[8]">
+        <div class="cj_contenido">
+          @for (habilidad of db.bienvenida.habilidades; track habilidad) {
+            <div class="txt_conocimiento">
+              {{habilidad}}
             </div>
-            <div class="txt_bienvenida_p" *ngFor="let parrafo of db.bienvenida.infoBienvenida">
-                {{parrafo}}
-            </div>
+          }
         </div>
-        <div class="cj_imagen">
-            <img class="img_dev" [src]="db.imagenes[6]">
-        </div>
+        @for (parrafo of db.bienvenida.infoBienvenida; track parrafo) {
+          <div class="txt_bienvenida_p">
+            {{parrafo}}
+          </div>
+        }
+      </div>
+      <div class="cj_imagen">
+        <img class="img_dev" [src]="db.imagenes[6]">
+      </div>
     </div>
     <div class="enlaces_iconos">
-        <a [href]="red.urlRed" *ngFor="let red of db.sobreMy.misRedes" target="_blank">
-            <img class="redImg" [src]="red.urlImg" alt="">
+      @for (red of db.sobreMy.misRedes; track red) {
+        <a [href]="red.urlRed" target="_blank">
+          <img class="redImg" [src]="red.urlImg" alt="">
         </a>
+      }
     </div>
-</article>
+  </article>
+}
