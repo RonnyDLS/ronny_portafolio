@@ -100,7 +100,7 @@
           "options": {
             "repo": "https://github.com/RonnyDLS/ronny_portafolio.git",
             "branch": "gh-pages",
-            "dir": "dist/my-portafolio/browser/"          
+            "dir": "dist/my-portafolio"          
           }
         }
       }
