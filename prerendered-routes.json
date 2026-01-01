@@ -1,0 +1,16 @@
+{
+  "routes": {
+    "/ronny_portafolio/bienvenida": {},
+    "/ronny_portafolio/descargaCurriculum": {},
+    "/ronny_portafolio/home": {},
+    "/ronny_portafolio/nav": {},
+    "/ronny_portafolio/proyectos": {},
+    "/ronny_portafolio/proyectos_descripcion": {},
+    "/ronny_portafolio/proyectos_destacado_descripcion": {},
+    "/ronny_portafolio/proyectos_destacados": {},
+    "/ronny_portafolio/proyectos_destacados_mobile": {},
+    "/ronny_portafolio/proyectos_mobile": {},
+    "/ronny_portafolio/proyectos_resumen": {},
+    "/ronny_portafolio/sobre_mi": {}
+  }
+}
