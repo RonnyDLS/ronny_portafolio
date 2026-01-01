@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { DB } from '../../../models/dbDatos.models';
 import { DbService } from '../../../services/db/db.service';
 
 @Component({
     selector: 'app-img-proyectos',
-    imports: [
-        CommonModule
-    ],
+    imports: [],
     templateUrl: './img-proyectos.component.html',
     styleUrl: './img-proyectos.component.css'
 })

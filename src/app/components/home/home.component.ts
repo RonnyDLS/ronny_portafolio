@@ -1,13 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { DbService } from '../../services/db/db.service';
 import { DB } from '../../models/dbDatos.models';
-import { CommonModule } from '@angular/common';
+
 
 @Component({
     selector: 'app-home',
-    imports: [
-        CommonModule
-    ],
+    imports: [],
     templateUrl: './home.component.html',
     styleUrl: './home.component.css'
 })

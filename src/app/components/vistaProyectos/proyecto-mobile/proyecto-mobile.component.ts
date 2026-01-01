@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { DB } from '../../../models/dbDatos.models';
 import { DbService } from '../../../services/db/db.service';
 import { EnviarProyectoService } from '../../../services/enviarObjProyecto/enviar-proyecto.service';
-import { CommonModule } from '@angular/common';
+
 import { Proyecto } from '../../../models/Proyectos.models';
 import { Router } from '@angular/router';
 import { ImgProyectosComponent } from '../img-proyectos/img-proyectos.component';
@@ -10,9 +10,8 @@ import { ImgProyectosComponent } from '../img-proyectos/img-proyectos.component'
 @Component({
     selector: 'app-proyecto-mobile',
     imports: [
-        CommonModule,
-        ImgProyectosComponent
-    ],
+    ImgProyectosComponent
+],
     templateUrl: './proyecto-mobile.component.html',
     styleUrl: './proyecto-mobile.component.css'
 })

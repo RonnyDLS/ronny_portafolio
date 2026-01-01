@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, ComponentRef, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { DbService } from '../../../services/db/db.service';
@@ -11,9 +11,8 @@ import { ImgProyectosDestacadosComponent } from '../img-proyectos-destacados/img
 @Component({
     selector: 'app-proyectos-destacados',
     imports: [
-        RouterModule,
-        CommonModule
-    ],
+    RouterModule
+],
     templateUrl: './proyectos-destacados.component.html',
     styleUrl: './proyectos-destacados.component.css'
 })
