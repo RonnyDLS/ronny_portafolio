@@ -7,14 +7,13 @@ import { Proyecto } from '../../../models/Proyectos.models';
 import { VideoComponent } from "../../generic-components/video/video.component";
 
 @Component({
-  selector: 'app-proyecto-destacado-descripcion',
-  standalone: true,
-  imports: [
-    CommonModule,
-    VideoComponent
-],
-  templateUrl: './proyecto-destacado-descripcion.component.html',
-  styleUrl: './proyecto-destacado-descripcion.component.css'
+    selector: 'app-proyecto-destacado-descripcion',
+    imports: [
+        CommonModule,
+        VideoComponent
+    ],
+    templateUrl: './proyecto-destacado-descripcion.component.html',
+    styleUrl: './proyecto-destacado-descripcion.component.css'
 })
 export class ProyectoDestacadoDescripcionComponent implements OnInit {
   proyectoDestacado: Proyecto;

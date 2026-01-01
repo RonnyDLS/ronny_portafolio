@@ -13,11 +13,10 @@ import { ProyectosComponent } from './components/vistaProyectos/proyectos/proyec
 import { ProyectosDestacadosComponent } from './components/vistaProyectosDestacados/proyectos-destacados/proyectos-destacados.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+    selector: 'app-root',
+    imports: [],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css'
 })
 export class AppComponent {
   title = 'MyPortafolio';

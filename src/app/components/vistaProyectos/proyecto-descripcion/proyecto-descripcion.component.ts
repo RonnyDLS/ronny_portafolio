@@ -8,11 +8,10 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { VideoComponent } from "../../generic-components/video/video.component";
 
 @Component({
-  selector: 'app-proyecto-descripcion',
-  standalone: true,
-  imports: [CommonModule, VideoComponent],
-  templateUrl: './proyecto-descripcion.component.html',
-  styleUrl: './proyecto-descripcion.component.css',
+    selector: 'app-proyecto-descripcion',
+    imports: [CommonModule, VideoComponent],
+    templateUrl: './proyecto-descripcion.component.html',
+    styleUrl: './proyecto-descripcion.component.css'
 })
 export class ProyectoDescripcionComponent implements OnInit {
   proyecto: Proyecto;

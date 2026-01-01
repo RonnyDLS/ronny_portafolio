@@ -7,17 +7,16 @@ import { DbService } from '../../services/db/db.service';
 import { DB } from '../../models/dbDatos.models';
 
 @Component({
-  selector: 'app-navbar',
-  standalone: true,
-  imports: [
-    RouterOutlet,
-    RouterLink,
-    RouterModule,
-    DescargaCurriculumModalComponent,
-    CommonModule
-],
-  templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+    selector: 'app-navbar',
+    imports: [
+        RouterOutlet,
+        RouterLink,
+        RouterModule,
+        DescargaCurriculumModalComponent,
+        CommonModule
+    ],
+    templateUrl: './navbar.component.html',
+    styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
 

@@ -8,14 +8,13 @@ import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-proyecto-destacado-resumen',
-  standalone: true,
-  imports: [
-    CommonModule,
-    RouterLink
-  ],
-  templateUrl: './proyecto-destacado-resumen.component.html',
-  styleUrl: './proyecto-destacado-resumen.component.css'
+    selector: 'app-proyecto-destacado-resumen',
+    imports: [
+        CommonModule,
+        RouterLink
+    ],
+    templateUrl: './proyecto-destacado-resumen.component.html',
+    styleUrl: './proyecto-destacado-resumen.component.css'
 })
 export class ProyectoDestacadoResumenComponent {
 

@@ -8,14 +8,13 @@ import { Proyecto } from '../../../models/Proyectos.models';
 import { ImgProyectosDestacadosComponent } from '../img-proyectos-destacados/img-proyectos-destacados.component';
 
 @Component({
-  selector: 'app-proyecto-destacado-mobile',
-  standalone: true,
-  imports: [
-    CommonModule,
-    ImgProyectosDestacadosComponent
-],
-  templateUrl: './proyecto-destacado-mobile.component.html',
-  styleUrl: './proyecto-destacado-mobile.component.css'
+    selector: 'app-proyecto-destacado-mobile',
+    imports: [
+        CommonModule,
+        ImgProyectosDestacadosComponent
+    ],
+    templateUrl: './proyecto-destacado-mobile.component.html',
+    styleUrl: './proyecto-destacado-mobile.component.css'
 })
 export class ProyectoDestacadoMobileComponent {
 

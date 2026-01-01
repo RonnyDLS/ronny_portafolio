@@ -9,14 +9,13 @@ import { ProyectoDestacadoResumenComponent } from '../proyecto-destacado-resumen
 import { ImgProyectosDestacadosComponent } from '../img-proyectos-destacados/img-proyectos-destacados.component';
 
 @Component({
-  selector: 'app-proyectos-destacados',
-  standalone: true,
-  imports: [
-    RouterModule,
-    CommonModule
-  ],
-  templateUrl: './proyectos-destacados.component.html',
-  styleUrl: './proyectos-destacados.component.css'
+    selector: 'app-proyectos-destacados',
+    imports: [
+        RouterModule,
+        CommonModule
+    ],
+    templateUrl: './proyectos-destacados.component.html',
+    styleUrl: './proyectos-destacados.component.css'
 })
 export class ProyectosDestacadosComponent implements OnInit {
 

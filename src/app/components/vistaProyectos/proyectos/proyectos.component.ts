@@ -9,14 +9,13 @@ import { Proyecto } from '../../../models/Proyectos.models';
 import { ImgProyectosComponent } from '../img-proyectos/img-proyectos.component';
 
 @Component({
-  selector: 'app-proyectos',
-  standalone: true,
-  imports: [
-    RouterOutlet,
-    CommonModule
-  ],
-  templateUrl: './proyectos.component.html',
-  styleUrl: './proyectos.component.css'
+    selector: 'app-proyectos',
+    imports: [
+        RouterOutlet,
+        CommonModule
+    ],
+    templateUrl: './proyectos.component.html',
+    styleUrl: './proyectos.component.css'
 })
 export class ProyectosComponent {
 

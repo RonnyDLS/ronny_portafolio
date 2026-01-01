@@ -8,14 +8,13 @@ import { Router } from '@angular/router';
 import { ImgProyectosComponent } from '../img-proyectos/img-proyectos.component';
 
 @Component({
-  selector: 'app-proyecto-mobile',
-  standalone: true,
-  imports: [
-    CommonModule,
-    ImgProyectosComponent
-],
-  templateUrl: './proyecto-mobile.component.html',
-  styleUrl: './proyecto-mobile.component.css'
+    selector: 'app-proyecto-mobile',
+    imports: [
+        CommonModule,
+        ImgProyectosComponent
+    ],
+    templateUrl: './proyecto-mobile.component.html',
+    styleUrl: './proyecto-mobile.component.css'
 })
 export class ProyectoMobileComponent {
 
