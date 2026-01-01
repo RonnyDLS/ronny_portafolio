@@ -33,7 +33,7 @@
             ],
             "scripts": [],
             "server": "src/main.server.ts",
-            "prerender": true,
+            "prerender": false,
             "ssr": false
           },
           "configurations": {
@@ -100,7 +100,7 @@
           "options": {
             "repo": "https://github.com/RonnyDLS/ronny_portafolio.git",
             "branch": "gh-pages",
-            "dir": "dist/my-portafolio"          
+            "dir": "dist/my-portafolio/browser/"          
           }
         }
       }
