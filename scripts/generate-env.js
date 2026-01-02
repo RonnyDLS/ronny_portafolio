@@ -34,6 +34,8 @@ export const environment = {
 `;
 
 fs.writeFileSync(targetPath, content, { encoding: 'utf8' });
+console.log('✅ content', JSON.stringify(content));
+
 
 content = `
 export const environment = {};
@@ -41,5 +43,7 @@ export const environment = {};
 
 const targetPath2 = path.join(__dirname, '../src/environments/environment.ts');
 fs.writeFileSync(targetPath2, content, { encoding: 'utf8' });
+console.log('✅ content2', JSON.stringify(content2));
+
 
 console.log('✅ environment.prod.ts y environment.ts generado correctamente.');
