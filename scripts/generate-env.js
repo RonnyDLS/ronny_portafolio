@@ -11,6 +11,12 @@ const __dirname = path.dirname(__filename);
 
 const targetPath = path.join(__dirname, '../src/environments/environment.prod.ts');
 
+// Asegurarte que la carpeta existe
+const envDir = path.dirname(targetPath);
+if (!fs.existsSync(envDir)) {
+  fs.mkdirSync(envDir, { recursive: true });
+}
+
 let content = `
 export const environment = {
   production: true,
