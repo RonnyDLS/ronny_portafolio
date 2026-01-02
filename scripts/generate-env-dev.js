@@ -32,4 +32,4 @@ export const environment = {
 `;
 
 fs.writeFileSync(targetPath, content, { encoding: 'utf8' });
-console.log('✅ environment.prod.ts generado correctamente.');
+console.log('✅ environment.ts generado correctamente.');
