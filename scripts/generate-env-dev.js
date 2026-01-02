@@ -9,7 +9,7 @@ dotenv.config();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const targetPath = path.join(__dirname, '../src/environments/environment.prod.ts');
+const targetPath = path.join(__dirname, '../src/environments/environment.ts');
 
 // Asegurarte que la carpeta existe
 const envDir = path.dirname(targetPath);
