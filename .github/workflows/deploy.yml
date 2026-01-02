@@ -32,12 +32,14 @@ jobs:
       - name: Generate environment.prod.ts
         run: node scripts/generate-env.js
         env:
-          API_KEY: ${{ secrets.FIREBASE_APIKEY }}
-          APPID: ${{ secrets.FIREBASE_APPID }}
-          AUTHDOMAIN: ${{ secrets.FIREBASE_AUTHDOMAIN }}
-          MESSAGINGSENDERID: ${{ secrets.FIREBASE_MESSAGINGSENDERID }}
-          PROJECTID: ${{ secrets.FIREBASE_PROJECTID }}
-          STORAGEBUCKET: ${{ secrets.FIREBASE_STORAGEBUCKET }}
+          FIREBASE_APIKEY: ${{ secrets.FIREBASE_APIKEY }}
+          FIREBASE_APPID: ${{ secrets.FIREBASE_APPID }}
+          FIREBASE_AUTHDOMAIN: ${{ secrets.FIREBASE_AUTHDOMAIN }}
+          FIREBASE_DATABASEURL: ${{ secrets.FIREBASE_DATABASEURL }}
+          FIREBASE_MESSAGINGSENDERID: ${{ secrets.FIREBASE_MESSAGINGSENDERID }}
+          FIREBASE_PROJECTID: ${{ secrets.FIREBASE_PROJECTID }}
+          FIREBASE_STORAGEBUCKET: ${{ secrets.FIREBASE_STORAGEBUCKET }}
+          FIREBASE_MEASUREMENTID: ${{ secrets.FIREBASE_MEASUREMENTID }}
 
       - name: Build Angular app
         run: npm run build:prod
