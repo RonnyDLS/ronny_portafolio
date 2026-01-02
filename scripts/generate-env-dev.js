@@ -1,9 +1,21 @@
 import fs from 'fs';
 import dotenv from 'dotenv';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-dotenv.config()
+dotenv.config();
 
-const targetPath = '../src/environments/environment.ts';
+// Esto reemplaza __dirname
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const targetPath = path.join(__dirname, '../src/environments/environment.prod.ts');
+
+// Asegurarte que la carpeta existe
+const envDir = path.dirname(targetPath);
+if (!fs.existsSync(envDir)) {
+  fs.mkdirSync(envDir, { recursive: true });
+}
 
 const content = `
 export const environment = {
