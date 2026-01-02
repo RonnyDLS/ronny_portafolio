@@ -1,14 +1,16 @@
-<div class="content">
-  <div class="cj_ventana">
-    @if (db) {
-      <div class="img_ico">
-        <img class="cv_ico" [src]="db.imagenes[2]">
+@if(db?.imagenes[2]) {
+  <div class="content">
+    <div class="cj_ventana">
+      @if (db) {
+        <div class="img_ico">
+          <img class="cv_ico" [src]="db.imagenes[2]">
+        </div>
+      }
+      <h3 class="titulo_modal">Seguro que desea descargar el CV</h3>
+      <div class="btn_opcion">
+        <div (click)="cerrarVentana()" class="btn cancelar"></div>
+        <a (click)="cerrarVentana()"  class="btn descargar" href="assets/pdf/CV_Ronny_De_Los_Santos.pdf" download="CV - Ronny De Los Santos Peralta.pdf"></a>
       </div>
-    }
-    <h3 class="titulo_modal">Seguro que desea descargar el CV</h3>
-    <div class="btn_opcion">
-      <div (click)="cerrarVentana()" class="btn cancelar"></div>
-      <a (click)="cerrarVentana()"  class="btn descargar" href="assets/pdf/CV_Ronny_De_Los_Santos.pdf" download="CV - Ronny De Los Santos Peralta.pdf"></a>
     </div>
   </div>
-</div>
+}

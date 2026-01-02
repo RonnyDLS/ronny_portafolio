@@ -4,16 +4,15 @@ import { DB } from '../../../models/dbDatos.models';
 import { EnviarProyectoService } from '../../../services/enviarObjProyecto/enviar-proyecto.service';
 import { DbService } from '../../../services/db/db.service';
 import { Proyecto } from '../../../models/Proyectos.models';
-import { VideoComponent } from "../../generic-components/video/video.component";
+import { VideoComponent } from '../../generic-components/video/video.component';
+import { FeatureSection } from '../../../models/type/firebase.type';
+import { FirebaseService } from '../../../services/firebase/firebase.service';
 
 @Component({
-    selector: 'app-proyecto-destacado-descripcion',
-    imports: [
-        CommonModule,
-        VideoComponent
-    ],
-    templateUrl: './proyecto-destacado-descripcion.component.html',
-    styleUrl: './proyecto-destacado-descripcion.component.css'
+  selector: 'app-proyecto-destacado-descripcion',
+  imports: [CommonModule, VideoComponent],
+  templateUrl: './proyecto-destacado-descripcion.component.html',
+  styleUrl: './proyecto-destacado-descripcion.component.css',
 })
 export class ProyectoDestacadoDescripcionComponent implements OnInit {
   proyectoDestacado: Proyecto;
@@ -22,24 +21,39 @@ export class ProyectoDestacadoDescripcionComponent implements OnInit {
   viewVideo: boolean = false;
   viewImgs: boolean = true;
 
-  constructor(private proyectoService: EnviarProyectoService, private dbService: DbService) {
-  }
-  ngOnInit(): void {
+  constructor(
+    private proyectoService: EnviarProyectoService,
+    private dbService: DbService,
+    private readonly fb: FirebaseService
+  ) {}
+  async ngOnInit(): Promise<void> {
     this.proyectoDestacado = this.proyectoService.getProyectoDestacado();
 
     if (typeof window !== 'undefined') {
       if (this.proyectoDestacado) {
-        localStorage.setItem("id_p_des_destacado", JSON.stringify(this.proyectoDestacado.id))
+        localStorage.setItem(
+          'id_p_des_destacado',
+          JSON.stringify(this.proyectoDestacado.id)
+        );
       }
-      this.idProyectoDestacado = JSON.parse(localStorage.getItem("id_p_des_destacado"));
+      this.idProyectoDestacado = JSON.parse(
+        localStorage.getItem('id_p_des_destacado')
+      );
 
-      this.dbService.getDB().subscribe(
-        (respuesta) => {
+      const firebaseService: FeatureSection = await this.fb.getFeatureSection();
+      if (firebaseService.enableDbFirebase) {
+        this.db = await this.fb.getDB();
+        this.proyectoDestacado = this.db.proyectos.filter(
+          (p) => p.id === this.idProyectoDestacado
+        )[0];
+      } else {
+        this.dbService.getDB().subscribe((respuesta) => {
           this.db = respuesta;
           this.proyectoDestacado = this.db.proyectos.filter(
             (p) => p.id === this.idProyectoDestacado
           )[0];
         });
+      }
     }
   }
 
