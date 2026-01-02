@@ -4,13 +4,10 @@ import {
   ViewChild,
   ViewContainerRef,
 } from '@angular/core';
-import { Router, RouterOutlet } from '@angular/router';
 import { BienvenidaComponent } from './components/bienvenida/bienvenida.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { HomeComponent } from './components/home/home.component';
-import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
-import { ProyectosComponent } from './components/vistaProyectos/proyectos/proyectos.component';
-import { ProyectosDestacadosComponent } from './components/vistaProyectosDestacados/proyectos-destacados/proyectos-destacados.component';
+import { FirebaseService } from './services/firebase/firebase.service';
+import { FeatureSection } from './models/type/firebase.type';
 
 @Component({
     selector: 'app-root',
@@ -25,12 +22,19 @@ export class AppComponent {
   navContent: ComponentRef<NavbarComponent>;
   bienvenidaContent: ComponentRef<BienvenidaComponent>;
 
-  ngAfterViewInit(): void {
-    this.bienvenidaContent = this.cambios.createComponent(BienvenidaComponent);
-    setTimeout(()=>{
-      this.bienvenidaContent.destroy()
+  constructor(private readonly fb: FirebaseService){}
+
+  async ngAfterViewInit(): Promise<void> {
+    const featureSection: FeatureSection = await this.fb.getFeatureSection();
+
+    if(featureSection.animatePortfolioIntro) {
+      this.bienvenidaContent = this.cambios.createComponent(BienvenidaComponent);
+      setTimeout(()=>{
+        this.bienvenidaContent.destroy()
+        this.cambios.createComponent(NavbarComponent);
+      }, 4000)
+    } else {
       this.cambios.createComponent(NavbarComponent);
-    }, 4000)
-    //this.cambios.createComponent(NavbarComponent);
+    }
   }
 }

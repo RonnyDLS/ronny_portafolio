@@ -1,26 +1,32 @@
 import { Component, OnInit } from '@angular/core';
 import { DbService } from '../../services/db/db.service';
 import { DB } from '../../models/dbDatos.models';
-
+import { FirebaseService } from '../../services/firebase/firebase.service';
+import { FeatureSection } from '../../models/type/firebase.type';
 
 @Component({
-    selector: 'app-home',
-    imports: [],
-    templateUrl: './home.component.html',
-    styleUrl: './home.component.css'
+  selector: 'app-home',
+  imports: [],
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.css',
 })
-export class HomeComponent implements OnInit{
+export class HomeComponent implements OnInit {
+  constructor(
+    private dbService: DbService,
+    private readonly fb: FirebaseService
+  ) {}
 
-  constructor(private dbService:DbService){}
+  db: DB;
 
-  db:DB;
+  async ngOnInit(): Promise<void> {
+    const firebaseService: FeatureSection = await this.fb.getFeatureSection();
 
-  ngOnInit(): void {
-    this.dbService.getDB().subscribe(
-      (respuesta)=>{
+    if (firebaseService.enableDbFirebase) {
+      this.db = await this.fb.getDB();
+    } else {
+      this.dbService.getDB().subscribe((respuesta) => {
         this.db = respuesta;
-        
-      }
-    )
+      });
+    }
   }
 }

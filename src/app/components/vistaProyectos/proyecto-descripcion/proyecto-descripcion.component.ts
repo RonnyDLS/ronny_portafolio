@@ -5,13 +5,15 @@ import { DbService } from '../../../services/db/db.service';
 import { DB } from '../../../models/dbDatos.models';
 import { Proyecto } from '../../../models/Proyectos.models';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-import { VideoComponent } from "../../generic-components/video/video.component";
+import { VideoComponent } from '../../generic-components/video/video.component';
+import { FeatureSection } from '../../../models/type/firebase.type';
+import { FirebaseService } from '../../../services/firebase/firebase.service';
 
 @Component({
-    selector: 'app-proyecto-descripcion',
-    imports: [CommonModule, VideoComponent],
-    templateUrl: './proyecto-descripcion.component.html',
-    styleUrl: './proyecto-descripcion.component.css'
+  selector: 'app-proyecto-descripcion',
+  imports: [CommonModule, VideoComponent],
+  templateUrl: './proyecto-descripcion.component.html',
+  styleUrl: './proyecto-descripcion.component.css',
 })
 export class ProyectoDescripcionComponent implements OnInit {
   proyecto: Proyecto;
@@ -23,9 +25,10 @@ export class ProyectoDescripcionComponent implements OnInit {
   constructor(
     private proyectoService: EnviarProyectoService,
     private dbService: DbService,
-    private sanitizer: DomSanitizer
+    private sanitizer: DomSanitizer,
+    private readonly fb: FirebaseService
   ) {}
-  ngOnInit(): void {
+  async ngOnInit(): Promise<void> {
     this.proyecto = this.proyectoService.getProyecto();
 
     if (typeof window !== 'undefined') {
@@ -34,13 +37,20 @@ export class ProyectoDescripcionComponent implements OnInit {
       }
       this.idProyecto = JSON.parse(localStorage.getItem('id_p_des'));
 
-      this.dbService.getDB().subscribe(
-        (respuesta) => {
+      const firebaseService: FeatureSection = await this.fb.getFeatureSection();
+      if (firebaseService.enableDbFirebase) {
+        this.db = await this.fb.getDB();
+        this.proyecto = this.db.proyectos.filter(
+          (p) => p.id === this.idProyecto
+        )[0];
+      } else {
+        this.dbService.getDB().subscribe((respuesta) => {
           this.db = respuesta;
           this.proyecto = this.db.proyectos.filter(
             (p) => p.id === this.idProyecto
           )[0];
-      });
+        });
+      }
     }
   }
 
