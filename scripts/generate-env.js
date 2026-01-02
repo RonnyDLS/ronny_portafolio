@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 
 dotenv.config()
 
-const targetPath = './src/environments/environment.prod.ts';
+const targetPath = '../src/environments/environment.prod.ts';
 
 const content = `
 export const environment = {
