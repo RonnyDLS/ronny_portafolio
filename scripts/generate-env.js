@@ -11,13 +11,7 @@ const __dirname = path.dirname(__filename);
 
 const targetPath = path.join(__dirname, '../src/environments/environment.prod.ts');
 
-// Asegurarte que la carpeta existe
-const envDir = path.dirname(targetPath);
-if (!fs.existsSync(envDir)) {
-  fs.mkdirSync(envDir, { recursive: true });
-}
-
-const content = `
+let content = `
 export const environment = {
   production: true,
   firebase: {
@@ -34,4 +28,12 @@ export const environment = {
 `;
 
 fs.writeFileSync(targetPath, content, { encoding: 'utf8' });
-console.log('✅ environment.prod.ts generado correctamente.');
+
+content = `
+export const environment = {};
+`
+
+const targetPath2 = path.join(__dirname, '../src/environments/environment.ts');
+fs.writeFileSync(targetPath2, content, { encoding: 'utf8' });
+
+console.log('✅ environment.prod.ts y environment.ts generado correctamente.');

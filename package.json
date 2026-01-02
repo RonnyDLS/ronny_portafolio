@@ -9,7 +9,7 @@
     "test": "ng test",
     "serve:ssr:MyPortafolio": "node dist/my-portafolio/server/server.mjs",
     "build": "ng build --base-href /ronny_portafolio/",
-    "build:prod": "ng build --configuration production --base-href /ronny_portafolio/",
+    "build:prod": "node scripts/generate-env.js && ng build --configuration production --base-href /ronny_portafolio/",
     "deploy": "ng deploy"
   },
   "private": true,

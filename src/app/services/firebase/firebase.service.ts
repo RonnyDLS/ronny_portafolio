@@ -17,7 +17,7 @@ export class FirebaseService {
   private db: any;
 
   constructor() {
-    const app: FirebaseApp = initializeApp(environment.firebase);
+    const app: FirebaseApp = initializeApp(environment?.firebase);
     this.remoteConfig = getRemoteConfig(app);
     this.remoteConfig.settings.minimumFetchIntervalMillis = 0;
   }
@@ -28,7 +28,7 @@ export class FirebaseService {
       this.featureSection = getString(this.remoteConfig, 'featureSection');
     }
 
-    if(!environment.production)
+    if(!environment?.production)
     console.info('FeatureSection:', this.featureSection ? JSON.parse(this.featureSection) : '');
     return this.featureSection ? JSON.parse(this.featureSection) : null;
   }
@@ -39,7 +39,7 @@ export class FirebaseService {
       this.db = getString(this.remoteConfig, 'db');
     }
 
-    if(!environment.production)
+    if(!environment?.production)
     console.info('Base de datos:', this.db ? JSON.parse(this.db) : '');
     return this.db ? JSON.parse(this.db) : null;
   }
