@@ -27,7 +27,7 @@ export class AppComponent {
   async ngAfterViewInit(): Promise<void> {
     const featureSection: FeatureSection = await this.fb.getFeatureSection();
 
-    if(featureSection.animatePortfolioIntro) {
+    if(featureSection?.animatePortfolioIntro) {
       this.bienvenidaContent = this.cambios.createComponent(BienvenidaComponent);
       setTimeout(()=>{
         this.bienvenidaContent.destroy()

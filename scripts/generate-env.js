@@ -1,6 +1,10 @@
 import fs from 'fs';
+import dotenv from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
+
+dotenv.config();
+
 // Esto reemplaza __dirname
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -30,16 +34,11 @@ export const environment = {
 `;
 
 fs.writeFileSync(targetPath, content, { encoding: 'utf8' });
-console.log('✅ content', JSON.stringify(content));
-
-
-content = `
-export const environment = {};
-`
+console.log('✅ content environment.prod', JSON.stringify(content));
 
 const targetPath2 = path.join(__dirname, '../src/environments/environment.ts');
 fs.writeFileSync(targetPath2, content, { encoding: 'utf8' });
-console.log('✅ content', JSON.stringify(content));
+console.log('✅ content environment', JSON.stringify(content));
 
 
-console.log('✅ environment.prod.ts y environment.ts generado correctamente.');
+// console.log('✅ environment.prod.ts y environment.ts generado correctamente.');

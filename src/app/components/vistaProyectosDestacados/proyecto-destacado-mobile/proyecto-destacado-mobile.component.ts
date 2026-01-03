@@ -26,7 +26,7 @@ export class ProyectoDestacadoMobileComponent {
 
   async ngOnInit(): Promise<void> {
     const firebaseService: FeatureSection = await this.fb.getFeatureSection();
-    if (firebaseService.enableDbFirebase) {
+    if (firebaseService?.enableDbFirebase) {
       this.db = await this.fb.getDB();
       for (let proyecto of this.db.proyectos) {
         if (proyecto.destacado === true) {
