@@ -1,21 +1,42 @@
-import fs from 'fs';
-import dotenv from 'dotenv';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
-dotenv.config();
+// 👉 SOLO usar dotenv en local
+if (!process.env.GITHUB_ACTIONS) {
+  const dotenv = await import("dotenv");
+  dotenv.config();
+}
 
 // Esto reemplaza __dirname
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const targetPath = path.join(__dirname, '../src/environments/environment.ts');
+const targetPath = path.join(__dirname, "../src/environments/environment.ts");
 
-// Asegurarte que la carpeta existe
+// Asegurar carpeta
 const envDir = path.dirname(targetPath);
 if (!fs.existsSync(envDir)) {
   fs.mkdirSync(envDir, { recursive: true });
 }
+
+// 🔐 Validación (IMPORTANTE)
+const required = [
+  "FIREBASE_APIKEY",
+  "FIREBASE_AUTHDOMAIN",
+  "FIREBASE_DATABASEURL",
+  "FIREBASE_PROJECTID",
+  "FIREBASE_STORAGEBUCKET",
+  "FIREBASE_MESSAGINGSENDERID",
+  "FIREBASE_APPID",
+  "FIREBASE_MEASUREMENTID",
+];
+
+required.forEach((key) => {
+  if (!process.env[key]) {
+    throw new Error(`❌ Missing env var: ${key}`);
+  }
+});
 
 const content = `
 export const environment = {
@@ -31,5 +52,5 @@ export const environment = {
 };
 `;
 
-fs.writeFileSync(targetPath, content, { encoding: 'utf8' });
-console.log('✅ environment.ts generado correctamente.');
+fs.writeFileSync(targetPath, content, { encoding: "utf8" });
+console.log("✅ environment.ts generated");
