@@ -2,12 +2,8 @@
   "name": "my-portafolio",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
     "start": "node scripts/generate-env-dev.js && ng serve",
     "start:prod": "node scripts/generate-env.js && ng serve --configuration production",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "serve:ssr:MyPortafolio": "node dist/my-portafolio/server/server.mjs",
     "build": "ng build --base-href /ronny_portafolio/",
     "build:prod": "ng build --configuration production --base-href /ronny_portafolio/",
     "deploy": "ng deploy"
