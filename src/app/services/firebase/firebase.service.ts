@@ -22,8 +22,11 @@ export class FirebaseService {
     this.remoteConfig.settings.minimumFetchIntervalMillis = 0;
   }
 
-  public async getFeatureSection(): Promise<FeatureSection> {
-    await fetchAndActivate(this.remoteConfig);
+  public async getFeatureSection(): Promise<FeatureSection> { 
+    try {
+      await fetchAndActivate(this.remoteConfig);
+    } catch (error) { }
+    
     if(!this.featureSection){
       this.featureSection = getString(this.remoteConfig, 'featureSection');
     }
@@ -34,7 +37,10 @@ export class FirebaseService {
   }
 
   public async getDB(): Promise<DB> {
-    await fetchAndActivate(this.remoteConfig);
+    try {
+      await fetchAndActivate(this.remoteConfig);
+    } catch (error) { }
+    
     if(!this.db){
       this.db = getString(this.remoteConfig, 'db');
     }

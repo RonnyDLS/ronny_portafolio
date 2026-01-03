@@ -41,7 +41,7 @@ export class ProyectoDestacadoDescripcionComponent implements OnInit {
       );
 
       const firebaseService: FeatureSection = await this.fb.getFeatureSection();
-      if (firebaseService.enableDbFirebase) {
+      if (firebaseService?.enableDbFirebase) {
         this.db = await this.fb.getDB();
         this.proyectoDestacado = this.db.proyectos.filter(
           (p) => p.id === this.idProyectoDestacado

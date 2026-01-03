@@ -38,7 +38,7 @@ export class ProyectoDescripcionComponent implements OnInit {
       this.idProyecto = JSON.parse(localStorage.getItem('id_p_des'));
 
       const firebaseService: FeatureSection = await this.fb.getFeatureSection();
-      if (firebaseService.enableDbFirebase) {
+      if (firebaseService?.enableDbFirebase) {
         this.db = await this.fb.getDB();
         this.proyecto = this.db.proyectos.filter(
           (p) => p.id === this.idProyecto

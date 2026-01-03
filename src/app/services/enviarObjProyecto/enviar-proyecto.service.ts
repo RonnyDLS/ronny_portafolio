@@ -25,7 +25,7 @@ export class EnviarProyectoService {
   async init() {
     const firebaseService: FeatureSection = await this.fb.getFeatureSection();
 
-    if (firebaseService.enableDbFirebase) {
+    if (firebaseService?.enableDbFirebase) {
       this.db = await this.fb.getDB();
     } else {
       this.dbService.getDB().subscribe((respuesta) => {
