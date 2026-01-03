@@ -1,10 +1,10 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
 // 👉 SOLO usar dotenv en local
 if (!process.env.GITHUB_ACTIONS) {
-  const dotenv = await import('dotenv');
+  const dotenv = await import("dotenv");
   dotenv.config();
 }
 
@@ -12,7 +12,10 @@ if (!process.env.GITHUB_ACTIONS) {
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const targetPath = path.join(__dirname, '../src/environments/environment.prod.ts');
+const targetPath = path.join(
+  __dirname,
+  "../src/environments/environment.prod.ts"
+);
 
 // Asegurar carpeta
 const envDir = path.dirname(targetPath);
@@ -22,14 +25,14 @@ if (!fs.existsSync(envDir)) {
 
 // 🔐 Validación (IMPORTANTE)
 const required = [
-  'FIREBASE_APIKEY',
-  'FIREBASE_AUTHDOMAIN',
-  'FIREBASE_DATABASEURL',
-  'FIREBASE_PROJECTID',
-  'FIREBASE_STORAGEBUCKET',
-  'FIREBASE_MESSAGINGSENDERID',
-  'FIREBASE_APPID',
-  'FIREBASE_MEASUREMENTID',
+  "FIREBASE_APIKEY",
+  "FIREBASE_AUTHDOMAIN",
+  "FIREBASE_DATABASEURL",
+  "FIREBASE_PROJECTID",
+  "FIREBASE_STORAGEBUCKET",
+  "FIREBASE_MESSAGINGSENDERID",
+  "FIREBASE_APPID",
+  "FIREBASE_MEASUREMENTID",
 ];
 
 required.forEach((key) => {
@@ -54,9 +57,9 @@ export const environment = {
 };
 `;
 
-fs.writeFileSync(targetPath, content, { encoding: 'utf8' });
-console.log('✅ environment.prod.ts generated');
+fs.writeFileSync(targetPath, content, { encoding: "utf8" });
+console.log("✅ environment.prod.ts generated");
 
-const targetPath2 = path.join(__dirname, '../src/environments/environment.ts');
-fs.writeFileSync(targetPath2, content, { encoding: 'utf8' });
-console.log('✅ environment.ts generated');
+const targetPath2 = path.join(__dirname, "../src/environments/environment.ts");
+fs.writeFileSync(targetPath2, content, { encoding: "utf8" });
+console.log("✅ environment.ts generated");
