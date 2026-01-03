@@ -1,0 +1,41 @@
+name: Debug Firebase Envs
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  debug-env:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check Firebase envs
+        env:
+          FIREBASE_APIKEY: ${{ secrets.FIREBASE_APIKEY }}
+          FIREBASE_APPID: ${{ secrets.FIREBASE_APPID }}
+          FIREBASE_AUTHDOMAIN: ${{ secrets.FIREBASE_AUTHDOMAIN }}
+          FIREBASE_DATABASEURL: ${{ secrets.FIREBASE_DATABASEURL }}
+          FIREBASE_MESSAGINGSENDERID: ${{ secrets.FIREBASE_MESSAGINGSENDERID }}
+          FIREBASE_PROJECTID: ${{ secrets.FIREBASE_PROJECTID }}
+          FIREBASE_STORAGEBUCKET: ${{ secrets.FIREBASE_STORAGEBUCKET }}
+          FIREBASE_MEASUREMENTID: ${{ secrets.FIREBASE_MEASUREMENTID }}
+        run: |
+          echo "🔍 Checking Firebase environment variables..."
+
+          for var in \
+            FIREBASE_APIKEY \
+            FIREBASE_APPID \
+            FIREBASE_AUTHDOMAIN \
+            FIREBASE_DATABASEURL \
+            FIREBASE_MESSAGINGSENDERID \
+            FIREBASE_PROJECTID \
+            FIREBASE_STORAGEBUCKET \
+            FIREBASE_MEASUREMENTID
+          do
+            if [ -z "${!var}" ]; then
+              echo "❌ $var is UNDEFINED"
+            else
+              echo "✅ $var is PRESENT"
+            fi
+          done
