@@ -13,18 +13,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Install dependencies
-        run: npm install
+      - run: npm install
 
-      - name: Generate environment.prod.ts
+      # 🔥 AQUÍ SÍ llegan los env
+      - name: Generate environment files
         run: node scripts/generate-env.js
         env:
           FIREBASE_APIKEY: ${{ secrets.FIREBASE_APIKEY }}
@@ -36,7 +34,8 @@ jobs:
           FIREBASE_STORAGEBUCKET: ${{ secrets.FIREBASE_STORAGEBUCKET }}
           FIREBASE_MEASUREMENTID: ${{ secrets.FIREBASE_MEASUREMENTID }}
 
-      - name: Build Angular app
+      # ✅ ya NO vuelve a ejecutar generate-env
+      - name: Build Angular
         run: npm run build:prod
 
       - name: Configure Git identity
