@@ -1,26 +1,21 @@
-name: Deploy Angular 18 to GitHub Pages
+name: Deploy Angular 21 to GitHub Pages
 
 on:
-  pull_request:
+  push:
     branches:
       - main
-    types:
-      - closed
 
 permissions:
   contents: write    # ← necesaria para gh-pages
 
 jobs:
   deploy:
-    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          persist-credentials: false
-
+        
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
