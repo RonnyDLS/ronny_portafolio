@@ -6,6 +6,13 @@
         @for (proyectoDestacado of proyectosDestacados; track proyectoDestacado) {
           <div class="item" (click)="cargarComponente(proyectoDestacado)" (click)="eliminarImgDefault()">
             {{proyectoDestacado.titulo}}
+            <div class="item_sub_tec">
+              @for (tecnologia of proyectoDestacado.tecnologias; track tecnologia) {
+                <p class="item_tec" [ngStyle]="{'background-color': tecnologia.color}">
+                  <img class="img_conocimientos" [src]="tecnologia.url_img" alt="">
+                </p>
+              }
+            </div>
           </div>
         }
         @if (db?.proyectos.length == 0) {
