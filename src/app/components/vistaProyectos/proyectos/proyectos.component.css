@@ -19,14 +19,16 @@
     .content {
         width: 90%;
         margin: auto;
-        margin-top: 3rem;
         display: grid;
         grid-template-columns: 1.5fr 2fr;
         gap: 4rem;
     }
+
+    .lista_proyectos{
+        margin-top: 3rem;
+    }
     
     .enlaces_iconos{
-        margin-top: 3rem;
         margin-bottom: 5rem;
         display: flex;
         justify-content: start;
@@ -158,6 +160,7 @@
         height: 80vh;
         overflow-y: scroll;
         scrollbar-width: none;
+        margin-top: 3rem;
     }
     .img_proyectos{
        width: 30rem;
