@@ -6,6 +6,13 @@
         @for (proyecto of db.proyectos; track proyecto) {
           <div class="item" (click)="cargarComponente(proyecto)" (click)="eliminarImgDefault()">
             {{proyecto.titulo}}
+            <div class="item_sub_tec">
+              @for (tecnologia of proyecto.tecnologias; track tecnologia) {
+                <p class="item_tec" [ngStyle]="{'background-color': tecnologia.color}">
+                  <img class="img_conocimientos" [src]="tecnologia.url_img" alt="">
+                </p>
+              }
+            </div>
           </div>
         }
         @if (db?.proyectos.length == 0) {

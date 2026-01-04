@@ -13,10 +13,14 @@ import { Proyecto } from '../../../models/Proyectos.models';
 import { ImgProyectosComponent } from '../img-proyectos/img-proyectos.component';
 import { FirebaseService } from '../../../services/firebase/firebase.service';
 import { FeatureSection } from '../../../models/type/firebase.type';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-proyectos',
-  imports: [RouterOutlet],
+  imports: [
+    RouterOutlet, 
+    CommonModule
+  ],
   templateUrl: './proyectos.component.html',
   styleUrl: './proyectos.component.css',
 })

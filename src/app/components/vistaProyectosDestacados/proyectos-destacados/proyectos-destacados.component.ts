@@ -14,10 +14,14 @@ import { ProyectoDestacadoResumenComponent } from '../proyecto-destacado-resumen
 import { ImgProyectosDestacadosComponent } from '../img-proyectos-destacados/img-proyectos-destacados.component';
 import { FeatureSection } from '../../../models/type/firebase.type';
 import { FirebaseService } from '../../../services/firebase/firebase.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-proyectos-destacados',
-  imports: [RouterModule],
+  imports: [
+    RouterModule, 
+    CommonModule
+  ],
   templateUrl: './proyectos-destacados.component.html',
   styleUrl: './proyectos-destacados.component.css',
 })
