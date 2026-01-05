@@ -7,46 +7,90 @@ import {
   RemoteConfig,
   fetchAndActivate,
 } from 'firebase/remote-config';
+import { getDatabase, onValue, ref } from 'firebase/database';
 import { FeatureSection } from '../../models/type/firebase.type';
-import { DB } from '../../models/dbDatos.models';
+import { Observable, firstValueFrom } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class FirebaseService {
   private remoteConfig: RemoteConfig;
   private featureSection: any;
-  private db: any;
+  private dbMyPortafolioWeb: any;
+  app: FirebaseApp;
 
   constructor() {
-    const app: FirebaseApp = initializeApp(environment?.firebase);
-    this.remoteConfig = getRemoteConfig(app);
-    this.remoteConfig.settings.minimumFetchIntervalMillis = 0;
+    this.app = initializeApp(environment?.firebase);
+    this.remoteConfig = getRemoteConfig(this.app);
+    this.dbMyPortafolioWeb = getDatabase();
+    this.configMinimumFetchIntervalMillis_RemoteConfig();
   }
 
-  public async getFeatureSection(): Promise<FeatureSection> { 
+  private async configMinimumFetchIntervalMillis_RemoteConfig(): Promise<void> {
+    let featureSection: FeatureSection = await this.getFeatureSection();
+    if (featureSection.requestFirebaseAlltime)
+      this.remoteConfig.settings.minimumFetchIntervalMillis = 0;
+  }
+
+  /*
+  ==================================================
+  >>>>>>>>>> Remote Config desde firebase <<<<<<<<<<
+  ==================================================
+  */
+
+  public async getFeatureSection(): Promise<FeatureSection> {
     try {
       await fetchAndActivate(this.remoteConfig);
-    } catch (error) { }
-    
-    if(!this.featureSection){
+    } catch (error) {}
+
+    if (!this.featureSection) {
       this.featureSection = getString(this.remoteConfig, 'featureSection');
     }
 
-    if(!environment?.production)
-    console.info('FeatureSection:', this.featureSection ? JSON.parse(this.featureSection) : '');
+    if (!environment?.production)
+      console.info(
+        'FeatureSection:',
+        this.featureSection ? JSON.parse(this.featureSection) : ''
+      );
     return this.featureSection ? JSON.parse(this.featureSection) : null;
   }
 
-  public async getDB(): Promise<DB> {
-    try {
-      await fetchAndActivate(this.remoteConfig);
-    } catch (error) { }
-    
-    if(!this.db){
-      this.db = getString(this.remoteConfig, 'db');
-    }
+  /*
+  ======================================================
+  >>>>>>>>>> Realtime Database desde firebase <<<<<<<<<<
+  ======================================================
+  */
 
-    if(!environment?.production)
-    console.info('Base de datos:', this.db ? JSON.parse(this.db) : '');
-    return this.db ? JSON.parse(this.db) : null;
+  public getFullDB(): any {
+    const starCountRef = ref(this.dbMyPortafolioWeb);
+    onValue(starCountRef, (snapshot) => {
+      const value = snapshot.val();
+
+      if (!environment?.production) console.info('Base de datos:', value);
+      return value;
+    });
+  }
+
+  public getObjDB(path: string): Promise<any> {
+    return firstValueFrom<any>(
+      new Observable((sub) => {
+        const starCountRef = ref(this.dbMyPortafolioWeb, path);
+        onValue(
+          starCountRef,
+          (snapshot) => {
+            const value = snapshot.val();
+
+            if (!environment?.production) console.info('Base de datos:', value);
+            return sub.next(value);
+          },
+          (err) => {
+            if (!environment?.production)
+              console.error(
+                'Ha ocurrido un error al establecer la conexión de lectura con Firebase.',
+                err
+              );
+          }
+        );
+      })
+    );
   }
 }

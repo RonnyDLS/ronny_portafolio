@@ -7,6 +7,7 @@ import { DbService } from '../../services/db/db.service';
 import { DB } from '../../models/dbDatos.models';
 import { FeatureSection } from '../../models/type/firebase.type';
 import { FirebaseService } from '../../services/firebase/firebase.service';
+import { pathDbFirebase } from '../../models/enum/pathDbFirebase.enum';
 
 @Component({
   selector: 'app-navbar',
@@ -36,7 +37,7 @@ export class NavbarComponent implements OnInit {
     const firebaseService: FeatureSection = await this.fb.getFeatureSection();
 
     if (firebaseService?.enableDbFirebase) {
-      this.db = await this.fb.getDB();
+      this.db = await this.fb.getObjDB(`${pathDbFirebase.DB_MYPORTAFOLIOWEB}`); 
     } else {
       this.dbService.getDB().subscribe((respuesta) => {
         this.db = respuesta;
