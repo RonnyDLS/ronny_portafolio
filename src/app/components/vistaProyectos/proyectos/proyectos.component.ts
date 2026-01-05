@@ -13,6 +13,7 @@ import { FirebaseService } from '../../../services/firebase/firebase.service';
 import { FeatureSection } from '../../../models/type/firebase.type';
 import { CommonModule } from '@angular/common';
 import { ImgProyectosComponent } from "../img-proyectos/img-proyectos.component";
+import { pathDbFirebase } from '../../../models/enum/pathDbFirebase.enum';
 
 @Component({
   selector: 'app-proyectos',
@@ -41,7 +42,7 @@ export class ProyectosComponent {
     const firebaseService: FeatureSection = await this.fb.getFeatureSection();
 
     if (firebaseService?.enableDbFirebase) {
-      this.db = await this.fb.getDB();
+      this.db = await this.fb.getObjDB(pathDbFirebase.DB_MYPORTAFOLIOWEB);
     } else {
       this.dbService.getDB().subscribe((respuesta) => {
         this.db = respuesta;

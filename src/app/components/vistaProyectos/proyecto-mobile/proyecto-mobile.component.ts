@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
 import { ImgProyectosComponent } from '../img-proyectos/img-proyectos.component';
 import { FeatureSection } from '../../../models/type/firebase.type';
 import { FirebaseService } from '../../../services/firebase/firebase.service';
+import { pathDbFirebase } from '../../../models/enum/pathDbFirebase.enum';
 
 @Component({
   selector: 'app-proyecto-mobile',
@@ -28,7 +29,7 @@ export class ProyectoMobileComponent {
     const firebaseService: FeatureSection = await this.fb.getFeatureSection();
 
     if (firebaseService?.enableDbFirebase) {
-      this.db = await this.fb.getDB();
+      this.db = this.proyecto = await this.fb.getObjDB(pathDbFirebase.DB_MYPORTAFOLIOWEB);
     } else {
       this.dbService.getDB().subscribe((respuesta) => {
         this.db = respuesta;

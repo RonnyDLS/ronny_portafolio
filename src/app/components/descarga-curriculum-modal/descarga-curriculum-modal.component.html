@@ -1,9 +1,9 @@
-@if(db?.imagenes[2]) {
+@if(sourceImg) {
   <div class="content">
     <div class="cj_ventana">
-      @if (db) {
+      @if (sourceImg) {
         <div class="img_ico">
-          <img class="cv_ico" [src]="db.imagenes[2]">
+          <img class="cv_ico" [src]="sourceImg">
         </div>
       }
       <h3 class="titulo_modal">Seguro que desea descargar el CV</h3>

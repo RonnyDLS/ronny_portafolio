@@ -1,8 +1,8 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { DbService } from '../../services/db/db.service';
-import { DB } from '../../models/dbDatos.models';
 import { FirebaseService } from '../../services/firebase/firebase.service';
 import { FeatureSection } from '../../models/type/firebase.type';
+import { pathDbFirebase } from '../../models/enum/pathDbFirebase.enum';
 
 @Component({
   selector: 'app-descarga-curriculum-modal',
@@ -11,7 +11,7 @@ import { FeatureSection } from '../../models/type/firebase.type';
   styleUrl: './descarga-curriculum-modal.component.css',
 })
 export class DescargaCurriculumModalComponent implements OnInit {
-  db: DB;
+  sourceImg: string;
   @Output() eventoCerrar = new EventEmitter<void>();
 
   constructor(
@@ -23,10 +23,10 @@ export class DescargaCurriculumModalComponent implements OnInit {
     const firebaseService: FeatureSection = await this.fb.getFeatureSection();
 
     if (firebaseService?.enableDbFirebase) {
-      this.db = await this.fb.getDB();
+      this.sourceImg = await this.fb.getObjDB(`${pathDbFirebase.IMAGENES}/2`);     
     } else {
       this.dbService.getDB().subscribe((respuesta) => {
-        this.db = respuesta;
+        this.sourceImg = respuesta.imagenes[2];
       });
     }
   }

@@ -1,4 +1,4 @@
-import { Component, ViewChild, ViewContainerRef } from '@angular/core';
+import { Component } from '@angular/core';
 import { DB } from '../../../models/dbDatos.models';
 import { DbService } from '../../../services/db/db.service';
 import { EnviarProyectoService } from '../../../services/enviarObjProyecto/enviar-proyecto.service';
@@ -7,6 +7,7 @@ import { Proyecto } from '../../../models/Proyectos.models';
 import { ImgProyectosDestacadosComponent } from '../img-proyectos-destacados/img-proyectos-destacados.component';
 import { FeatureSection } from '../../../models/type/firebase.type';
 import { FirebaseService } from '../../../services/firebase/firebase.service';
+import { pathDbFirebase } from '../../../models/enum/pathDbFirebase.enum';
 
 @Component({
   selector: 'app-proyecto-destacado-mobile',
@@ -27,7 +28,7 @@ export class ProyectoDestacadoMobileComponent {
   async ngOnInit(): Promise<void> {
     const firebaseService: FeatureSection = await this.fb.getFeatureSection();
     if (firebaseService?.enableDbFirebase) {
-      this.db = await this.fb.getDB();
+      this.db = await this.fb.getObjDB(pathDbFirebase.DB_MYPORTAFOLIOWEB);
       for (let proyecto of this.db.proyectos) {
         if (proyecto.destacado === true) {
           this.proyectosDestacados.push(proyecto);

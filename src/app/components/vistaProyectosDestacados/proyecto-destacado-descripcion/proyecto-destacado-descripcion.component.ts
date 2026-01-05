@@ -7,6 +7,7 @@ import { Proyecto } from '../../../models/Proyectos.models';
 import { VideoComponent } from '../../generic-components/video/video.component';
 import { FeatureSection } from '../../../models/type/firebase.type';
 import { FirebaseService } from '../../../services/firebase/firebase.service';
+import { pathDbFirebase } from '../../../models/enum/pathDbFirebase.enum';
 
 @Component({
   selector: 'app-proyecto-destacado-descripcion',
@@ -42,7 +43,7 @@ export class ProyectoDestacadoDescripcionComponent implements OnInit {
 
       const firebaseService: FeatureSection = await this.fb.getFeatureSection();
       if (firebaseService?.enableDbFirebase) {
-        this.db = await this.fb.getDB();
+        this.db = await this.fb.getObjDB(pathDbFirebase.DB_MYPORTAFOLIOWEB);
         this.proyectoDestacado = this.db.proyectos.filter(
           (p) => p.id === this.idProyectoDestacado
         )[0];

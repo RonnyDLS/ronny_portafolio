@@ -8,6 +8,8 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { VideoComponent } from '../../generic-components/video/video.component';
 import { FeatureSection } from '../../../models/type/firebase.type';
 import { FirebaseService } from '../../../services/firebase/firebase.service';
+import { pathDbFirebase } from '../../../models/enum/pathDbFirebase.enum';
+import { Redes } from '../../../models/Redes.models';
 
 @Component({
   selector: 'app-proyecto-descripcion',
@@ -17,6 +19,7 @@ import { FirebaseService } from '../../../services/firebase/firebase.service';
 })
 export class ProyectoDescripcionComponent implements OnInit {
   proyecto: Proyecto;
+  misRedes:Redes[];
   db: DB;
   idProyecto: string;
   viewVideo: boolean = false;
@@ -39,7 +42,7 @@ export class ProyectoDescripcionComponent implements OnInit {
 
       const firebaseService: FeatureSection = await this.fb.getFeatureSection();
       if (firebaseService?.enableDbFirebase) {
-        this.db = await this.fb.getDB();
+        this.db = await this.fb.getObjDB(pathDbFirebase.DB_MYPORTAFOLIOWEB);
         this.proyecto = this.db.proyectos.filter(
           (p) => p.id === this.idProyecto
         )[0];

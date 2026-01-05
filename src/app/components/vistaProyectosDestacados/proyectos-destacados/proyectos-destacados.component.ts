@@ -14,6 +14,7 @@ import { FeatureSection } from '../../../models/type/firebase.type';
 import { FirebaseService } from '../../../services/firebase/firebase.service';
 import { CommonModule } from '@angular/common';
 import { ImgProyectosComponent } from "../../vistaProyectos/img-proyectos/img-proyectos.component";
+import { pathDbFirebase } from '../../../models/enum/pathDbFirebase.enum';
 
 @Component({
   selector: 'app-proyectos-destacados',
@@ -41,7 +42,7 @@ export class ProyectosDestacadosComponent implements OnInit {
   async ngOnInit(): Promise<void> {
     const firebaseService: FeatureSection = await this.fb.getFeatureSection();
     if (firebaseService?.enableDbFirebase) {
-      this.db = await this.fb.getDB();
+      this.db = await this.fb.getObjDB(pathDbFirebase.DB_MYPORTAFOLIOWEB);
       for (let proyecto of this.db.proyectos) {
         if (proyecto.destacado === true) {
           this.proyectosDestacados.push(proyecto);
